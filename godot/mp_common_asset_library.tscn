@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=3 uid="uid://iqi840nxh6ae"]
+
+[ext_resource type="PackedScene" path="res://static/MP_Abbasid_Terrain.tscn" id="1_7twww"]
+[ext_resource type="PackedScene" path="res://static/MP_Abbasid_Assets.tscn" id="2_ya4tm"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Floor_A.tscn" id="3_bxdms"]
+[ext_resource type="PackedScene" path="res://objects/Gameplay/Common/HQ_PlayerSpawner.tscn" id="4_32bxv"]
+[ext_resource type="PackedScene" uid="uid://jv31so3xcr7p" path="res://addons/bf_portal/portal_tools/types/PolygonVolume/PolygonVolume.tscn" id="5_f1d3q"]
+[ext_resource type="PackedScene" path="res://objects/entities/SpawnPoint.tscn" id="6_t4rut"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Floor_01.tscn" id="7_yke4s"]
+[ext_resource type="PackedScene" path="res://objects/Gameplay/Common/WorldIcon.tscn" id="9_10o5b"]
+
+[node name="MP_Abbasid" type="Node3D"]
+
+[node name="Static" type="Node3D" parent="."]
+
+[node name="MP_Abbasid_Terrain" parent="Static" instance=ExtResource("1_7twww")]
+metadata/_edit_lock_ = true
+
+[node name="MP_Abbasid_Assets" parent="Static" instance=ExtResource("2_ya4tm")]
+metadata/_edit_lock_ = true
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 135, 0)
+
+[node name="FiringRange_Floor_A" parent="Node3D" instance=ExtResource("3_bxdms")]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, -257.432, -1.52588e-05, 181.147)
+
+[node name="TEAM_2_HQ" parent="Node3D" node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("4_32bxv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 60.0035, 0)
+Team = 2
+AltTeam = 0
+ObjId = 1
+HQArea = NodePath("HQ_Team2")
+InfantrySpawns = [NodePath("SpawnPoint_1_1")]
+
+[node name="HQ_Team2" parent="Node3D/TEAM_2_HQ" instance=ExtResource("5_f1d3q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+points = PackedVector2Array(3.69577, 2.51045, 3.51781, -3.44029, -3.26338, -3.25956, -3.03007, 2.96584)
+
+[node name="SpawnPoint_1_1" parent="Node3D/TEAM_2_HQ" instance=ExtResource("6_t4rut")]
+transform = Transform3D(0.999884, 0, -0.0152535, 0, 1, 0, 0.0152535, 0, 0.999884, -0.0364078, 0, -0.613427)
+
+[node name="TEAM_1_HQ" parent="Node3D" node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("4_32bxv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 59.9578, 0)
+AltTeam = 0
+ObjId = 1
+HQArea = NodePath("HQ_Team1")
+InfantrySpawns = [NodePath("SpawnPoint_1_1")]
+
+[node name="HQ_Team1" parent="Node3D/TEAM_1_HQ" instance=ExtResource("5_f1d3q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+points = PackedVector2Array(3.27526, 2.50534, 2.66804, -3.50386, -3.3709, -3.39503, -3.05582, 2.65506)
+
+[node name="SpawnPoint_1_1" parent="Node3D/TEAM_1_HQ" instance=ExtResource("6_t4rut")]
+transform = Transform3D(0.999884, 0, -0.0152535, 0, 1, 0, 0.0152535, 0, 0.999884, -0.038861, 0, -0.452616)
+
+[node name="FiringRange_Floor_01" parent="Node3D" instance=ExtResource("7_yke4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9795, 59.1822, -9.30867)
+
+[node name="WorldIcon" parent="Node3D" instance=ExtResource("9_10o5b")]
+ObjId = 1
+iconTextVisible = true
+iconImagePicker = 2

@@ -1,0 +1,338 @@
+{
+    "Portal_Dynamic": [
+        {
+            "name": "FiringRange_Floor_A",
+            "type": "FiringRange_Floor_A",
+            "right": {
+                "x": 100,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 100,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 100
+            },
+            "position": {
+                "x": -257.432,
+                "y": 134.9999847412,
+                "z": 181.147
+            },
+            "id": "Node3D/FiringRange_Floor_A"
+        },
+        {
+            "name": "TEAM_2_HQ",
+            "Team": "Team2",
+            "AltTeam": "TeamNeutral",
+            "ObjId": 1,
+            "InfantrySpawns": [
+                "Node3D/TEAM_2_HQ/SpawnPoint_1_1"
+            ],
+            "HQArea": "Node3D/TEAM_2_HQ/HQ_Team2",
+            "type": "HQ_PlayerSpawner",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -6,
+                "y": 195.0035,
+                "z": 0
+            },
+            "id": "Node3D/TEAM_2_HQ",
+            "linked": [
+                "HQArea",
+                "InfantrySpawns"
+            ]
+        },
+        {
+            "name": "HQ_Team2",
+            "type": "PolygonVolume",
+            "id": "Node3D/TEAM_2_HQ/HQ_Team2",
+            "height": 0,
+            "points": [
+                {
+                    "x": -2.30423,
+                    "y": 200.0035,
+                    "z": 2.51045
+                },
+                {
+                    "x": -2.48219,
+                    "y": 200.0035,
+                    "z": -3.44029
+                },
+                {
+                    "x": -9.26338,
+                    "y": 200.0035,
+                    "z": -3.25956
+                },
+                {
+                    "x": -9.03007,
+                    "y": 200.0035,
+                    "z": 2.96584
+                }
+            ]
+        },
+        {
+            "name": "SpawnPoint_1_1",
+            "type": "SpawnPoint",
+            "right": {
+                "x": 0.999884,
+                "y": 0,
+                "z": 0.0152535
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.0152535,
+                "y": 0,
+                "z": 0.999884
+            },
+            "position": {
+                "x": -6.0364078,
+                "y": 195.0035,
+                "z": -0.613427
+            },
+            "id": "Node3D/TEAM_2_HQ/SpawnPoint_1_1"
+        },
+        {
+            "name": "TEAM_1_HQ",
+            "AltTeam": "TeamNeutral",
+            "ObjId": 1,
+            "InfantrySpawns": [
+                "Node3D/TEAM_1_HQ/SpawnPoint_1_1"
+            ],
+            "HQArea": "Node3D/TEAM_1_HQ/HQ_Team1",
+            "type": "HQ_PlayerSpawner",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 5,
+                "y": 194.9578,
+                "z": 0
+            },
+            "id": "Node3D/TEAM_1_HQ",
+            "linked": [
+                "HQArea",
+                "InfantrySpawns"
+            ]
+        },
+        {
+            "name": "HQ_Team1",
+            "type": "PolygonVolume",
+            "id": "Node3D/TEAM_1_HQ/HQ_Team1",
+            "height": 0,
+            "points": [
+                {
+                    "x": 8.27526,
+                    "y": 199.9578,
+                    "z": 2.50534
+                },
+                {
+                    "x": 7.66804,
+                    "y": 199.9578,
+                    "z": -3.50386
+                },
+                {
+                    "x": 1.6291,
+                    "y": 199.9578,
+                    "z": -3.39503
+                },
+                {
+                    "x": 1.94418,
+                    "y": 199.9578,
+                    "z": 2.65506
+                }
+            ]
+        },
+        {
+            "name": "SpawnPoint_1_1",
+            "type": "SpawnPoint",
+            "right": {
+                "x": 0.999884,
+                "y": 0,
+                "z": 0.0152535
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.0152535,
+                "y": 0,
+                "z": 0.999884
+            },
+            "position": {
+                "x": 4.961139,
+                "y": 194.9578,
+                "z": -0.452616
+            },
+            "id": "Node3D/TEAM_1_HQ/SpawnPoint_1_1"
+        },
+        {
+            "name": "FiringRange_Floor_01",
+            "type": "FiringRange_Floor_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -11.9795,
+                "y": 194.1822,
+                "z": -9.30867
+            },
+            "id": "Node3D/FiringRange_Floor_01"
+        },
+        {
+            "name": "PalaceBalcony_01_320x256",
+            "type": "PalaceBalcony_01_320x256",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0.4327,
+                "y": 195.56742,
+                "z": -5.82996
+            },
+            "id": "Node3D/FiringRange_Floor_01/PalaceBalcony_01_320x256"
+        },
+        {
+            "name": "WorldIcon",
+            "ObjId": 1,
+            "iconTextVisible": true,
+            "iconImagePicker": "SquadPing",
+            "type": "WorldIcon",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 135,
+                "z": 0
+            },
+            "id": "Node3D/WorldIcon"
+        }
+    ],
+    "Static": [
+        {
+            "name": "MP_Abbasid_Terrain",
+            "metadata/_edit_lock_": true,
+            "type": "MP_Abbasid_Terrain",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "id": "Static/MP_Abbasid_Terrain"
+        },
+        {
+            "name": "MP_Abbasid_Assets",
+            "metadata/_edit_lock_": true,
+            "type": "MP_Abbasid_Assets",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "id": "Static/MP_Abbasid_Assets"
+        }
+    ]
+}
