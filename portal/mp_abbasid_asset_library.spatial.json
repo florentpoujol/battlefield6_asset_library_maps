@@ -4,26 +4,26 @@
             "name": "FiringRange_Floor_A",
             "type": "FiringRange_Floor_A",
             "right": {
-                "x": 100,
+                "x": 125,
                 "y": 0,
                 "z": 0
             },
             "up": {
                 "x": 0,
-                "y": 100,
+                "y": 125,
                 "z": 0
             },
             "front": {
                 "x": 0,
                 "y": 0,
-                "z": 100
+                "z": 125
             },
             "position": {
-                "x": -257.432,
-                "y": 134.9999847412,
-                "z": 181.147
+                "x": -312.5,
+                "y": 135,
+                "z": 218.75
             },
-            "id": "Node3D/FiringRange_Floor_A"
+            "id": "Node3D/FloorCenter/FiringRange_Floor_A"
         },
         {
             "name": "TEAM_2_HQ",
@@ -222,41 +222,17 @@
             },
             "position": {
                 "x": -11.9795,
-                "y": 194.1822,
+                "y": 193.2337,
                 "z": -9.30867
             },
             "id": "Node3D/FiringRange_Floor_01"
-        },
-        {
-            "name": "PalaceBalcony_01_320x256",
-            "type": "PalaceBalcony_01_320x256",
-            "right": {
-                "x": 1,
-                "y": 0,
-                "z": 0
-            },
-            "up": {
-                "x": 0,
-                "y": 1,
-                "z": 0
-            },
-            "front": {
-                "x": 0,
-                "y": 0,
-                "z": 1
-            },
-            "position": {
-                "x": 0.4327,
-                "y": 195.56742,
-                "z": -5.82996
-            },
-            "id": "Node3D/FiringRange_Floor_01/PalaceBalcony_01_320x256"
         },
         {
             "name": "WorldIcon",
             "ObjId": 1,
             "iconTextVisible": true,
             "iconImagePicker": "SquadPing",
+            "iconImageVisible": true,
             "type": "WorldIcon",
             "right": {
                 "x": 1,
@@ -275,7 +251,7 @@
             },
             "position": {
                 "x": 0,
-                "y": 135,
+                "y": 136.86163,
                 "z": 0
             },
             "id": "Node3D/WorldIcon"

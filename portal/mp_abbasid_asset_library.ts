@@ -1,4 +1,11 @@
 
+/**
+ * Script for the "mp_abbasid_asset_library" map
+ * Build by Florent Poujol
+ * Sources: https://github.com/florentpoujol/battlefield6_asset_library_maps
+ * Built on: Wed Oct 22 23:09:15     2025
+ */
+
 export class SpawnedObject {
     constructor(
         public readonly name: string,
@@ -93,7 +100,7 @@ export class ObjectSpawner
     {
         mod.AddUIContainer(
             'rootUIWidget',
-            mod.CreateVector(0, 10, 0), // position (positiv Y = toward the top)
+            mod.CreateVector(0, 10, 0), // position
             mod.CreateVector(500, 50, 0), // size
             mod.UIAnchor.BottomCenter,
             mod.GetUIRoot(),
@@ -161,4 +168,48 @@ export class ObjectSpawner
             mod.ZComponentOf(closestObject.position)
         ));
     }
+}
+
+// import {ObjectSpawner} from "./common";
+
+let objectSpawner: ObjectSpawner;
+let player: mod.Player|undefined;
+
+export async function OnGameModeStarted(): Promise<void>
+{
+    objectSpawner = new ObjectSpawner(
+        mod.RuntimeSpawn_Abbasid,
+        [
+            (name: string) => name.startsWith('Mosque'),
+            (name: string) => name.startsWith('OutskirtsHouse'),
+            (name: string) => name.startsWith('Building_'),
+            (name: string) => name.startsWith('Palace_'),
+        ],
+        135.5
+    );
+
+    objectSpawner.spawnObjects();
+
+    while (true) {
+        await mod.Wait(1);
+
+        if (!player) {
+            await mod.Wait(5);
+            continue;
+        }
+
+        objectSpawner.OnUpdate(player);
+    }
+}
+
+export function OnPlayerDeployed(eventPlayer: mod.Player): void
+{
+    player = eventPlayer;
+    objectSpawner.createUI(eventPlayer);
+}
+
+export function OnPlayerUndeploy(): void
+{
+    player = undefined;
+    objectSpawner.destroyUI();
 }
