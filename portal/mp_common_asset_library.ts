@@ -3,34 +3,34 @@
  * Script for the "mp_common_asset_library" map
  * Build by Florent Poujol
  * Sources: https://github.com/florentpoujol/battlefield6_asset_library_maps
- * Built on: Mon Oct 20 23:33:23     2025
+ * Built on: Wed Oct 22 22:31:58     2025
  */
+
+export class SpawnedObject {
+    constructor(
+        public readonly name: string,
+        public readonly position: mod.Vector,
+    ) {}
+}
 
 export class ObjectSpawner
 {
     constructor(
         private _enum: any, // one of the mod.RuntimeSpawn_* enums, NOT one of its case, the whole enum
-        private spawnObjectFunction: { (enumCase: any, position: mod.Vector, rotation: mod.Vector): mod.Object },
         private filters:  { (objectName: string): boolean }[] = [],
         private baseY: number = 0,
+        private worldIconObjectId: number = 1
     ) {}
 
-    public positionVectorsPerObjectName: {[index: string]: mod.Vector} = {}
+    private objects: {[index: string]: SpawnedObject} = {}
 
     public spawnObjects(): void
     {
         const zeroVector = mod.CreateVector(0, 0, 0);
 
-        const elements = Object.entries(this._enum);
-        const elementsPerSide = Math.ceil(Math.sqrt(elements.length));
-        const spacePerElement = 10;
-
-        const max = Math.ceil((elementsPerSide / 2) * spacePerElement);
-        let x = 0-max;
-        let z = 0-max;
-        let i = 0;
-
-        for (const [name, value] of elements) {
+        const initialElements = Object.entries(this._enum);
+        const objectNamesToSpawn: string[] = [];
+        for (const [name, value] of initialElements) {
             let ignoreObject = false;
             for (const filter of this.filters) {
                 if (filter(name)) {
@@ -42,17 +42,27 @@ export class ObjectSpawner
                 continue;
             }
 
-            const position = mod.CreateVector(x, this.baseY, z);
-            // const object = mod.SpawnObject(
-            //     value,
-            //     position,
-            //     zeroVector
-            // );
-            const object = this.spawnObjectFunction(value, position, zeroVector);
-            const positionStr = devTools.vectorToString(position);
-            console.log('spawn object ' + i + ' ' + name + ' ' + mod.GetObjId(object) + ' ' + positionStr);
+            objectNamesToSpawn.push(name);
+        }
 
-            this.positionVectorsPerObjectName[name] = position
+        const elementsPerSide = Math.ceil(Math.sqrt(objectNamesToSpawn.length));
+        const spacePerElement = 10;
+
+        const max = Math.ceil((elementsPerSide / 2) * spacePerElement);
+        let x = 0-max;
+        let z = 0-max;
+        let i = 0;
+
+        for (const name of objectNamesToSpawn) {
+            const position = mod.CreateVector(x, this.baseY, z);
+
+            mod.SpawnObject(
+                this._enum[name] as any,
+                position,
+                zeroVector
+            );
+
+            this.objects[name] = new SpawnedObject(name, position);
 
             x += spacePerElement;
             if (x > max) { // start a new line
@@ -62,301 +72,162 @@ export class ObjectSpawner
             i++;
         }
     }
-}
 
-export class DevTools
-{
-    public log(message: string|mod.Message): void
+    private findClosestObjectFromPlayer(player: mod.Player): null|SpawnedObject
     {
-        const date = new Date();
-        const timeElapsed = mod.GetMatchTimeElapsed().toFixed(3);
+        let smallestDistance = 999.0;
+        let closestObject: null|SpawnedObject = null;
 
-        console.log(
-            `[${date.getMinutes()}m ${date.getSeconds()}s ${date.getMilliseconds()}ms] `,
-            `[${timeElapsed}] `,
-            message
-        );
+        const playerPosition = mod.GetSoldierState(player, mod.SoldierStateVector.GetPosition);
+
+        for (const spawnedObject of Object.values(this.objects)) {
+            const distance = mod.DistanceBetween(playerPosition, spawnedObject.position);
+            if (distance < 30.0 && distance < smallestDistance) {
+                smallestDistance = distance;
+                closestObject = spawnedObject;
+            }
+        }
+
+        return closestObject
     }
 
-    private loggedOnce: {[index: string]: boolean} = {};
+    private rootUIWidget: mod.UIWidget|undefined;
+    private objectNameUIWidget: mod.UIWidget|undefined;
+    /** @ts-ignore */
+    private worldIcon: mod.WorldIcon;
 
-    public logOnce(message: string): void
+    public createUI(player: mod.Player): void
     {
-        if (this.loggedOnce.hasOwnProperty(message)) {
+        mod.AddUIContainer(
+            'rootUIWidget',
+            mod.CreateVector(0, 0, 0), // position
+            mod.CreateVector(500, 50, 0), // size
+            mod.UIAnchor.BottomCenter,
+            mod.GetUIRoot(),
+            true,
+            5,
+            mod.CreateVector(0.2, 0.2, 0.2),
+            0.8,
+            mod.UIBgFill.Solid,
+            player
+        );
+        this.rootUIWidget = mod.FindUIWidgetWithName('rootUIWidget') as mod.UIWidget;
+
+        mod.AddUIText(
+            'object_name',
+            mod.CreateVector(0, 0, 0),
+            mod.CreateVector(380, 40, 0),
+            mod.UIAnchor.Center,
+            this.rootUIWidget as mod.UIWidget,
+            true,
+            5,
+            // background
+            mod.CreateVector(0, 0, 0),
+            0,
+            mod.UIBgFill.None,
+            // text message, size, color, alpha, anchor
+            mod.Message(''), // will be replaced when needed
+            25,
+            mod.CreateVector(1, 1, 1),
+            1,
+            mod.UIAnchor.Center,
+        );
+        this.objectNameUIWidget = mod.FindUIWidgetWithName('object_name') as mod.UIWidget;
+
+        this.worldIcon = mod.GetWorldIcon(this.worldIconObjectId);
+        mod.EnableWorldIconText(this.worldIcon, true);
+        mod.EnableWorldIconImage(this.worldIcon, true);
+        mod.SetWorldIconImage(this.worldIcon, mod.WorldIconImages.SquadPing);
+        mod.SetWorldIconColor(this.worldIcon, mod.CreateVector(1, 0, 0));
+    }
+
+    public destroyUI(): void
+    {
+        mod.DeleteAllUIWidgets();
+        this.rootUIWidget = undefined;
+        this.objectNameUIWidget = undefined;
+    }
+
+    public OnUpdate(player: mod.Player): void
+    {
+        const closestObject: null|SpawnedObject = this.findClosestObjectFromPlayer(player);
+        if (closestObject === null) {
             return;
         }
 
-        this.loggedOnce[message] = true;
+        const name = mod.Message(closestObject.name);
 
-        this.log('[ONCE] ' + message);
-    }
+        if (this.objectNameUIWidget) {
+            mod.SetUITextLabel(this.objectNameUIWidget, name);
+        }
 
-    public getRandomValueInArray<T>(array: Array<T>): T
-    {
-        return array[Math.floor(Math.random() * array.length)];
-    }
-
-    public vectorToString(vector: mod.Vector): string
-    {
-        return `(${mod.XComponentOf(vector)}, ${mod.YComponentOf(vector)}, ${mod.ZComponentOf(vector)})`
+        mod.SetWorldIconText(this.worldIcon, name);
+        mod.SetWorldIconPosition(this.worldIcon, mod.CreateVector(
+            mod.XComponentOf(closestObject.position),
+            mod.YComponentOf(closestObject.position) + 1,
+            mod.ZComponentOf(closestObject.position)
+        ));
     }
 }
 
-export const devTools = new DevTools();
-
-// import {devTools, ObjectSpawner} from "./common";
+// import {ObjectSpawner} from "./common";
 
 let objectSpawner: ObjectSpawner;
-let rootUIWidget: mod.UIWidget|null = null;
-let buttonTextWidget: mod.UIWidget|null = null;
-let closeButtonWidget: mod.UIWidget|null = null;
-let player: mod.Player|null = null;
-let currentSfxName: string|null = null;
+let player: mod.Player|undefined;
 
-export function OnGameModeStarted(): void
+export async function OnGameModeStarted(): Promise<void>
 {
-    devTools.log("OnGameModeStarted");
+    const gameplayObjects = [
+        'AI_ActionStation',
+        'AI_Spawner',
+        'AI_WaypointPath',
+        'AreaTrigger',
+        'CapturePoint',
+        'CombatArea',
+        'DeployCam',
+        'HQ_PlayerSpawner',
+        'MCOM',
+        'PlayerSpawner',
+        'Sector',
+        'StationaryEmplacementSpawner',
+        'SurroundingCombatArea',
+        'VehicleSpawner',
+        'WorldIcon',
+        'LootSpawner',
+    ];
 
     objectSpawner = new ObjectSpawner(
         mod.RuntimeSpawn_Common,
-        (enumCase: mod.RuntimeSpawn_Common, position: mod.Vector, rotation: mod.Vector) => mod.SpawnObject(enumCase, position, rotation),
         [
-            // these are gameplay objects
-            (name: string) => name === 'AI_ActionStation',
-            (name: string) => name === 'AI_Spawner',
-            (name: string) => name === 'AI_WaypointPath',
-            (name: string) => name === 'AreaTrigger',
-            (name: string) => name === 'CapturePoint',
-            (name: string) => name === 'CombatArea',
-            (name: string) => name === 'DeployCam',
-            (name: string) => name === 'HQ_PlayerSpawner',
-            (name: string) => name === 'MCOM',
-            (name: string) => name === 'PlayerSpawner',
-            (name: string) => name === 'Sector',
-            (name: string) => name === 'StationaryEmplacementSpawner',
-            (name: string) => name === 'SurroundingCombatArea',
-            (name: string) => name === 'VehicleSpawner',
-            (name: string) => name === 'WorldIcon',
-            (name: string) => name === 'LootSpawner',
-            (name: string) => name.startsWith('Highway')
+            (name: string) => gameplayObjects.includes(name),
+            (name: string) => name.startsWith('Highway'),
+            (name: string) => name.startsWith('SFX_') || name.startsWith('FX_'),
         ],
         135.5
     );
 
     objectSpawner.spawnObjects();
 
-    UpdateLoop();
+    while (true) {
+        await mod.Wait(1);
+
+        if (!player) {
+            await mod.Wait(5);
+            continue;
+        }
+
+        objectSpawner.OnUpdate(player);
+    }
 }
 
 export function OnPlayerDeployed(eventPlayer: mod.Player): void
 {
     player = eventPlayer;
-
-    // mod.AddUIContainer(
-    //     'rootUIWidget',
-    //     mod.CreateVector(0, 0, 0),
-    //     mod.CreateVector(200, 50, 0),
-    //     mod.UIAnchor.TopCenter,
-    //     mod.GetUIRoot(),
-    //     true,
-    //     5,
-    //     mod.CreateVector(0.2, 0.2, 0.2),
-    //     1,
-    //     mod.UIBgFill.Solid,
-    //     player
-    // );
-    mod.AddUIButton(
-        'rootUIWidget',
-        mod.CreateVector(0, 0, 0),
-        mod.CreateVector(400, 50, 0),
-        mod.UIAnchor.TopCenter,
-        mod.GetUIRoot(),
-        true,
-        5,
-        mod.CreateVector(0.2, 0.2, 0.2),
-        1,
-        mod.UIBgFill.Solid,
-        true,
-        // base
-        mod.CreateVector(0, 0, 0),
-        0,
-        // disabled
-        mod.CreateVector(0, 0, 0),
-        0,
-        // pressed
-        mod.CreateVector(0.5, 0.5, 0.5),
-        1,
-        // hover
-        mod.CreateVector(0.3, 0.3, 0.3),
-        1,
-        // focused
-        mod.CreateVector(0, 0, 0),
-        0,
-
-        player,
-    );
-    rootUIWidget = mod.FindUIWidgetWithName('rootUIWidget');
-
-    mod.AddUIButton(
-        'close_button',
-        mod.CreateVector(0, 0, 0),
-        mod.CreateVector(30, 30, 0),
-        mod.UIAnchor.TopRight,
-        rootUIWidget as mod.UIWidget,
-        true, // visible
-        0,
-        // bg
-        mod.CreateVector(1, 0, 0),
-        1,
-        mod.UIBgFill.Solid,
-        true,// enabled
-        // base
-        mod.CreateVector(1, 1, 0),
-        0,
-        // disabled
-        mod.CreateVector(0, 0, 0),
-        0,
-        // pressed
-        mod.CreateVector(0.8, 0, 0),
-        1,
-        // hover
-        mod.CreateVector(1, 0, 0),
-        1,
-        // focused
-        mod.CreateVector(1, 0, 0),
-        0,
-
-        player,
-    );
-    // closeButtonWidget = mod.FindUIWidgetWithName('close_button');
-
-    mod.AddUIText(
-        'object_name',
-        mod.CreateVector(0, 0, 0),
-        mod.CreateVector(380, 25, 0),
-        mod.UIAnchor.Center,
-        rootUIWidget as mod.UIWidget,
-        true,
-        5,
-        // background
-        mod.CreateVector(0, 0, 0),
-        0,
-        mod.UIBgFill.None,
-        // text message, size, color, alpha, anchor
-        mod.Message(''), // will be replaced when needed
-        25,
-        mod.CreateVector(1, 1, 1),
-        1,
-        mod.UIAnchor.Center,
-    );
-    buttonTextWidget = mod.FindUIWidgetWithName('object_name');
+    objectSpawner.createUI(eventPlayer);
 }
 
-export function OnPlayerUndeploy(): void 
+export function OnPlayerUndeploy(): void
 {
-    if (player) {
-        mod.EnableUIInputMode(false, player);
-    }
-
-    player = null;
-    mod.DeleteAllUIWidgets();
-    rootUIWidget = null;
-    buttonTextWidget = null;
-}
-export function OnPlayerLeaveGame():void 
-{
-    OnPlayerUndeploy();
-}
-
-export async function UpdateLoop(): Promise<void>
-{
-    const worldIcon = mod.GetWorldIcon(1);
-    mod.EnableWorldIconText(worldIcon, true);
-    mod.EnableWorldIconImage(worldIcon, true);
-    mod.SetWorldIconImage(worldIcon, mod.WorldIconImages.SquadPing);
-    mod.SetWorldIconColor(worldIcon, mod.CreateVector(0.3, 0.3, 0.3)); // dark gray
-
-    while (true) {
-        await mod.Wait(1);
-
-        if (!player) {
-            continue;
-        }
-
-        let smallestDistance = 999.0;
-        let closestObject: null|[string, mod.Vector] = null;
-
-        const playerPosition = mod.GetSoldierState(player, mod.SoldierStateVector.GetPosition);
-        for (const [name, objectPosition] of Object.entries(objectSpawner.positionVectorsPerObjectName)) {
-            const distance = mod.DistanceBetween(playerPosition, objectPosition);
-            if (distance < 30.0 && distance < smallestDistance) {
-                smallestDistance = distance;
-                closestObject = [name, objectPosition]; 
-            }
-        }
-
-        let hideWidget = currentSfxName === null;
-        if (closestObject !== null) {
-            const [name, objectPosition] = closestObject;
-            mod.SetWorldIconText(worldIcon, mod.Message(name));
-            const iconPosition = mod.CreateVector(
-                mod.XComponentOf(objectPosition),
-                mod.YComponentOf(objectPosition) + 1,
-                mod.ZComponentOf(objectPosition)
-            );
-            mod.SetWorldIconPosition(worldIcon, iconPosition);
-
-            if (name.startsWith('SFX_') || name.startsWith('FX_')) {
-                if (currentSfxName !== name) {
-                    if (rootUIWidget) {
-                        mod.SetUIWidgetVisible(rootUIWidget, true);
-                    }
-                    if (buttonTextWidget) {
-                        mod.SetUITextLabel(buttonTextWidget, mod.Message('{}', name));
-                    }
-                    currentSfxName = name;
-                    hideWidget = false;
-                    console.log("show widget ", currentSfxName);
-                }
-
-                // if (mod.GetSoldierState(player, mod.SoldierStateBool.IsCrouching)) {
-                //     mod.EnableUIInputMode(false, player);
-                //     console.log('enable input mode');
-                // }
-            } else {
-                hideWidget = true
-            }
-        }
-
-        if (hideWidget) {
-            console.log("hide widget");
-
-            mod.EnableUIInputMode(false, player);
-            if (rootUIWidget) {
-                mod.SetUIWidgetVisible(rootUIWidget, false);
-            }
-            currentSfxName = null;
-        }
-    }
-}
-
-export function OnPlayerUIButtonEvent(player: mod.Player, widget: mod.UIWidget, buttonEvent: mod.UIButtonEvent): void
-{
-    if (buttonEvent !== mod.UIButtonEvent.ButtonUp) {
-        return;
-    }
-
-    mod.EnableUIInputMode(false, player);
-
-    const name = mod.GetUIWidgetName(widget);
-    if (name === 'close_button') {
-        console.log("close button clicked", currentSfxName);
-        if (rootUIWidget) {
-            mod.SetUIWidgetVisible(rootUIWidget, false);
-        }
-
-        return;
-    }
-
-    console.log("button clicked ", currentSfxName);
+    player = undefined;
+    objectSpawner.destroyUI();
 }

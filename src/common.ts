@@ -1,29 +1,29 @@
 
+export class SpawnedObject {
+    constructor(
+        public readonly name: string,
+        public readonly position: mod.Vector,
+    ) {}
+}
+
 export class ObjectSpawner
 {
     constructor(
         private _enum: any, // one of the mod.RuntimeSpawn_* enums, NOT one of its case, the whole enum
-        private spawnObjectFunction: { (enumCase: any, position: mod.Vector, rotation: mod.Vector): mod.Object },
         private filters:  { (objectName: string): boolean }[] = [],
         private baseY: number = 0,
+        private worldIconObjectId: number = 1
     ) {}
 
-    public positionVectorsPerObjectName: {[index: string]: mod.Vector} = {}
+    private objects: {[index: string]: SpawnedObject} = {}
 
     public spawnObjects(): void
     {
         const zeroVector = mod.CreateVector(0, 0, 0);
 
-        const elements = Object.entries(this._enum);
-        const elementsPerSide = Math.ceil(Math.sqrt(elements.length));
-        const spacePerElement = 10;
-
-        const max = Math.ceil((elementsPerSide / 2) * spacePerElement);
-        let x = 0-max;
-        let z = 0-max;
-        let i = 0;
-
-        for (const [name, value] of elements) {
+        const initialElements = Object.entries(this._enum);
+        const objectNamesToSpawn: string[] = [];
+        for (const [name, value] of initialElements) {
             let ignoreObject = false;
             for (const filter of this.filters) {
                 if (filter(name)) {
@@ -35,17 +35,27 @@ export class ObjectSpawner
                 continue;
             }
 
-            const position = mod.CreateVector(x, this.baseY, z);
-            // const object = mod.SpawnObject(
-            //     value,
-            //     position,
-            //     zeroVector
-            // );
-            const object = this.spawnObjectFunction(value, position, zeroVector);
-            const positionStr = devTools.vectorToString(position);
-            console.log('spawn object ' + i + ' ' + name + ' ' + mod.GetObjId(object) + ' ' + positionStr);
+            objectNamesToSpawn.push(name);
+        }
 
-            this.positionVectorsPerObjectName[name] = position
+        const elementsPerSide = Math.ceil(Math.sqrt(objectNamesToSpawn.length));
+        const spacePerElement = 10;
+
+        const max = Math.ceil((elementsPerSide / 2) * spacePerElement);
+        let x = 0-max;
+        let z = 0-max;
+        let i = 0;
+
+        for (const name of objectNamesToSpawn) {
+            const position = mod.CreateVector(x, this.baseY, z);
+
+            mod.SpawnObject(
+                this._enum[name] as any,
+                position,
+                zeroVector
+            );
+
+            this.objects[name] = new SpawnedObject(name, position);
 
             x += spacePerElement;
             if (x > max) { // start a new line
@@ -55,44 +65,100 @@ export class ObjectSpawner
             i++;
         }
     }
-}
 
-export class DevTools
-{
-    public log(message: string|mod.Message): void
+    private findClosestObjectFromPlayer(player: mod.Player): null|SpawnedObject
     {
-        const date = new Date();
-        const timeElapsed = mod.GetMatchTimeElapsed().toFixed(3);
+        let smallestDistance = 999.0;
+        let closestObject: null|SpawnedObject = null;
 
-        console.log(
-            `[${date.getMinutes()}m ${date.getSeconds()}s ${date.getMilliseconds()}ms] `,
-            `[${timeElapsed}] `,
-            message
-        );
+        const playerPosition = mod.GetSoldierState(player, mod.SoldierStateVector.GetPosition);
+
+        for (const spawnedObject of Object.values(this.objects)) {
+            const distance = mod.DistanceBetween(playerPosition, spawnedObject.position);
+            if (distance < 30.0 && distance < smallestDistance) {
+                smallestDistance = distance;
+                closestObject = spawnedObject;
+            }
+        }
+
+        return closestObject
     }
 
-    private loggedOnce: {[index: string]: boolean} = {};
+    private rootUIWidget: mod.UIWidget|undefined;
+    private objectNameUIWidget: mod.UIWidget|undefined;
+    /** @ts-ignore */
+    private worldIcon: mod.WorldIcon;
 
-    public logOnce(message: string): void
+    public createUI(player: mod.Player): void
     {
-        if (this.loggedOnce.hasOwnProperty(message)) {
+        mod.AddUIContainer(
+            'rootUIWidget',
+            mod.CreateVector(0, 0, 0), // position
+            mod.CreateVector(500, 50, 0), // size
+            mod.UIAnchor.BottomCenter,
+            mod.GetUIRoot(),
+            true,
+            5,
+            mod.CreateVector(0.2, 0.2, 0.2),
+            0.8,
+            mod.UIBgFill.Solid,
+            player
+        );
+        this.rootUIWidget = mod.FindUIWidgetWithName('rootUIWidget') as mod.UIWidget;
+
+        mod.AddUIText(
+            'object_name',
+            mod.CreateVector(0, 0, 0),
+            mod.CreateVector(380, 40, 0),
+            mod.UIAnchor.Center,
+            this.rootUIWidget as mod.UIWidget,
+            true,
+            5,
+            // background
+            mod.CreateVector(0, 0, 0),
+            0,
+            mod.UIBgFill.None,
+            // text message, size, color, alpha, anchor
+            mod.Message(''), // will be replaced when needed
+            25,
+            mod.CreateVector(1, 1, 1),
+            1,
+            mod.UIAnchor.Center,
+        );
+        this.objectNameUIWidget = mod.FindUIWidgetWithName('object_name') as mod.UIWidget;
+
+        this.worldIcon = mod.GetWorldIcon(this.worldIconObjectId);
+        mod.EnableWorldIconText(this.worldIcon, true);
+        mod.EnableWorldIconImage(this.worldIcon, true);
+        mod.SetWorldIconImage(this.worldIcon, mod.WorldIconImages.SquadPing);
+        mod.SetWorldIconColor(this.worldIcon, mod.CreateVector(1, 0, 0));
+    }
+
+    public destroyUI(): void
+    {
+        mod.DeleteAllUIWidgets();
+        this.rootUIWidget = undefined;
+        this.objectNameUIWidget = undefined;
+    }
+
+    public OnUpdate(player: mod.Player): void
+    {
+        const closestObject: null|SpawnedObject = this.findClosestObjectFromPlayer(player);
+        if (closestObject === null) {
             return;
         }
 
-        this.loggedOnce[message] = true;
+        const name = mod.Message(closestObject.name);
 
-        this.log('[ONCE] ' + message);
-    }
+        if (this.objectNameUIWidget) {
+            mod.SetUITextLabel(this.objectNameUIWidget, name);
+        }
 
-    public getRandomValueInArray<T>(array: Array<T>): T
-    {
-        return array[Math.floor(Math.random() * array.length)];
-    }
-
-    public vectorToString(vector: mod.Vector): string
-    {
-        return `(${mod.XComponentOf(vector)}, ${mod.YComponentOf(vector)}, ${mod.ZComponentOf(vector)})`
+        mod.SetWorldIconText(this.worldIcon, name);
+        mod.SetWorldIconPosition(this.worldIcon, mod.CreateVector(
+            mod.XComponentOf(closestObject.position),
+            mod.YComponentOf(closestObject.position) + 1,
+            mod.ZComponentOf(closestObject.position)
+        ));
     }
 }
-
-export const devTools = new DevTools();
