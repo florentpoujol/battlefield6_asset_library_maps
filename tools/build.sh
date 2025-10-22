@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # execute from the root folder, not from 'tools'
+# ie: ./tools/build.sh mp_abbasid_asset_library
 
 if [[ -z "$1" ]]; then
   echo "ERROR: Expect the map name as first argument";
