@@ -1,0 +1,160 @@
+[gd_scene load_steps=26 format=3 uid="uid://c0bt3msmg1pno"]
+
+[ext_resource type="PackedScene" uid="uid://jv31so3xcr7p" path="res://addons/bf_portal/portal_tools/types/PolygonVolume/PolygonVolume.tscn" id="2_0l6cc"]
+[ext_resource type="PackedScene" path="res://static/MP_Tungsten_Terrain.tscn" id="3_66ubd"]
+[ext_resource type="PackedScene" path="res://static/MP_Tungsten_Assets.tscn" id="4_puova"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Floor_01.tscn" id="4_y3ne6"]
+[ext_resource type="PackedScene" path="res://objects/Gameplay/Common/HQ_PlayerSpawner.tscn" id="5_1ec6i"]
+[ext_resource type="PackedScene" path="res://objects/entities/SpawnPoint.tscn" id="6_t1wsr"]
+[ext_resource type="PackedScene" path="res://objects/Gameplay/Common/WorldIcon.tscn" id="7_0l6cc"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Tungsten/Generic/Industrial/Architecture/ConstructionBuilding_FlagC_01_PropsA.tscn" id="9_igu73"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Tungsten/Generic/Industrial/Architecture/ConstructionBuilding_FlagC_01.tscn" id="10_275vq"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/CliffLarge_03.tscn" id="11_xxckt"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Tungsten/Generic/Industrial/Architecture/ConstructionBuilding_FlagD_01_PropsA.tscn" id="12_yyqjx"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Tungsten/Generic/Industrial/Architecture/ConstructionBuilding_FlagD_01.tscn" id="13_63wil"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Tungsten/Generic/Industrial/Architecture/PylonCollapsed_01.tscn" id="14_se0ne"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Generic/Industrial/Backdrop/Pylon_01_A.tscn" id="15_81o0u"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Generic/Industrial/Architecture/Pylon_01_B.tscn" id="16_3luc0"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/CliffLarge_04.tscn" id="17_81o0u"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Nature/CliffDarkLarge_03B.tscn" id="18_3luc0"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/MudRidgeHuge_Corner_01.tscn" id="19_ajhki"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/MudRidgeHuge_Straight_02.tscn" id="20_l3uvi"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/MudRidgeHuge_Straight_03.tscn" id="21_7srfk"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Nature/RidgeMud_01_B_C45.tscn" id="22_61ip0"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Nature/CliffDarkLarge_01.tscn" id="23_l3uvi"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/CliffDarkLarge_02A.tscn" id="24_7srfk"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Nature/CliffDarkLarge_02B.tscn" id="25_61ip0"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Tungsten/Nature/CliffRiverside_01.tscn" id="25_l3uvi"]
+
+[node name="MP_Tungsten" type="Node3D"]
+
+[node name="Static" type="Node3D" parent="."]
+
+[node name="MP_Tungsten_Terrain" parent="Static" instance=ExtResource("3_66ubd")]
+
+[node name="MP_Tungsten_Assets" parent="Static" instance=ExtResource("4_puova")]
+
+[node name="asset_lib" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 155, 0)
+
+[node name="floor center" type="Node3D" parent="asset_lib"]
+transform = Transform3D(30, 0, 0, 0, 40, 0, 0, 0, 40, 0, 0, 0)
+
+[node name="FiringRange_Floor_01" parent="asset_lib/floor center" instance=ExtResource("4_y3ne6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10)
+
+[node name="player_spawn" type="Node3D" parent="asset_lib"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 75.3398, 0)
+
+[node name="TEAM_1_HQ" parent="asset_lib/player_spawn" node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("5_1ec6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.287979, -7.3186)
+AltTeam = 0
+ObjId = 1
+HQArea = NodePath("HQ_Team1")
+InfantrySpawns = [NodePath("SpawnPoint_1_1")]
+
+[node name="HQ_Team1" parent="asset_lib/player_spawn/TEAM_1_HQ" instance=ExtResource("2_0l6cc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+points = PackedVector2Array(5, 5, 5, -5, -5, -5, -5, 5)
+
+[node name="SpawnPoint_1_1" parent="asset_lib/player_spawn/TEAM_1_HQ" instance=ExtResource("6_t1wsr")]
+transform = Transform3D(0.999884, 0, -0.0152535, 0, 1, 0, 0.0152535, 0, 0.999884, 0, 0, -0.0845032)
+
+[node name="TEAM_2_HQ" parent="asset_lib/player_spawn" node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("5_1ec6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.409302, 3.76392)
+AltTeam = 0
+ObjId = 1
+HQArea = NodePath("HQ_Team2")
+InfantrySpawns = [NodePath("SpawnPoint_1_1")]
+
+[node name="HQ_Team2" parent="asset_lib/player_spawn/TEAM_2_HQ" instance=ExtResource("2_0l6cc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+points = PackedVector2Array(5, 5, 5, -5, -5, -5, -5, 5)
+
+[node name="SpawnPoint_1_1" parent="asset_lib/player_spawn/TEAM_2_HQ" instance=ExtResource("6_t1wsr")]
+transform = Transform3D(0.999884, 0, -0.0152535, 0, 1, 0, 0.0152535, 0, 0.999884, 0, 0, -0.0845032)
+
+[node name="FiringRange_Floor_02" parent="asset_lib/player_spawn" instance=ExtResource("4_y3ne6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.18085, 0, -11.724)
+
+[node name="WorldIcon" parent="asset_lib" instance=ExtResource("7_0l6cc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.386032, 0)
+ObjId = 1
+iconTextVisible = true
+iconImagePicker = 2
+iconImageVisible = true
+
+[node name="big_objects" type="Node3D" parent="asset_lib"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -259.272, 0, 0)
+
+[node name="ConstructionBuilding_FlagC_01_PropsA" parent="asset_lib/big_objects" instance=ExtResource("9_igu73")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -28.473)
+ObjId = 102
+
+[node name="ConstructionBuilding_FlagC_01" parent="asset_lib/big_objects" instance=ExtResource("10_275vq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -118.124)
+ObjId = 101
+
+[node name="CliffLarge_03" parent="asset_lib/big_objects" instance=ExtResource("11_xxckt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 39.044)
+ObjId = 103
+
+[node name="ConstructionBuilding_FlagD_01_PropsA" parent="asset_lib/big_objects" instance=ExtResource("12_yyqjx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -299.25)
+ObjId = 104
+
+[node name="ConstructionBuilding_FlagD_01" parent="asset_lib/big_objects" instance=ExtResource("13_63wil")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -368.468)
+ObjId = 105
+
+[node name="PylonCollapsed_01" parent="asset_lib/big_objects" instance=ExtResource("14_se0ne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 213.212)
+ObjId = 106
+
+[node name="Pylon_01_A" parent="asset_lib/big_objects" instance=ExtResource("15_81o0u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 159.478)
+ObjId = 107
+
+[node name="Pylon_01_B" parent="asset_lib/big_objects" instance=ExtResource("16_3luc0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 109.311)
+ObjId = 108
+
+[node name="CliffLarge_04" parent="asset_lib/big_objects" instance=ExtResource("17_81o0u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 65.2404)
+ObjId = 109
+
+[node name="CliffDarkLarge_03B" parent="asset_lib/big_objects" instance=ExtResource("18_3luc0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 25.1287)
+ObjId = 110
+
+[node name="MudRidgeHuge_Corner_01" parent="asset_lib/big_objects" instance=ExtResource("19_ajhki")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.7381, 0, 35.3182)
+ObjId = 111
+
+[node name="MudRidgeHuge_Straight_02" parent="asset_lib/big_objects" instance=ExtResource("20_l3uvi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.7381, 0, 9.15241)
+ObjId = 112
+
+[node name="MudRidgeHuge_Straight_03" parent="asset_lib/big_objects" instance=ExtResource("21_7srfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.7381, 0, 0)
+ObjId = 113
+
+[node name="RidgeMud_01_B_C45" parent="asset_lib/big_objects" instance=ExtResource("22_61ip0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.0967, 0, -11.5106)
+ObjId = 114
+
+[node name="CliffDarkLarge_01" parent="asset_lib/big_objects" instance=ExtResource("23_l3uvi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5527, 0, 80.7337)
+ObjId = 115
+
+[node name="CliffDarkLarge_02A" parent="asset_lib/big_objects" instance=ExtResource("24_7srfk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.0578, 0, 60.161)
+ObjId = 116
+
+[node name="CliffDarkLarge_02B" parent="asset_lib/big_objects" instance=ExtResource("25_61ip0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.8602, 0, 30.1751)
+ObjId = 117
+
+[node name="CliffRiverside_01" parent="asset_lib/big_objects" instance=ExtResource("25_l3uvi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.9553, 0, 112.402)
+ObjId = 118

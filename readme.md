@@ -12,6 +12,8 @@ An icon in the 3D world as well a UI element in the bottom center show you the n
 Some may be published, look for "assets library" in the in-game Portal server browser.    
 The experiences are only meant to be hosted locally and with a single player.
 
+![abbasid assets](imgs/abbasid.jpg)
+
 ## Sources
 
 This repo contain all the sources necessary to develop and rebuild the experiences.
@@ -21,7 +23,7 @@ The `src` folder contains the source of the scripts, that are concatenated with 
 
 ### Build the .strings.json file
 
-Copy from the `index.d.ts` file the list of cases from one of the enum.  
+Copy from the `index.d.ts` file the list of cases from one of the `RuntimeSpawn_*` enum.  
 Then do a search/replace with regex: search for `\w+(.+),`, and replace by `  "$1": "$1",` (works in Webstorm at least).
 
 ## Create an experience for yourself

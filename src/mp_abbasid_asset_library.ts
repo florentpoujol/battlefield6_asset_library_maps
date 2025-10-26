@@ -14,7 +14,9 @@ export async function OnGameModeStarted(): Promise<void>
             (name: string) => name.startsWith('Building_'),
             (name: string) => name.startsWith('Palace_'),
         ],
-        135.5
+        135.5,
+        1,
+        {}
     );
 
     objectSpawner.spawnObjects();

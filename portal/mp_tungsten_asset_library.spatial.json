@@ -1,0 +1,779 @@
+{
+    "Portal_Dynamic": [
+        {
+            "name": "FiringRange_Floor_01",
+            "type": "FiringRange_Floor_01",
+            "right": {
+                "x": 30,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 40,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 40
+            },
+            "position": {
+                "x": -300,
+                "y": 155,
+                "z": -400
+            },
+            "id": "asset_lib/floor center/FiringRange_Floor_01"
+        },
+        {
+            "name": "TEAM_1_HQ",
+            "AltTeam": "TeamNeutral",
+            "ObjId": 1,
+            "InfantrySpawns": [
+                "asset_lib/player_spawn/TEAM_1_HQ/SpawnPoint_1_1"
+            ],
+            "HQArea": "asset_lib/player_spawn/TEAM_1_HQ/HQ_Team1",
+            "type": "HQ_PlayerSpawner",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 230.627779,
+                "z": -7.3186
+            },
+            "id": "asset_lib/player_spawn/TEAM_1_HQ",
+            "linked": [
+                "HQArea",
+                "InfantrySpawns"
+            ]
+        },
+        {
+            "name": "HQ_Team1",
+            "type": "PolygonVolume",
+            "id": "asset_lib/player_spawn/TEAM_1_HQ/HQ_Team1",
+            "height": 0,
+            "points": [
+                {
+                    "x": 5,
+                    "y": 235.627779,
+                    "z": -2.3186
+                },
+                {
+                    "x": 5,
+                    "y": 235.627779,
+                    "z": -12.3186
+                },
+                {
+                    "x": -5,
+                    "y": 235.627779,
+                    "z": -12.3186
+                },
+                {
+                    "x": -5,
+                    "y": 235.627779,
+                    "z": -2.3186
+                }
+            ]
+        },
+        {
+            "name": "SpawnPoint_1_1",
+            "type": "SpawnPoint",
+            "right": {
+                "x": 0.999884,
+                "y": 0,
+                "z": 0.0152535
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.0152535,
+                "y": 0,
+                "z": 0.999884
+            },
+            "position": {
+                "x": 0,
+                "y": 230.627779,
+                "z": -7.4031032
+            },
+            "id": "asset_lib/player_spawn/TEAM_1_HQ/SpawnPoint_1_1"
+        },
+        {
+            "name": "TEAM_2_HQ",
+            "AltTeam": "TeamNeutral",
+            "ObjId": 1,
+            "InfantrySpawns": [
+                "asset_lib/player_spawn/TEAM_2_HQ/SpawnPoint_1_1"
+            ],
+            "HQArea": "asset_lib/player_spawn/TEAM_2_HQ/HQ_Team2",
+            "type": "HQ_PlayerSpawner",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 230.749102,
+                "z": 3.76392
+            },
+            "id": "asset_lib/player_spawn/TEAM_2_HQ",
+            "linked": [
+                "HQArea",
+                "InfantrySpawns"
+            ]
+        },
+        {
+            "name": "HQ_Team2",
+            "type": "PolygonVolume",
+            "id": "asset_lib/player_spawn/TEAM_2_HQ/HQ_Team2",
+            "height": 0,
+            "points": [
+                {
+                    "x": 5,
+                    "y": 235.749102,
+                    "z": 8.76392
+                },
+                {
+                    "x": 5,
+                    "y": 235.749102,
+                    "z": -1.23608
+                },
+                {
+                    "x": -5,
+                    "y": 235.749102,
+                    "z": -1.23608
+                },
+                {
+                    "x": -5,
+                    "y": 235.749102,
+                    "z": 8.76392
+                }
+            ]
+        },
+        {
+            "name": "SpawnPoint_1_1",
+            "type": "SpawnPoint",
+            "right": {
+                "x": 0.999884,
+                "y": 0,
+                "z": 0.0152535
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.0152535,
+                "y": 0,
+                "z": 0.999884
+            },
+            "position": {
+                "x": 0,
+                "y": 230.749102,
+                "z": 3.6794168
+            },
+            "id": "asset_lib/player_spawn/TEAM_2_HQ/SpawnPoint_1_1"
+        },
+        {
+            "name": "FiringRange_Floor_02",
+            "type": "FiringRange_Floor_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -9.18085,
+                "y": 230.3398,
+                "z": -11.724
+            },
+            "id": "asset_lib/player_spawn/FiringRange_Floor_02"
+        },
+        {
+            "name": "WorldIcon",
+            "ObjId": 1,
+            "iconTextVisible": true,
+            "iconImagePicker": "SquadPing",
+            "iconImageVisible": true,
+            "type": "WorldIcon",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 155.386032,
+                "z": 0
+            },
+            "id": "asset_lib/WorldIcon"
+        },
+        {
+            "name": "ConstructionBuilding_FlagC_01_PropsA",
+            "ObjId": 102,
+            "type": "ConstructionBuilding_FlagC_01_PropsA",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -259.272,
+                "y": 155.5,
+                "z": -28.473
+            },
+            "id": "asset_lib/big_objects/ConstructionBuilding_FlagC_01_PropsA"
+        },
+        {
+            "name": "ConstructionBuilding_FlagC_01",
+            "ObjId": 101,
+            "type": "ConstructionBuilding_FlagC_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -259.272,
+                "y": 155.5,
+                "z": -118.124
+            },
+            "id": "asset_lib/big_objects/ConstructionBuilding_FlagC_01"
+        },
+        {
+            "name": "CliffLarge_03",
+            "ObjId": 103,
+            "type": "CliffLarge_03",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -259.272,
+                "y": 155,
+                "z": 39.044
+            },
+            "id": "asset_lib/big_objects/CliffLarge_03"
+        },
+        {
+            "name": "ConstructionBuilding_FlagD_01_PropsA",
+            "ObjId": 104,
+            "type": "ConstructionBuilding_FlagD_01_PropsA",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -259.272,
+                "y": 155,
+                "z": -299.25
+            },
+            "id": "asset_lib/big_objects/ConstructionBuilding_FlagD_01_PropsA"
+        },
+        {
+            "name": "ConstructionBuilding_FlagD_01",
+            "ObjId": 105,
+            "type": "ConstructionBuilding_FlagD_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -259.272,
+                "y": 155,
+                "z": -368.468
+            },
+            "id": "asset_lib/big_objects/ConstructionBuilding_FlagD_01"
+        },
+        {
+            "name": "PylonCollapsed_01",
+            "ObjId": 106,
+            "type": "PylonCollapsed_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -259.272,
+                "y": 155,
+                "z": 213.212
+            },
+            "id": "asset_lib/big_objects/PylonCollapsed_01"
+        },
+        {
+            "name": "Pylon_01_A",
+            "ObjId": 107,
+            "type": "Pylon_01_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -259.272,
+                "y": 155,
+                "z": 159.478
+            },
+            "id": "asset_lib/big_objects/Pylon_01_A"
+        },
+        {
+            "name": "Pylon_01_B",
+            "ObjId": 108,
+            "type": "Pylon_01_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -259.272,
+                "y": 155,
+                "z": 109.311
+            },
+            "id": "asset_lib/big_objects/Pylon_01_B"
+        },
+        {
+            "name": "CliffLarge_04",
+            "ObjId": 109,
+            "type": "CliffLarge_04",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -259.272,
+                "y": 155,
+                "z": 65.2404
+            },
+            "id": "asset_lib/big_objects/CliffLarge_04"
+        },
+        {
+            "name": "CliffDarkLarge_03B",
+            "ObjId": 110,
+            "type": "CliffDarkLarge_03B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -259.272,
+                "y": 155,
+                "z": 25.1287
+            },
+            "id": "asset_lib/big_objects/CliffDarkLarge_03B"
+        },
+        {
+            "name": "MudRidgeHuge_Corner_01",
+            "ObjId": 111,
+            "type": "MudRidgeHuge_Corner_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -195.5339,
+                "y": 155,
+                "z": 35.3182
+            },
+            "id": "asset_lib/big_objects/MudRidgeHuge_Corner_01"
+        },
+        {
+            "name": "MudRidgeHuge_Straight_02",
+            "ObjId": 112,
+            "type": "MudRidgeHuge_Straight_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -195.5339,
+                "y": 155,
+                "z": 9.15241
+            },
+            "id": "asset_lib/big_objects/MudRidgeHuge_Straight_02"
+        },
+        {
+            "name": "MudRidgeHuge_Straight_03",
+            "ObjId": 113,
+            "type": "MudRidgeHuge_Straight_03",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -195.5339,
+                "y": 155,
+                "z": 0
+            },
+            "id": "asset_lib/big_objects/MudRidgeHuge_Straight_03"
+        },
+        {
+            "name": "RidgeMud_01_B_C45",
+            "ObjId": 114,
+            "type": "RidgeMud_01_B_C45",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -192.1753,
+                "y": 155,
+                "z": -11.5106
+            },
+            "id": "asset_lib/big_objects/RidgeMud_01_B_C45"
+        },
+        {
+            "name": "CliffDarkLarge_01",
+            "ObjId": 115,
+            "type": "CliffDarkLarge_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -231.7193,
+                "y": 155,
+                "z": 80.7337
+            },
+            "id": "asset_lib/big_objects/CliffDarkLarge_01"
+        },
+        {
+            "name": "CliffDarkLarge_02A",
+            "ObjId": 116,
+            "type": "CliffDarkLarge_02A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -229.2142,
+                "y": 155,
+                "z": 60.161
+            },
+            "id": "asset_lib/big_objects/CliffDarkLarge_02A"
+        },
+        {
+            "name": "CliffDarkLarge_02B",
+            "ObjId": 117,
+            "type": "CliffDarkLarge_02B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -228.4118,
+                "y": 155,
+                "z": 30.1751
+            },
+            "id": "asset_lib/big_objects/CliffDarkLarge_02B"
+        },
+        {
+            "name": "CliffRiverside_01",
+            "ObjId": 118,
+            "type": "CliffRiverside_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -193.3167,
+                "y": 155,
+                "z": 112.402
+            },
+            "id": "asset_lib/big_objects/CliffRiverside_01"
+        }
+    ],
+    "Static": [
+        {
+            "name": "MP_Tungsten_Terrain",
+            "type": "MP_Tungsten_Terrain",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "id": "Static/MP_Tungsten_Terrain"
+        },
+        {
+            "name": "MP_Tungsten_Assets",
+            "type": "MP_Tungsten_Assets",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "id": "Static/MP_Tungsten_Assets"
+        }
+    ]
+}

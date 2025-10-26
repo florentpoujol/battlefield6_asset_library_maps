@@ -32,7 +32,9 @@ export async function OnGameModeStarted(): Promise<void>
             (name: string) => name.startsWith('Highway'),
             (name: string) => name.startsWith('SFX_') || name.startsWith('FX_'),
         ],
-        135.5
+        135.5,
+        1,
+        {}
     );
 
     objectSpawner.spawnObjects();
