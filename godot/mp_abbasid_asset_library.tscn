@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c5kqtm6pikgnd"]
+[gd_scene load_steps=41 format=3 uid="uid://c5kqtm6pikgnd"]
 
 [ext_resource type="PackedScene" path="res://static/MP_Abbasid_Terrain.tscn" id="1_ms8ms"]
 [ext_resource type="PackedScene" path="res://static/MP_Abbasid_Assets.tscn" id="2_ycvd7"]
@@ -7,7 +7,39 @@
 [ext_resource type="PackedScene" uid="uid://jv31so3xcr7p" path="res://addons/bf_portal/portal_tools/types/PolygonVolume/PolygonVolume.tscn" id="5_kebpd"]
 [ext_resource type="PackedScene" path="res://objects/entities/SpawnPoint.tscn" id="6_qewrd"]
 [ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Floor_01.tscn" id="7_xg6oq"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/MosqueArches_01.tscn" id="9_eh8ql"]
 [ext_resource type="PackedScene" path="res://objects/Gameplay/Common/WorldIcon.tscn" id="9_nysut"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/MosqueArches_01_B.tscn" id="10_f2xak"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/MosqueBase_01.tscn" id="11_ai2q3"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/MosqueFront_01.tscn" id="12_3uj8q"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/MosqueMinaret_01.tscn" id="13_af8n6"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/MosqueMinaret_01_B.tscn" id="14_l0drn"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/MosqueMinaret_01_C.tscn" id="15_tta4j"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/MosqueSmallDomes_01.tscn" id="16_urxlk"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/MosqueTop_01.tscn" id="17_nbl4h"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/Mosque_01.tscn" id="18_8kmd0"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Uncategorized/Palace_01.tscn" id="19_hak06"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/Building_01.tscn" id="20_1itjq"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/Building_02.tscn" id="21_u4e2i"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/Building_03.tscn" id="22_8krm6"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/Shared/Architecture/BR_OutskirtsHouseMediumGround_01.tscn" id="23_wkx57"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/Shared/Architecture/BR_OutskirtsHouseMediumIntermediate_01.tscn" id="24_iq5k0"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/OutskirtsHouseMediumRoof_01.tscn" id="25_blfml"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Architecture/OutskirtsHouseMedium_01_Props_D.tscn" id="26_28dmb"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Architecture/OutskirtsHouseMedium_03_Abbasid_Mirrored.tscn" id="27_qptc4"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Architecture/OutskirtsHouseMedium_03_Abbasid_Mirrored_BD.tscn" id="28_hdrvh"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Architecture/OutskirtsHouseMedium_04_Abbasid_BD.tscn" id="29_4tiwe"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Architecture/OutskirtsHouseMedium_04_Abbasid_Mirrored.tscn" id="30_rqxuk"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Architecture/OutskirtsHouseMedium_04_Abbasid_Mirrored_BD.tscn" id="31_271qo"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Architecture/OutskirtsHouseMedium_04_Abbasid_Mirrored_Props.tscn" id="32_lcdgi"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Architecture/OutskirtsHouseMedium_05_Abbasid_Mirrored.tscn" id="33_p3s86"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Architecture/OutskirtsHouseMedium_05_Abbasid_Mirrored_Props.tscn" id="34_nacj0"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Architecture/OutskirtsHouseMedium_06_Abbasid_Mirrored_BD.tscn" id="35_y6o3g"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Architecture/OutskirtsHouseMedium_07_Abbasid_BD.tscn" id="36_13br4"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Uncategorized/HighwayOverpassProps_01.tscn" id="37_iq5k0"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/BuildingBlockFloor_02.tscn" id="38_blfml"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/BuildingBlockFloor_01.tscn" id="39_qptc4"]
+[ext_resource type="PackedScene" path="res://objects/Cairo/MP_Abbasid/Backdrop/BuildingBlockFloor_03.tscn" id="40_hdrvh"]
 
 [node name="MP_Abbasid" type="Node3D"]
 
@@ -20,7 +52,7 @@ metadata/_edit_lock_ = true
 metadata/_edit_lock_ = true
 
 [node name="Node3D" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 135, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 150, 0)
 
 [node name="FloorCenter" type="Node3D" parent="Node3D"]
 transform = Transform3D(125, 0, 0, 0, 125, 0, 0, 0, 125, 0, 0, 0)
@@ -66,3 +98,137 @@ ObjId = 1
 iconTextVisible = true
 iconImagePicker = 2
 iconImageVisible = true
+
+[node name="large_objects" type="Node3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -296.557, 0, 0)
+
+[node name="MosqueArches_01" parent="Node3D/large_objects" instance=ExtResource("9_eh8ql")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 192.849)
+ObjId = 101
+
+[node name="MosqueArches_01_B" parent="Node3D/large_objects" instance=ExtResource("10_f2xak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 165.28)
+ObjId = 102
+
+[node name="MosqueBase_01" parent="Node3D/large_objects" instance=ExtResource("11_ai2q3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 94.3949)
+ObjId = 103
+
+[node name="MosqueFront_01" parent="Node3D/large_objects" instance=ExtResource("12_3uj8q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 50.9296)
+ObjId = 104
+
+[node name="MosqueMinaret_01" parent="Node3D/large_objects" instance=ExtResource("13_af8n6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 32.0213)
+ObjId = 105
+
+[node name="MosqueMinaret_01_B" parent="Node3D/large_objects" instance=ExtResource("14_l0drn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.7885, 0, 30.7362)
+ObjId = 106
+
+[node name="MosqueMinaret_01_C" parent="Node3D/large_objects" instance=ExtResource("15_tta4j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6569, 0, 29.4777)
+ObjId = 107
+
+[node name="MosqueSmallDomes_01" parent="Node3D/large_objects" instance=ExtResource("16_urxlk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.06144)
+ObjId = 108
+
+[node name="MosqueTop_01" parent="Node3D/large_objects" instance=ExtResource("17_nbl4h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -46.579)
+ObjId = 109
+
+[node name="Mosque_01" parent="Node3D/large_objects" instance=ExtResource("18_8kmd0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -123.99)
+ObjId = 110
+
+[node name="Palace_01" parent="Node3D/large_objects" instance=ExtResource("19_hak06")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.5598, 0, 188.089)
+ObjId = 111
+
+[node name="Building_01" parent="Node3D/large_objects" instance=ExtResource("20_1itjq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.4823, 0, -203.937)
+ObjId = 112
+
+[node name="Building_02" parent="Node3D/large_objects" instance=ExtResource("21_u4e2i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.1488, 0, -203.343)
+ObjId = 113
+
+[node name="Building_03" parent="Node3D/large_objects" instance=ExtResource("22_8krm6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 139.046, 0, -206.06)
+ObjId = 114
+
+[node name="OutskirtsHouses" type="Node3D" parent="Node3D/large_objects"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 247.453, 0, -209.151)
+
+[node name="BR_OutskirtsHouseMediumGround_01" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("23_wkx57")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.2818, 0, 0)
+ObjId = 115
+
+[node name="BR_OutskirtsHouseMediumIntermediate_01" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("24_iq5k0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.7562, 0, 0)
+ObjId = 116
+
+[node name="OutskirtsHouseMediumRoof_01" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("25_blfml")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.3765, 0, 0)
+ObjId = 117
+
+[node name="OutskirtsHouseMedium_01_Props_D" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("26_28dmb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5744, 0, 0)
+ObjId = 118
+
+[node name="OutskirtsHouseMedium_03_Abbasid_Mirrored" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("27_qptc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.5025, 0, 0)
+ObjId = 119
+
+[node name="OutskirtsHouseMedium_03_Abbasid_Mirrored_BD" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("28_hdrvh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.9526, 0, 0)
+ObjId = 120
+
+[node name="OutskirtsHouseMedium_04_Abbasid_BD" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("29_4tiwe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 108.718, 0, 0)
+ObjId = 121
+
+[node name="OutskirtsHouseMedium_04_Abbasid_Mirrored" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("30_rqxuk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 138.442, 0, 0)
+ObjId = 122
+
+[node name="OutskirtsHouseMedium_04_Abbasid_Mirrored_BD" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("31_271qo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 170.3, 0, 0)
+ObjId = 123
+
+[node name="OutskirtsHouseMedium_04_Abbasid_Mirrored_Props" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("32_lcdgi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 200.399, 0, 0)
+ObjId = 124
+
+[node name="OutskirtsHouseMedium_05_Abbasid_Mirrored" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("33_p3s86")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 231.756, 0, 0)
+ObjId = 125
+
+[node name="OutskirtsHouseMedium_05_Abbasid_Mirrored_Props" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("34_nacj0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 259.19, 0, 0)
+ObjId = 126
+
+[node name="OutskirtsHouseMedium_06_Abbasid_Mirrored_BD" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("35_y6o3g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 294.608, 0, 0)
+ObjId = 127
+
+[node name="OutskirtsHouseMedium_07_Abbasid_BD" parent="Node3D/large_objects/OutskirtsHouses" instance=ExtResource("36_13br4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 329.458, 0, 0)
+ObjId = 128
+
+[node name="HighwayOverpassProps_01" parent="Node3D/large_objects" instance=ExtResource("37_iq5k0")]
+transform = Transform3D(-0.00593391, 0, 0.999982, 0, 1, 0, -0.999982, 0, -0.00593391, 172.096, 0, 212.189)
+ObjId = 129
+
+[node name="BuildingBlockFloor_02" parent="Node3D/large_objects" instance=ExtResource("38_blfml")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 575.838, 0, -145.51)
+ObjId = 130
+
+[node name="BuildingBlockFloor_01" parent="Node3D/large_objects" instance=ExtResource("39_qptc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 582.194, 0, -98.0471)
+ObjId = 131
+
+[node name="BuildingBlockFloor_03" parent="Node3D/large_objects" instance=ExtResource("40_hdrvh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 571.872, 0, -47.2234)
+ObjId = 132

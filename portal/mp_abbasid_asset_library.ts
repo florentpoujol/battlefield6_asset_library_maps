@@ -3,7 +3,7 @@
  * Script for the "mp_abbasid_asset_library" map
  * Build by Florent Poujol
  * Sources: https://github.com/florentpoujol/battlefield6_asset_library_maps
- * Built on: Wed Oct 22 23:09:15     2025
+ * Built on: Sun Oct 26 12:31:40     2025
  */
 
 export class SpawnedObject {
@@ -17,10 +17,15 @@ export class ObjectSpawner
 {
     constructor(
         private _enum: any, // one of the mod.RuntimeSpawn_* enums, NOT one of its case, the whole enum
-        private filters:  { (objectName: string): boolean }[] = [],
-        private baseY: number = 0,
-        private worldIconObjectId: number = 1
-    ) {}
+        private filters:  { (objectName: string): boolean }[],
+        private baseY: number,
+        private worldIconObjectId: number,
+        private largeObjectIdsPerName: { [index:string]: number },
+    ) {
+        // automatically exclude objets referenced as large object
+        const largeObjects = Object.keys(this.largeObjectIdsPerName);
+        this.filters.push((name: string): boolean => largeObjects.includes(name))
+    }
 
     private objects: {[index: string]: SpawnedObject} = {}
 
@@ -71,6 +76,14 @@ export class ObjectSpawner
             }
             i++;
         }
+
+        for (const [name, id] of Object.entries(this.largeObjectIdsPerName)) {
+            const object = mod.GetSpatialObject(id);
+            if (object != undefined) {
+                const position = mod.GetObjectPosition(object);
+                this.objects[name] = new SpawnedObject(name, position);
+            }
+        }
     }
 
     private findClosestObjectFromPlayer(player: mod.Player): null|SpawnedObject
@@ -100,7 +113,7 @@ export class ObjectSpawner
     {
         mod.AddUIContainer(
             'rootUIWidget',
-            mod.CreateVector(0, 10, 0), // position
+            mod.CreateVector(0, 10, 0), // position (positiv Y = toward the top)
             mod.CreateVector(500, 50, 0), // size
             mod.UIAnchor.BottomCenter,
             mod.GetUIRoot(),
@@ -179,13 +192,43 @@ export async function OnGameModeStarted(): Promise<void>
 {
     objectSpawner = new ObjectSpawner(
         mod.RuntimeSpawn_Abbasid,
-        [
-            (name: string) => name.startsWith('Mosque'),
-            (name: string) => name.startsWith('OutskirtsHouse'),
-            (name: string) => name.startsWith('Building_'),
-            (name: string) => name.startsWith('Palace_'),
-        ],
-        135.5
+        [],
+        150.5,
+        1,
+        {
+            MosqueArches_01: 101,
+            MosqueArches_01_B: 102,
+            MosqueBase_01: 103,
+            MosqueFront_01: 104,
+            MosqueMinaret_01: 105,
+            MosqueMinaret_01_B: 106,
+            MosqueMinaret_01_C: 107,
+            MosqueSmallDomes_01: 108,
+            MosqueTop_01: 109,
+            Mosque_01: 110,
+            Palace_01: 111,
+            Building_01: 112,
+            Building_02: 113,
+            Building_03: 114,
+            BR_OutskirtsHouseMediumGround_01: 115,
+            BR_OutskirtsHouseMediumIntermediate_01: 116,
+            OutskirtsHouseMediumRoof_01: 117,
+            OutskirtsHouseMedium_01_Props_D: 118,
+            OutskirtsHouseMedium_03_Abbasid_Mirrored: 119,
+            OutskirtsHouseMedium_03_Abbasid_Mirrored_BD: 120,
+            OutskirtsHouseMedium_04_Abbasid_BD: 121,
+            OutskirtsHouseMedium_04_Abbasid_Mirrored: 122,
+            OutskirtsHouseMedium_04_Abbasid_Mirrored_BD: 123,
+            OutskirtsHouseMedium_04_Abbasid_Mirrored_Props: 124,
+            OutskirtsHouseMedium_05_Abbasid_Mirrored: 125,
+            OutskirtsHouseMedium_05_Abbasid_Mirrored_Props: 126,
+            OutskirtsHouseMedium_06_Abbasid_Mirrored_BD: 127,
+            OutskirtsHouseMedium_07_Abbasid_BD: 128,
+            HighwayOverpassProps_01: 129,
+            BuildingBlockFloor_02: 130,
+            BuildingBlockFloor_01: 131,
+            BuildingBlockFloor_03: 132,
+        }
     );
 
     objectSpawner.spawnObjects();
@@ -206,6 +249,7 @@ export function OnPlayerDeployed(eventPlayer: mod.Player): void
 {
     player = eventPlayer;
     objectSpawner.createUI(eventPlayer);
+    mod.SetPlayerMovementSpeedMultiplier(player, 2);
 }
 
 export function OnPlayerUndeploy(): void

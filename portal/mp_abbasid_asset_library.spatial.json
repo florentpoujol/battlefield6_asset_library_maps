@@ -20,7 +20,7 @@
             },
             "position": {
                 "x": -312.5,
-                "y": 135,
+                "y": 150,
                 "z": 218.75
             },
             "id": "Node3D/FloorCenter/FiringRange_Floor_A"
@@ -52,7 +52,7 @@
             },
             "position": {
                 "x": -6,
-                "y": 195.0035,
+                "y": 210.0035,
                 "z": 0
             },
             "id": "Node3D/TEAM_2_HQ",
@@ -69,22 +69,22 @@
             "points": [
                 {
                     "x": -2.30423,
-                    "y": 200.0035,
+                    "y": 215.0035,
                     "z": 2.51045
                 },
                 {
                     "x": -2.48219,
-                    "y": 200.0035,
+                    "y": 215.0035,
                     "z": -3.44029
                 },
                 {
                     "x": -9.26338,
-                    "y": 200.0035,
+                    "y": 215.0035,
                     "z": -3.25956
                 },
                 {
                     "x": -9.03007,
-                    "y": 200.0035,
+                    "y": 215.0035,
                     "z": 2.96584
                 }
             ]
@@ -109,7 +109,7 @@
             },
             "position": {
                 "x": -6.0364078,
-                "y": 195.0035,
+                "y": 210.0035,
                 "z": -0.613427
             },
             "id": "Node3D/TEAM_2_HQ/SpawnPoint_1_1"
@@ -140,7 +140,7 @@
             },
             "position": {
                 "x": 5,
-                "y": 194.9578,
+                "y": 209.9578,
                 "z": 0
             },
             "id": "Node3D/TEAM_1_HQ",
@@ -157,22 +157,22 @@
             "points": [
                 {
                     "x": 8.27526,
-                    "y": 199.9578,
+                    "y": 214.9578,
                     "z": 2.50534
                 },
                 {
                     "x": 7.66804,
-                    "y": 199.9578,
+                    "y": 214.9578,
                     "z": -3.50386
                 },
                 {
                     "x": 1.6291,
-                    "y": 199.9578,
+                    "y": 214.9578,
                     "z": -3.39503
                 },
                 {
                     "x": 1.94418,
-                    "y": 199.9578,
+                    "y": 214.9578,
                     "z": 2.65506
                 }
             ]
@@ -197,7 +197,7 @@
             },
             "position": {
                 "x": 4.961139,
-                "y": 194.9578,
+                "y": 209.9578,
                 "z": -0.452616
             },
             "id": "Node3D/TEAM_1_HQ/SpawnPoint_1_1"
@@ -222,7 +222,7 @@
             },
             "position": {
                 "x": -11.9795,
-                "y": 193.2337,
+                "y": 208.2337,
                 "z": -9.30867
             },
             "id": "Node3D/FiringRange_Floor_01"
@@ -251,10 +251,842 @@
             },
             "position": {
                 "x": 0,
-                "y": 136.86163,
+                "y": 151.86163,
                 "z": 0
             },
             "id": "Node3D/WorldIcon"
+        },
+        {
+            "name": "MosqueArches_01",
+            "ObjId": 101,
+            "type": "MosqueArches_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -296.557,
+                "y": 150,
+                "z": 192.849
+            },
+            "id": "Node3D/large_objects/MosqueArches_01"
+        },
+        {
+            "name": "MosqueArches_01_B",
+            "ObjId": 102,
+            "type": "MosqueArches_01_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -296.557,
+                "y": 150,
+                "z": 165.28
+            },
+            "id": "Node3D/large_objects/MosqueArches_01_B"
+        },
+        {
+            "name": "MosqueBase_01",
+            "ObjId": 103,
+            "type": "MosqueBase_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -296.557,
+                "y": 150,
+                "z": 94.3949
+            },
+            "id": "Node3D/large_objects/MosqueBase_01"
+        },
+        {
+            "name": "MosqueFront_01",
+            "ObjId": 104,
+            "type": "MosqueFront_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -296.557,
+                "y": 150,
+                "z": 50.9296
+            },
+            "id": "Node3D/large_objects/MosqueFront_01"
+        },
+        {
+            "name": "MosqueMinaret_01",
+            "ObjId": 105,
+            "type": "MosqueMinaret_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -296.557,
+                "y": 150,
+                "z": 32.0213
+            },
+            "id": "Node3D/large_objects/MosqueMinaret_01"
+        },
+        {
+            "name": "MosqueMinaret_01_B",
+            "ObjId": 106,
+            "type": "MosqueMinaret_01_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -278.7685,
+                "y": 150,
+                "z": 30.7362
+            },
+            "id": "Node3D/large_objects/MosqueMinaret_01_B"
+        },
+        {
+            "name": "MosqueMinaret_01_C",
+            "ObjId": 107,
+            "type": "MosqueMinaret_01_C",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -263.9001,
+                "y": 150,
+                "z": 29.4777
+            },
+            "id": "Node3D/large_objects/MosqueMinaret_01_C"
+        },
+        {
+            "name": "MosqueSmallDomes_01",
+            "ObjId": 108,
+            "type": "MosqueSmallDomes_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -296.557,
+                "y": 150,
+                "z": -9.06144
+            },
+            "id": "Node3D/large_objects/MosqueSmallDomes_01"
+        },
+        {
+            "name": "MosqueTop_01",
+            "ObjId": 109,
+            "type": "MosqueTop_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -296.557,
+                "y": 150,
+                "z": -46.579
+            },
+            "id": "Node3D/large_objects/MosqueTop_01"
+        },
+        {
+            "name": "Mosque_01",
+            "ObjId": 110,
+            "type": "Mosque_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -296.557,
+                "y": 150,
+                "z": -123.99
+            },
+            "id": "Node3D/large_objects/Mosque_01"
+        },
+        {
+            "name": "Palace_01",
+            "ObjId": 111,
+            "type": "Palace_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -239.9972,
+                "y": 150,
+                "z": 188.089
+            },
+            "id": "Node3D/large_objects/Palace_01"
+        },
+        {
+            "name": "Building_01",
+            "ObjId": 112,
+            "type": "Building_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -236.0747,
+                "y": 150,
+                "z": -203.937
+            },
+            "id": "Node3D/large_objects/Building_01"
+        },
+        {
+            "name": "Building_02",
+            "ObjId": 113,
+            "type": "Building_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -197.4082,
+                "y": 150,
+                "z": -203.343
+            },
+            "id": "Node3D/large_objects/Building_02"
+        },
+        {
+            "name": "Building_03",
+            "ObjId": 114,
+            "type": "Building_03",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -157.511,
+                "y": 150,
+                "z": -206.06
+            },
+            "id": "Node3D/large_objects/Building_03"
+        },
+        {
+            "name": "BR_OutskirtsHouseMediumGround_01",
+            "ObjId": 115,
+            "type": "BR_OutskirtsHouseMediumGround_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -121.3858,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/BR_OutskirtsHouseMediumGround_01"
+        },
+        {
+            "name": "BR_OutskirtsHouseMediumIntermediate_01",
+            "ObjId": 116,
+            "type": "BR_OutskirtsHouseMediumIntermediate_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -93.8602,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/BR_OutskirtsHouseMediumIntermediate_01"
+        },
+        {
+            "name": "OutskirtsHouseMediumRoof_01",
+            "ObjId": 117,
+            "type": "OutskirtsHouseMediumRoof_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -64.4805,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/OutskirtsHouseMediumRoof_01"
+        },
+        {
+            "name": "OutskirtsHouseMedium_01_Props_D",
+            "ObjId": 118,
+            "type": "OutskirtsHouseMedium_01_Props_D",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -38.5296,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/OutskirtsHouseMedium_01_Props_D"
+        },
+        {
+            "name": "OutskirtsHouseMedium_03_Abbasid_Mirrored",
+            "ObjId": 119,
+            "type": "OutskirtsHouseMedium_03_Abbasid_Mirrored",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -3.6015,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/OutskirtsHouseMedium_03_Abbasid_Mirrored"
+        },
+        {
+            "name": "OutskirtsHouseMedium_03_Abbasid_Mirrored_BD",
+            "ObjId": 120,
+            "type": "OutskirtsHouseMedium_03_Abbasid_Mirrored_BD",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 28.8486,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/OutskirtsHouseMedium_03_Abbasid_Mirrored_BD"
+        },
+        {
+            "name": "OutskirtsHouseMedium_04_Abbasid_BD",
+            "ObjId": 121,
+            "type": "OutskirtsHouseMedium_04_Abbasid_BD",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 59.614,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/OutskirtsHouseMedium_04_Abbasid_BD"
+        },
+        {
+            "name": "OutskirtsHouseMedium_04_Abbasid_Mirrored",
+            "ObjId": 122,
+            "type": "OutskirtsHouseMedium_04_Abbasid_Mirrored",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 89.338,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/OutskirtsHouseMedium_04_Abbasid_Mirrored"
+        },
+        {
+            "name": "OutskirtsHouseMedium_04_Abbasid_Mirrored_BD",
+            "ObjId": 123,
+            "type": "OutskirtsHouseMedium_04_Abbasid_Mirrored_BD",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 121.196,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/OutskirtsHouseMedium_04_Abbasid_Mirrored_BD"
+        },
+        {
+            "name": "OutskirtsHouseMedium_04_Abbasid_Mirrored_Props",
+            "ObjId": 124,
+            "type": "OutskirtsHouseMedium_04_Abbasid_Mirrored_Props",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 151.295,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/OutskirtsHouseMedium_04_Abbasid_Mirrored_Props"
+        },
+        {
+            "name": "OutskirtsHouseMedium_05_Abbasid_Mirrored",
+            "ObjId": 125,
+            "type": "OutskirtsHouseMedium_05_Abbasid_Mirrored",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 182.652,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/OutskirtsHouseMedium_05_Abbasid_Mirrored"
+        },
+        {
+            "name": "OutskirtsHouseMedium_05_Abbasid_Mirrored_Props",
+            "ObjId": 126,
+            "type": "OutskirtsHouseMedium_05_Abbasid_Mirrored_Props",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 210.086,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/OutskirtsHouseMedium_05_Abbasid_Mirrored_Props"
+        },
+        {
+            "name": "OutskirtsHouseMedium_06_Abbasid_Mirrored_BD",
+            "ObjId": 127,
+            "type": "OutskirtsHouseMedium_06_Abbasid_Mirrored_BD",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 245.504,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/OutskirtsHouseMedium_06_Abbasid_Mirrored_BD"
+        },
+        {
+            "name": "OutskirtsHouseMedium_07_Abbasid_BD",
+            "ObjId": 128,
+            "type": "OutskirtsHouseMedium_07_Abbasid_BD",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 280.354,
+                "y": 150,
+                "z": -209.151
+            },
+            "id": "Node3D/large_objects/OutskirtsHouses/OutskirtsHouseMedium_07_Abbasid_BD"
+        },
+        {
+            "name": "HighwayOverpassProps_01",
+            "ObjId": 129,
+            "type": "HighwayOverpassProps_01",
+            "right": {
+                "x": -0.00593391,
+                "y": 0,
+                "z": -0.999982
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0.999982,
+                "y": 0,
+                "z": -0.00593391
+            },
+            "position": {
+                "x": -124.461,
+                "y": 150,
+                "z": 212.189
+            },
+            "id": "Node3D/large_objects/HighwayOverpassProps_01"
+        },
+        {
+            "name": "BuildingBlockFloor_02",
+            "ObjId": 130,
+            "type": "BuildingBlockFloor_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 279.281,
+                "y": 150,
+                "z": -145.51
+            },
+            "id": "Node3D/large_objects/BuildingBlockFloor_02"
+        },
+        {
+            "name": "BuildingBlockFloor_01",
+            "ObjId": 131,
+            "type": "BuildingBlockFloor_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 285.637,
+                "y": 150,
+                "z": -98.0471
+            },
+            "id": "Node3D/large_objects/BuildingBlockFloor_01"
+        },
+        {
+            "name": "BuildingBlockFloor_03",
+            "ObjId": 132,
+            "type": "BuildingBlockFloor_03",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 275.315,
+                "y": 150,
+                "z": -47.2234
+            },
+            "id": "Node3D/large_objects/BuildingBlockFloor_03"
         }
     ],
     "Static": [
