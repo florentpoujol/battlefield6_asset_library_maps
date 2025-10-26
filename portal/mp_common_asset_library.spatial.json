@@ -26,208 +26,6 @@
             "id": "Node3D/FiringRange_Floor_A"
         },
         {
-            "name": "TEAM_2_HQ",
-            "Team": "Team2",
-            "AltTeam": "TeamNeutral",
-            "ObjId": 1,
-            "InfantrySpawns": [
-                "Node3D/TEAM_2_HQ/SpawnPoint_1_1"
-            ],
-            "HQArea": "Node3D/TEAM_2_HQ/HQ_Team2",
-            "type": "HQ_PlayerSpawner",
-            "right": {
-                "x": 1,
-                "y": 0,
-                "z": 0
-            },
-            "up": {
-                "x": 0,
-                "y": 1,
-                "z": 0
-            },
-            "front": {
-                "x": 0,
-                "y": 0,
-                "z": 1
-            },
-            "position": {
-                "x": -6,
-                "y": 177.3853,
-                "z": 0
-            },
-            "id": "Node3D/TEAM_2_HQ",
-            "linked": [
-                "HQArea",
-                "InfantrySpawns"
-            ]
-        },
-        {
-            "name": "HQ_Team2",
-            "type": "PolygonVolume",
-            "id": "Node3D/TEAM_2_HQ/HQ_Team2",
-            "height": 0,
-            "points": [
-                {
-                    "x": -2.30423,
-                    "y": 182.3853,
-                    "z": 2.51045
-                },
-                {
-                    "x": -2.48219,
-                    "y": 182.3853,
-                    "z": -3.44029
-                },
-                {
-                    "x": -9.26338,
-                    "y": 182.3853,
-                    "z": -3.25956
-                },
-                {
-                    "x": -9.03007,
-                    "y": 182.3853,
-                    "z": 2.96584
-                }
-            ]
-        },
-        {
-            "name": "SpawnPoint_1_1",
-            "type": "SpawnPoint",
-            "right": {
-                "x": 0.999884,
-                "y": 0,
-                "z": 0.0152535
-            },
-            "up": {
-                "x": 0,
-                "y": 1,
-                "z": 0
-            },
-            "front": {
-                "x": -0.0152535,
-                "y": 0,
-                "z": 0.999884
-            },
-            "position": {
-                "x": -6.0364078,
-                "y": 177.3853,
-                "z": -0.613427
-            },
-            "id": "Node3D/TEAM_2_HQ/SpawnPoint_1_1"
-        },
-        {
-            "name": "TEAM_1_HQ",
-            "AltTeam": "TeamNeutral",
-            "ObjId": 1,
-            "InfantrySpawns": [
-                "Node3D/TEAM_1_HQ/SpawnPoint_1_1"
-            ],
-            "HQArea": "Node3D/TEAM_1_HQ/HQ_Team1",
-            "type": "HQ_PlayerSpawner",
-            "right": {
-                "x": 1,
-                "y": 0,
-                "z": 0
-            },
-            "up": {
-                "x": 0,
-                "y": 1,
-                "z": 0
-            },
-            "front": {
-                "x": 0,
-                "y": 0,
-                "z": 1
-            },
-            "position": {
-                "x": 5,
-                "y": 177.3396,
-                "z": 0
-            },
-            "id": "Node3D/TEAM_1_HQ",
-            "linked": [
-                "HQArea",
-                "InfantrySpawns"
-            ]
-        },
-        {
-            "name": "HQ_Team1",
-            "type": "PolygonVolume",
-            "id": "Node3D/TEAM_1_HQ/HQ_Team1",
-            "height": 0,
-            "points": [
-                {
-                    "x": 8.27526,
-                    "y": 182.3396,
-                    "z": 2.50534
-                },
-                {
-                    "x": 7.66804,
-                    "y": 182.3396,
-                    "z": -3.50386
-                },
-                {
-                    "x": 1.6291,
-                    "y": 182.3396,
-                    "z": -3.39503
-                },
-                {
-                    "x": 1.94418,
-                    "y": 182.3396,
-                    "z": 2.65506
-                }
-            ]
-        },
-        {
-            "name": "SpawnPoint_1_1",
-            "type": "SpawnPoint",
-            "right": {
-                "x": 0.999884,
-                "y": 0,
-                "z": 0.0152535
-            },
-            "up": {
-                "x": 0,
-                "y": 1,
-                "z": 0
-            },
-            "front": {
-                "x": -0.0152535,
-                "y": 0,
-                "z": 0.999884
-            },
-            "position": {
-                "x": 4.961139,
-                "y": 177.3396,
-                "z": -0.452616
-            },
-            "id": "Node3D/TEAM_1_HQ/SpawnPoint_1_1"
-        },
-        {
-            "name": "FiringRange_Floor_01",
-            "type": "FiringRange_Floor_01",
-            "right": {
-                "x": 1,
-                "y": 0,
-                "z": 0
-            },
-            "up": {
-                "x": 0,
-                "y": 1,
-                "z": 0
-            },
-            "front": {
-                "x": 0,
-                "y": 0,
-                "z": 1
-            },
-            "position": {
-                "x": -11.9795,
-                "y": 176.564,
-                "z": -9.30867
-            },
-            "id": "Node3D/FiringRange_Floor_01"
-        },
-        {
             "name": "WorldIcon",
             "ObjId": 1,
             "iconTextVisible": true,
@@ -255,6 +53,780 @@
                 "z": 0
             },
             "id": "Node3D/WorldIcon"
+        },
+        {
+            "name": "FiringRange_Floor_01",
+            "type": "FiringRange_Floor_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -11.9795,
+                "y": 176.5639783,
+                "z": -9.30867
+            },
+            "id": "Node3D/spawn/FiringRange_Floor_01"
+        },
+        {
+            "name": "TEAM_2_HQ",
+            "Team": "Team2",
+            "AltTeam": "TeamNeutral",
+            "ObjId": 1,
+            "InfantrySpawns": [
+                "Node3D/spawn/TEAM_2_HQ/SpawnPoint_1_1"
+            ],
+            "HQArea": "Node3D/spawn/TEAM_2_HQ/HQ_Team2",
+            "type": "HQ_PlayerSpawner",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -6,
+                "y": 177.385283,
+                "z": 0
+            },
+            "id": "Node3D/spawn/TEAM_2_HQ",
+            "linked": [
+                "HQArea",
+                "InfantrySpawns"
+            ]
+        },
+        {
+            "name": "HQ_Team2",
+            "type": "PolygonVolume",
+            "id": "Node3D/spawn/TEAM_2_HQ/HQ_Team2",
+            "height": 0,
+            "points": [
+                {
+                    "x": -2.30423,
+                    "y": 182.385283,
+                    "z": 2.51045
+                },
+                {
+                    "x": -2.48219,
+                    "y": 182.385283,
+                    "z": -3.44029
+                },
+                {
+                    "x": -9.26338,
+                    "y": 182.385283,
+                    "z": -3.25956
+                },
+                {
+                    "x": -9.03007,
+                    "y": 182.385283,
+                    "z": 2.96584
+                }
+            ]
+        },
+        {
+            "name": "SpawnPoint_1_1",
+            "type": "SpawnPoint",
+            "right": {
+                "x": 0.999884,
+                "y": 0,
+                "z": 0.0152535
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.0152535,
+                "y": 0,
+                "z": 0.999884
+            },
+            "position": {
+                "x": -6.0364078,
+                "y": 177.385283,
+                "z": -0.613427
+            },
+            "id": "Node3D/spawn/TEAM_2_HQ/SpawnPoint_1_1"
+        },
+        {
+            "name": "TEAM_1_HQ",
+            "AltTeam": "TeamNeutral",
+            "ObjId": 1,
+            "InfantrySpawns": [
+                "Node3D/spawn/TEAM_1_HQ/SpawnPoint_1_1"
+            ],
+            "HQArea": "Node3D/spawn/TEAM_1_HQ/HQ_Team1",
+            "type": "HQ_PlayerSpawner",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 5,
+                "y": 177.339583,
+                "z": 0
+            },
+            "id": "Node3D/spawn/TEAM_1_HQ",
+            "linked": [
+                "HQArea",
+                "InfantrySpawns"
+            ]
+        },
+        {
+            "name": "HQ_Team1",
+            "type": "PolygonVolume",
+            "id": "Node3D/spawn/TEAM_1_HQ/HQ_Team1",
+            "height": 0,
+            "points": [
+                {
+                    "x": 8.27526,
+                    "y": 182.339583,
+                    "z": 2.50534
+                },
+                {
+                    "x": 7.66804,
+                    "y": 182.339583,
+                    "z": -3.50386
+                },
+                {
+                    "x": 1.6291,
+                    "y": 182.339583,
+                    "z": -3.39503
+                },
+                {
+                    "x": 1.94418,
+                    "y": 182.339583,
+                    "z": 2.65506
+                }
+            ]
+        },
+        {
+            "name": "SpawnPoint_1_1",
+            "type": "SpawnPoint",
+            "right": {
+                "x": 0.999884,
+                "y": 0,
+                "z": 0.0152535
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.0152535,
+                "y": 0,
+                "z": 0.999884
+            },
+            "position": {
+                "x": 4.961139,
+                "y": 177.339583,
+                "z": -0.452616
+            },
+            "id": "Node3D/spawn/TEAM_1_HQ/SpawnPoint_1_1"
+        },
+        {
+            "name": "HighwayOverpass_Bridge_01",
+            "ObjId": 101,
+            "type": "HighwayOverpass_Bridge_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 182.907,
+                "y": 135,
+                "z": 113.436
+            },
+            "id": "Node3D/large objects/HighwayOverpass_Bridge_01"
+        },
+        {
+            "name": "HighwayOverpass_Bridge_02",
+            "ObjId": 102,
+            "type": "HighwayOverpass_Bridge_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 129.337,
+                "y": 135,
+                "z": 113.436
+            },
+            "id": "Node3D/large objects/HighwayOverpass_Bridge_02"
+        },
+        {
+            "name": "HighwayOverpass_Bridge_04",
+            "ObjId": 103,
+            "type": "HighwayOverpass_Bridge_04",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 82.01,
+                "y": 135,
+                "z": 113.436
+            },
+            "id": "Node3D/large objects/HighwayOverpass_Bridge_04"
+        },
+        {
+            "name": "HighwayOverpass_Bridge_BrokenBlockout_2",
+            "ObjId": 104,
+            "type": "HighwayOverpass_Bridge_BrokenBlockout_2",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 35.6615,
+                "y": 135,
+                "z": 113.436
+            },
+            "id": "Node3D/large objects/HighwayOverpass_Bridge_BrokenBlockout_2"
+        },
+        {
+            "name": "HighwayOverpass_CurveLong_01",
+            "ObjId": 105,
+            "type": "HighwayOverpass_CurveLong_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 4.56763,
+                "y": 135,
+                "z": 132.7947
+            },
+            "id": "Node3D/large objects/HighwayOverpass_CurveLong_01"
+        },
+        {
+            "name": "HighwayOverpass_Foundation_01",
+            "ObjId": 106,
+            "type": "HighwayOverpass_Foundation_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -52.1596,
+                "y": 135,
+                "z": 100.9165
+            },
+            "id": "Node3D/large objects/HighwayOverpass_Foundation_01"
+        },
+        {
+            "name": "HighwayOverpass_Straight_01_4096",
+            "ObjId": 107,
+            "type": "HighwayOverpass_Straight_01_4096",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -72.9869,
+                "y": 135,
+                "z": 99.3092
+            },
+            "id": "Node3D/large objects/HighwayOverpass_Straight_01_4096"
+        },
+        {
+            "name": "HighwaySplit_01",
+            "ObjId": 108,
+            "type": "HighwaySplit_01",
+            "right": {
+                "x": -0.999979,
+                "y": 0,
+                "z": 0.00647508
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.00647508,
+                "y": 0,
+                "z": -0.999979
+            },
+            "position": {
+                "x": 174.165,
+                "y": 135.977661,
+                "z": 99.0292
+            },
+            "id": "Node3D/large objects/HighwaySplit_01"
+        },
+        {
+            "name": "HighwayStraight_01",
+            "ObjId": 109,
+            "type": "HighwayStraight_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 101.283,
+                "y": 135.3526,
+                "z": 77.6363
+            },
+            "id": "Node3D/large objects/HighwayStraight_01"
+        },
+        {
+            "name": "HighwayTurn_01",
+            "ObjId": 110,
+            "type": "HighwayTurn_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 46.3193,
+                "y": 135.552872,
+                "z": 75.2537
+            },
+            "id": "Node3D/large objects/HighwayTurn_01"
+        },
+        {
+            "name": "FiringRange_WallPanelContact_01",
+            "ObjId": 111,
+            "type": "FiringRange_WallPanelContact_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -167.25,
+                "y": 135,
+                "z": 30.9228
+            },
+            "id": "Node3D/large objects/FiringRange_WallPanelContact_01"
+        },
+        {
+            "name": "FiringRange_WallPanel_01",
+            "ObjId": 112,
+            "type": "FiringRange_WallPanel_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -161.971,
+                "y": 135,
+                "z": 17.6328
+            },
+            "id": "Node3D/large objects/FiringRange_WallPanel_01"
+        },
+        {
+            "name": "FiringRange_Wall_1024_01",
+            "ObjId": 113,
+            "type": "FiringRange_Wall_1024_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -167.103,
+                "y": 135,
+                "z": 2.627
+            },
+            "id": "Node3D/large objects/FiringRange_Wall_1024_01"
+        },
+        {
+            "name": "FiringRange_Wall_2048_01",
+            "ObjId": 114,
+            "type": "FiringRange_Wall_2048_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -168.516,
+                "y": 135,
+                "z": -11.519
+            },
+            "id": "Node3D/large objects/FiringRange_Wall_2048_01"
+        },
+        {
+            "name": "FiringRange_Floor_01",
+            "ObjId": 115,
+            "type": "FiringRange_Floor_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -168.574,
+                "y": 135.370728,
+                "z": -36.709
+            },
+            "id": "Node3D/large objects/FiringRange_Floor_01"
+        },
+        {
+            "name": "FiringRange_Floor_02",
+            "ObjId": 116,
+            "type": "FiringRange_Floor_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -162.56,
+                "y": 135.414352,
+                "z": -49.96
+            },
+            "id": "Node3D/large objects/FiringRange_Floor_02"
+        },
+        {
+            "name": "FiringRange_Floor_A",
+            "ObjId": 117,
+            "type": "FiringRange_Floor_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -164.234,
+                "y": 135.481659,
+                "z": -58.257
+            },
+            "id": "Node3D/large objects/FiringRange_Floor_A"
+        },
+        {
+            "name": "FiringRange_Floor_B",
+            "ObjId": 118,
+            "type": "FiringRange_Floor_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -165.452,
+                "y": 135.275513,
+                "z": -67.327
+            },
+            "id": "Node3D/large objects/FiringRange_Floor_B"
+        },
+        {
+            "name": "FiringRange_Ceiling_01_A",
+            "ObjId": 119,
+            "type": "FiringRange_Ceiling_01_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -165.452,
+                "y": 135.275513,
+                "z": -79.368
+            },
+            "id": "Node3D/large objects/FiringRange_Ceiling_01_A"
+        },
+        {
+            "name": "FiringRange_Ceiling_01_B",
+            "ObjId": 120,
+            "type": "FiringRange_Ceiling_01_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -165.452,
+                "y": 135.275513,
+                "z": -87.098
+            },
+            "id": "Node3D/large objects/FiringRange_Ceiling_01_B"
+        },
+        {
+            "name": "FiringRange_Ceiling_01_C",
+            "ObjId": 121,
+            "type": "FiringRange_Ceiling_01_C",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -165.452,
+                "y": 135.275513,
+                "z": -96.454
+            },
+            "id": "Node3D/large objects/FiringRange_Ceiling_01_C"
+        },
+        {
+            "name": "FiringRange_Ceiling_02",
+            "ObjId": 122,
+            "type": "FiringRange_Ceiling_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -165.452,
+                "y": 135.275513,
+                "z": -112.066
+            },
+            "id": "Node3D/large objects/FiringRange_Ceiling_02"
         }
     ],
     "Static": [

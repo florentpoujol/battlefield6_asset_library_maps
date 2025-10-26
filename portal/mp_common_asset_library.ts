@@ -3,7 +3,7 @@
  * Script for the "mp_common_asset_library" map
  * Build by Florent Poujol
  * Sources: https://github.com/florentpoujol/battlefield6_asset_library_maps
- * Built on: Wed Oct 22 22:31:58     2025
+ * Built on: Sun Oct 26 14:27:13     2025
  */
 
 export class SpawnedObject {
@@ -17,10 +17,15 @@ export class ObjectSpawner
 {
     constructor(
         private _enum: any, // one of the mod.RuntimeSpawn_* enums, NOT one of its case, the whole enum
-        private filters:  { (objectName: string): boolean }[] = [],
-        private baseY: number = 0,
-        private worldIconObjectId: number = 1
-    ) {}
+        private ignoreFilters:  { (objectName: string): boolean }[],
+        private baseY: number,
+        private worldIconObjectId: number,
+        private largeObjectIdsPerName: { [index:string]: number },
+    ) {
+        // automatically exclude objets referenced as large object
+        const largeObjects = Object.keys(this.largeObjectIdsPerName);
+        this.ignoreFilters.push((name: string): boolean => largeObjects.includes(name))
+    }
 
     private objects: {[index: string]: SpawnedObject} = {}
 
@@ -32,7 +37,7 @@ export class ObjectSpawner
         const objectNamesToSpawn: string[] = [];
         for (const [name, value] of initialElements) {
             let ignoreObject = false;
-            for (const filter of this.filters) {
+            for (const filter of this.ignoreFilters) {
                 if (filter(name)) {
                     ignoreObject = true;
                     break;
@@ -71,6 +76,14 @@ export class ObjectSpawner
             }
             i++;
         }
+
+        for (const [name, id] of Object.entries(this.largeObjectIdsPerName)) {
+            const object = mod.GetSpatialObject(id);
+            if (object != undefined) {
+                const position = mod.GetObjectPosition(object);
+                this.objects[name] = new SpawnedObject(name, position);
+            }
+        }
     }
 
     private findClosestObjectFromPlayer(player: mod.Player): null|SpawnedObject
@@ -82,7 +95,7 @@ export class ObjectSpawner
 
         for (const spawnedObject of Object.values(this.objects)) {
             const distance = mod.DistanceBetween(playerPosition, spawnedObject.position);
-            if (distance < 30.0 && distance < smallestDistance) {
+            if (distance < 50.0 && distance < smallestDistance) {
                 smallestDistance = distance;
                 closestObject = spawnedObject;
             }
@@ -100,8 +113,8 @@ export class ObjectSpawner
     {
         mod.AddUIContainer(
             'rootUIWidget',
-            mod.CreateVector(0, 0, 0), // position
-            mod.CreateVector(500, 50, 0), // size
+            mod.CreateVector(0, 10, 0), // position (positiv Y = toward the top)
+            mod.CreateVector(600, 50, 0), // size
             mod.UIAnchor.BottomCenter,
             mod.GetUIRoot(),
             true,
@@ -116,7 +129,7 @@ export class ObjectSpawner
         mod.AddUIText(
             'object_name',
             mod.CreateVector(0, 0, 0),
-            mod.CreateVector(380, 40, 0),
+            mod.CreateVector(600, 40, 0),
             mod.UIAnchor.Center,
             this.rootUIWidget as mod.UIWidget,
             true,
@@ -200,10 +213,34 @@ export async function OnGameModeStarted(): Promise<void>
         mod.RuntimeSpawn_Common,
         [
             (name: string) => gameplayObjects.includes(name),
-            (name: string) => name.startsWith('Highway'),
             (name: string) => name.startsWith('SFX_') || name.startsWith('FX_'),
         ],
-        135.5
+        135.5,
+        1,
+        {
+            HighwayOverpass_Bridge_01: 101,
+            HighwayOverpass_Bridge_02: 102,
+            HighwayOverpass_Bridge_04: 103,
+            HighwayOverpass_Bridge_BrokenBlockout_2: 104,
+            HighwayOverpass_CurveLong_01: 105,
+            HighwayOverpass_Foundation_01: 106,
+            HighwayOverpass_Straight_01_4096: 107,
+            HighwaySplit_01: 108,
+            HighwayStraight_01: 109,
+            HighwayTurn_01: 110,
+            FiringRange_WallPanelContact_01: 111,
+            FiringRange_WallPanel_01: 112,
+            FiringRange_Wall_1024_01: 113,
+            FiringRange_Wall_2048_01: 114,
+            FiringRange_Floor_01: 115,
+            FiringRange_Floor_02: 116,
+            FiringRange_Floor_A: 117,
+            FiringRange_Floor_B: 118,
+            FiringRange_Ceiling_01_A: 119,
+            FiringRange_Ceiling_01_B: 120,
+            FiringRange_Ceiling_01_C: 121,
+            FiringRange_Ceiling_02: 122,
+        }
     );
 
     objectSpawner.spawnObjects();
@@ -224,6 +261,7 @@ export function OnPlayerDeployed(eventPlayer: mod.Player): void
 {
     player = eventPlayer;
     objectSpawner.createUI(eventPlayer);
+    mod.SetPlayerMovementSpeedMultiplier(player, 2);
 }
 
 export function OnPlayerUndeploy(): void

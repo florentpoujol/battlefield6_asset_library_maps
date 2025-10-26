@@ -10,14 +10,14 @@ export class ObjectSpawner
 {
     constructor(
         private _enum: any, // one of the mod.RuntimeSpawn_* enums, NOT one of its case, the whole enum
-        private filters:  { (objectName: string): boolean }[],
+        private ignoreFilters:  { (objectName: string): boolean }[],
         private baseY: number,
         private worldIconObjectId: number,
         private largeObjectIdsPerName: { [index:string]: number },
     ) {
         // automatically exclude objets referenced as large object
         const largeObjects = Object.keys(this.largeObjectIdsPerName);
-        this.filters.push((name: string): boolean => largeObjects.includes(name))
+        this.ignoreFilters.push((name: string): boolean => largeObjects.includes(name))
     }
 
     private objects: {[index: string]: SpawnedObject} = {}
@@ -30,7 +30,7 @@ export class ObjectSpawner
         const objectNamesToSpawn: string[] = [];
         for (const [name, value] of initialElements) {
             let ignoreObject = false;
-            for (const filter of this.filters) {
+            for (const filter of this.ignoreFilters) {
                 if (filter(name)) {
                     ignoreObject = true;
                     break;
@@ -88,7 +88,7 @@ export class ObjectSpawner
 
         for (const spawnedObject of Object.values(this.objects)) {
             const distance = mod.DistanceBetween(playerPosition, spawnedObject.position);
-            if (distance < 30.0 && distance < smallestDistance) {
+            if (distance < 50.0 && distance < smallestDistance) {
                 smallestDistance = distance;
                 closestObject = spawnedObject;
             }
@@ -107,7 +107,7 @@ export class ObjectSpawner
         mod.AddUIContainer(
             'rootUIWidget',
             mod.CreateVector(0, 10, 0), // position (positiv Y = toward the top)
-            mod.CreateVector(500, 50, 0), // size
+            mod.CreateVector(600, 50, 0), // size
             mod.UIAnchor.BottomCenter,
             mod.GetUIRoot(),
             true,
@@ -122,7 +122,7 @@ export class ObjectSpawner
         mod.AddUIText(
             'object_name',
             mod.CreateVector(0, 0, 0),
-            mod.CreateVector(380, 40, 0),
+            mod.CreateVector(600, 40, 0),
             mod.UIAnchor.Center,
             this.rootUIWidget as mod.UIWidget,
             true,

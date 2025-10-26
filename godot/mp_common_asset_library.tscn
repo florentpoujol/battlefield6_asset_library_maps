@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://iqi840nxh6ae"]
+[gd_scene load_steps=29 format=3 uid="uid://iqi840nxh6ae"]
 
 [ext_resource type="PackedScene" path="res://static/MP_Abbasid_Terrain.tscn" id="1_7twww"]
 [ext_resource type="PackedScene" path="res://static/MP_Abbasid_Assets.tscn" id="2_ya4tm"]
@@ -7,7 +7,27 @@
 [ext_resource type="PackedScene" uid="uid://jv31so3xcr7p" path="res://addons/bf_portal/portal_tools/types/PolygonVolume/PolygonVolume.tscn" id="5_f1d3q"]
 [ext_resource type="PackedScene" path="res://objects/entities/SpawnPoint.tscn" id="6_t4rut"]
 [ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Floor_01.tscn" id="7_yke4s"]
+[ext_resource type="PackedScene" path="res://objects/Global/Generic/Common/Architecture/HighwayOverpass_Bridge_01.tscn" id="9_0d4gd"]
 [ext_resource type="PackedScene" path="res://objects/Gameplay/Common/WorldIcon.tscn" id="9_10o5b"]
+[ext_resource type="PackedScene" path="res://objects/Global/Generic/Common/Architecture/HighwayOverpass_Bridge_02.tscn" id="10_cr51i"]
+[ext_resource type="PackedScene" path="res://objects/Global/Generic/Common/Architecture/HighwayOverpass_Bridge_04.tscn" id="11_x14gl"]
+[ext_resource type="PackedScene" path="res://objects/Global/Generic/Common/Architecture/HighwayOverpass_Bridge_BrokenBlockout_2.tscn" id="12_66jpt"]
+[ext_resource type="PackedScene" path="res://objects/Global/Generic/Common/Architecture/HighwayOverpass_CurveLong_01.tscn" id="13_un6vs"]
+[ext_resource type="PackedScene" path="res://objects/Global/Generic/Common/Architecture/HighwayOverpass_Foundation_01.tscn" id="14_cuv4j"]
+[ext_resource type="PackedScene" path="res://objects/Global/Generic/Common/Architecture/HighwayOverpass_Straight_01_4096.tscn" id="15_ygvdo"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/HighwaySplit_01.tscn" id="16_3awqm"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/HighwayStraight_01.tscn" id="17_npvkh"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/HighwayTurn_01.tscn" id="18_n1lkj"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_WallPanelContact_01.tscn" id="19_un6vs"]
+[ext_resource type="PackedScene" path="res://objects/Global/Props/FiringRange_WallPanel_01.tscn" id="20_cuv4j"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Wall_1024_01.tscn" id="21_ygvdo"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Wall_2048_01.tscn" id="22_3awqm"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Floor_02.tscn" id="23_u41cf"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Floor_B.tscn" id="24_f6wbw"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Ceiling_01_A.tscn" id="25_enxt6"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Ceiling_01_B.tscn" id="26_kt77j"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Ceiling_01_C.tscn" id="27_wf85d"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Ceiling_02.tscn" id="28_v5rs5"]
 
 [node name="MP_Abbasid" type="Node3D"]
 
@@ -25,40 +45,134 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 135, 0)
 [node name="FiringRange_Floor_A" parent="Node3D" instance=ExtResource("3_bxdms")]
 transform = Transform3D(75, 0, 0, 0, 75, 0, 0, 0, 75, -183.292, 0, 123.043)
 
-[node name="TEAM_2_HQ" parent="Node3D" node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("4_32bxv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 42.3853, 0)
+[node name="WorldIcon" parent="Node3D" instance=ExtResource("9_10o5b")]
+ObjId = 1
+iconTextVisible = true
+iconImagePicker = 2
+iconImageVisible = true
+
+[node name="spawn" type="Node3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 41.5287, 0)
+
+[node name="FiringRange_Floor_01" parent="Node3D/spawn" instance=ExtResource("7_yke4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9795, 0.0352783, -9.30867)
+
+[node name="TEAM_2_HQ" parent="Node3D/spawn" node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("4_32bxv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0.856583, 0)
 Team = 2
 AltTeam = 0
 ObjId = 1
 HQArea = NodePath("HQ_Team2")
 InfantrySpawns = [NodePath("SpawnPoint_1_1")]
 
-[node name="HQ_Team2" parent="Node3D/TEAM_2_HQ" instance=ExtResource("5_f1d3q")]
+[node name="HQ_Team2" parent="Node3D/spawn/TEAM_2_HQ" instance=ExtResource("5_f1d3q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
 points = PackedVector2Array(3.69577, 2.51045, 3.51781, -3.44029, -3.26338, -3.25956, -3.03007, 2.96584)
 
-[node name="SpawnPoint_1_1" parent="Node3D/TEAM_2_HQ" instance=ExtResource("6_t4rut")]
+[node name="SpawnPoint_1_1" parent="Node3D/spawn/TEAM_2_HQ" instance=ExtResource("6_t4rut")]
 transform = Transform3D(0.999884, 0, -0.0152535, 0, 1, 0, 0.0152535, 0, 0.999884, -0.0364078, 0, -0.613427)
 
-[node name="TEAM_1_HQ" parent="Node3D" node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("4_32bxv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 42.3396, 0)
+[node name="TEAM_1_HQ" parent="Node3D/spawn" node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("4_32bxv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.810883, 0)
 AltTeam = 0
 ObjId = 1
 HQArea = NodePath("HQ_Team1")
 InfantrySpawns = [NodePath("SpawnPoint_1_1")]
 
-[node name="HQ_Team1" parent="Node3D/TEAM_1_HQ" instance=ExtResource("5_f1d3q")]
+[node name="HQ_Team1" parent="Node3D/spawn/TEAM_1_HQ" instance=ExtResource("5_f1d3q")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
 points = PackedVector2Array(3.27526, 2.50534, 2.66804, -3.50386, -3.3709, -3.39503, -3.05582, 2.65506)
 
-[node name="SpawnPoint_1_1" parent="Node3D/TEAM_1_HQ" instance=ExtResource("6_t4rut")]
+[node name="SpawnPoint_1_1" parent="Node3D/spawn/TEAM_1_HQ" instance=ExtResource("6_t4rut")]
 transform = Transform3D(0.999884, 0, -0.0152535, 0, 1, 0, 0.0152535, 0, 0.999884, -0.038861, 0, -0.452616)
 
-[node name="FiringRange_Floor_01" parent="Node3D" instance=ExtResource("7_yke4s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.9795, 41.564, -9.30867)
+[node name="large objects" type="Node3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 113.436)
 
-[node name="WorldIcon" parent="Node3D" instance=ExtResource("9_10o5b")]
-ObjId = 1
-iconTextVisible = true
-iconImagePicker = 2
-iconImageVisible = true
+[node name="HighwayOverpass_Bridge_01" parent="Node3D/large objects" instance=ExtResource("9_0d4gd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 182.907, 0, 0)
+ObjId = 101
+
+[node name="HighwayOverpass_Bridge_02" parent="Node3D/large objects" instance=ExtResource("10_cr51i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.337, 0, 0)
+ObjId = 102
+
+[node name="HighwayOverpass_Bridge_04" parent="Node3D/large objects" instance=ExtResource("11_x14gl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.01, 0, 0)
+ObjId = 103
+
+[node name="HighwayOverpass_Bridge_BrokenBlockout_2" parent="Node3D/large objects" instance=ExtResource("12_66jpt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.6615, 0, 0)
+ObjId = 104
+
+[node name="HighwayOverpass_CurveLong_01" parent="Node3D/large objects" instance=ExtResource("13_un6vs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.56763, 0, 19.3587)
+ObjId = 105
+
+[node name="HighwayOverpass_Foundation_01" parent="Node3D/large objects" instance=ExtResource("14_cuv4j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.1596, 0, -12.5195)
+ObjId = 106
+
+[node name="HighwayOverpass_Straight_01_4096" parent="Node3D/large objects" instance=ExtResource("15_ygvdo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.9869, 0, -14.1268)
+ObjId = 107
+
+[node name="HighwaySplit_01" parent="Node3D/large objects" instance=ExtResource("16_3awqm")]
+transform = Transform3D(-0.999979, 0, -0.00647508, 0, 1, 0, 0.00647508, 0, -0.999979, 174.165, 0.977661, -14.4068)
+ObjId = 108
+
+[node name="HighwayStraight_01" parent="Node3D/large objects" instance=ExtResource("17_npvkh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101.283, 0.3526, -35.7997)
+ObjId = 109
+
+[node name="HighwayTurn_01" parent="Node3D/large objects" instance=ExtResource("18_n1lkj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.3193, 0.552872, -38.1823)
+ObjId = 110
+
+[node name="FiringRange_WallPanelContact_01" parent="Node3D/large objects" instance=ExtResource("19_un6vs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -167.25, 0, -82.5132)
+ObjId = 111
+
+[node name="FiringRange_WallPanel_01" parent="Node3D/large objects" instance=ExtResource("20_cuv4j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -161.971, 0, -95.8032)
+ObjId = 112
+
+[node name="FiringRange_Wall_1024_01" parent="Node3D/large objects" instance=ExtResource("21_ygvdo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -167.103, 0, -110.809)
+ObjId = 113
+
+[node name="FiringRange_Wall_2048_01" parent="Node3D/large objects" instance=ExtResource("22_3awqm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -168.516, 0, -124.955)
+ObjId = 114
+
+[node name="FiringRange_Floor_01" parent="Node3D/large objects" instance=ExtResource("7_yke4s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -168.574, 0.370728, -150.145)
+ObjId = 115
+
+[node name="FiringRange_Floor_02" parent="Node3D/large objects" instance=ExtResource("23_u41cf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -162.56, 0.414352, -163.396)
+ObjId = 116
+
+[node name="FiringRange_Floor_A" parent="Node3D/large objects" instance=ExtResource("3_bxdms")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -164.234, 0.481659, -171.693)
+ObjId = 117
+
+[node name="FiringRange_Floor_B" parent="Node3D/large objects" instance=ExtResource("24_f6wbw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -165.452, 0.275513, -180.763)
+ObjId = 118
+
+[node name="FiringRange_Ceiling_01_A" parent="Node3D/large objects" instance=ExtResource("25_enxt6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -165.452, 0.275513, -192.804)
+ObjId = 119
+
+[node name="FiringRange_Ceiling_01_B" parent="Node3D/large objects" instance=ExtResource("26_kt77j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -165.452, 0.275513, -200.534)
+ObjId = 120
+
+[node name="FiringRange_Ceiling_01_C" parent="Node3D/large objects" instance=ExtResource("27_wf85d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -165.452, 0.275513, -209.89)
+ObjId = 121
+
+[node name="FiringRange_Ceiling_02" parent="Node3D/large objects" instance=ExtResource("28_v5rs5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -165.452, 0.275513, -225.502)
+ObjId = 122
