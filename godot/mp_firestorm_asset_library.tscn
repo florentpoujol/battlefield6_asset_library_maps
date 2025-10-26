@@ -1,0 +1,235 @@
+[gd_scene load_steps=41 format=3 uid="uid://d276n47clkcka"]
+
+[ext_resource type="PackedScene" path="res://objects/Gameplay/Common/HQ_PlayerSpawner.tscn" id="1_tlq03"]
+[ext_resource type="PackedScene" uid="uid://jv31so3xcr7p" path="res://addons/bf_portal/portal_tools/types/PolygonVolume/PolygonVolume.tscn" id="2_hqtar"]
+[ext_resource type="PackedScene" path="res://objects/entities/SpawnPoint.tscn" id="3_25anj"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Floor_01.tscn" id="3_tlq03"]
+[ext_resource type="PackedScene" path="res://static/MP_FireStorm_Terrain.tscn" id="5_2s7b2"]
+[ext_resource type="PackedScene" path="res://static/MP_FireStorm_Assets.tscn" id="6_m7s0y"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Architecture/GasTank_01.tscn" id="7_m7s0y"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/PressureTank_02.tscn" id="8_b5nqf"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Architecture/ConstructionSite_02_B.tscn" id="8_j5axt"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/CliffLarge_03.tscn" id="9_2ypti"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/CliffLarge_04.tscn" id="10_pv4cn"]
+[ext_resource type="PackedScene" path="res://objects/Gameplay/Common/WorldIcon.tscn" id="11_qnbb3"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Nature/CliffHuge_08B.tscn" id="12_pv4cn"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/CliffHuge_08B_B.tscn" id="13_qnbb3"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/CliffHuge_10_C90.tscn" id="14_rvf4l"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Architecture/ConstructionSite_03_C.tscn" id="16_qy5v3"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Architecture/ConstructionSite_04_B.tscn" id="17_h6ver"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Architecture/ConstructionSite_04_PropsA.tscn" id="18_0x013"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Architecture/ConstructionSite_04_PropsB.tscn" id="19_2glqw"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Architecture/ConstructionSite_04_PropsC.tscn" id="20_adiqe"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/RefineryConstruction_01.tscn" id="21_l1nnv"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/RefineryBridge_01.tscn" id="22_hvbho"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/RefineryBridge_02.tscn" id="23_hsqkc"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/FXSiloMedium_01.tscn" id="24_5g2mk"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/FXSiloOilHuge_02.tscn" id="25_17e2g"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/SiloMedium_01.tscn" id="26_2iwb7"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Backdrop/SiloOilHuge_01.tscn" id="27_iehax"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/SiloOilHuge_02.tscn" id="28_hi535"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/OilChimneyPlatform_02.tscn" id="29_hsqkc"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/RefineryTowerPlatform_01_A.tscn" id="30_5g2mk"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/RefineryTowerPlatform_01_B.tscn" id="31_17e2g"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/RefineryTowerPlatform_01_Beams.tscn" id="32_2iwb7"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Architecture/Warehouse_01_A.tscn" id="33_iehax"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Architecture/Warehouse_01_B.tscn" id="34_hi535"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Architecture/Warehouse_01_C.tscn" id="35_fqn47"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Architecture/Warehouse_01_D.tscn" id="36_f3emh"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Military/Architecture/StorageShed_01.tscn" id="37_5g2mk"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/SiloOilHugeRoof_02.tscn" id="38_iehax"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/Maze_02.tscn" id="39_hi535"]
+[ext_resource type="PackedScene" path="res://objects/Turkmenistan/MP_FireStorm/Generic/Industrial/Props/Maze_03.tscn" id="40_fqn47"]
+
+[node name="MP_FireStorm" type="Node3D"]
+
+[node name="WorldIcon" parent="." instance=ExtResource("11_qnbb3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.8811, 0)
+ObjId = 10
+iconTextVisible = true
+iconImagePicker = 2
+iconImageVisible = true
+
+[node name="Static" type="Node3D" parent="."]
+
+[node name="MP_FireStorm_Terrain" parent="Static" instance=ExtResource("5_2s7b2")]
+
+[node name="MP_FireStorm_Assets" parent="Static" instance=ExtResource("6_m7s0y")]
+
+[node name="floor" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 250, 0)
+
+[node name="floor center" type="Node3D" parent="floor"]
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0)
+
+[node name="FiringRange_Floor_01" parent="floor/floor center" instance=ExtResource("3_tlq03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10)
+
+[node name="spawn" type="Node3D" parent="floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 54.738, 0)
+
+[node name="FiringRange_Floor_01" parent="floor/spawn" instance=ExtResource("3_tlq03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10)
+
+[node name="TEAM_2_HQ" parent="floor/spawn" node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("1_tlq03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0670166, -4.58968)
+Team = 2
+AltTeam = 0
+ObjId = 2
+HQArea = NodePath("HQ_Team2")
+InfantrySpawns = [NodePath("SpawnPoint_2_1")]
+
+[node name="HQ_Team2" parent="floor/spawn/TEAM_2_HQ" instance=ExtResource("2_hqtar")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+points = PackedVector2Array(5, 5, 5, -5, -5, -5, -5, 5)
+
+[node name="SpawnPoint_2_1" parent="floor/spawn/TEAM_2_HQ" instance=ExtResource("3_25anj")]
+transform = Transform3D(0.87795, 0, -0.478754, 0, 1, 0, 0.478754, 0, 0.87795, 0, 0, -0.158737)
+
+[node name="TEAM_1_HQ" parent="floor/spawn" node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("1_tlq03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0826111, 5.90933)
+AltTeam = 0
+ObjId = 1
+HQArea = NodePath("HQ_Team1")
+InfantrySpawns = [NodePath("SpawnPoint_1_1")]
+
+[node name="HQ_Team1" parent="floor/spawn/TEAM_1_HQ" instance=ExtResource("2_hqtar")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+points = PackedVector2Array(5, 5, 5, -5, -5, -5, -5, 5)
+
+[node name="SpawnPoint_1_1" parent="floor/spawn/TEAM_1_HQ" instance=ExtResource("3_25anj")]
+transform = Transform3D(0.999884, 0, -0.0152535, 0, 1, 0, 0.0152535, 0, 0.999884, 0, 0, -0.0572758)
+
+[node name="large_objects" type="Node3D" parent="floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 216.926, 0, 0)
+
+[node name="GasTank_01" parent="floor/large_objects" instance=ExtResource("7_m7s0y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.7587)
+ObjId = 101
+
+[node name="PressureTank_02" parent="floor/large_objects" instance=ExtResource("8_b5nqf")]
+ObjId = 102
+
+[node name="CliffLarge_03" parent="floor/large_objects" instance=ExtResource("9_2ypti")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.9006)
+ObjId = 103
+
+[node name="CliffLarge_04" parent="floor/large_objects" instance=ExtResource("10_pv4cn")]
+transform = Transform3D(-0.98558, 0, -0.169212, 0, 1, 0, 0.169212, 0, -0.98558, 0, 0, 30.4182)
+ObjId = 104
+
+[node name="CliffHuge_08B" parent="floor/large_objects" instance=ExtResource("12_pv4cn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.9286, 0, 0)
+ObjId = 105
+
+[node name="CliffHuge_08B_B" parent="floor/large_objects" instance=ExtResource("13_qnbb3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6358, 0, 49.1845)
+ObjId = 106
+
+[node name="CliffHuge_10_C90" parent="floor/large_objects" instance=ExtResource("14_rvf4l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140.729, 0, 42.055)
+ObjId = 107
+
+[node name="ConstructionSite_03_C" parent="floor/large_objects" instance=ExtResource("16_qy5v3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 77.7004)
+ObjId = 108
+
+[node name="ConstructionSite_04_B" parent="floor/large_objects" instance=ExtResource("17_h6ver")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 97.0579)
+ObjId = 109
+
+[node name="ConstructionSite_04_PropsA" parent="floor/large_objects" instance=ExtResource("18_0x013")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 117.417)
+ObjId = 110
+
+[node name="ConstructionSite_04_PropsB" parent="floor/large_objects" instance=ExtResource("19_2glqw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 137.731)
+ObjId = 111
+
+[node name="ConstructionSite_04_PropsC" parent="floor/large_objects" instance=ExtResource("20_adiqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 157.031)
+ObjId = 112
+
+[node name="RefineryConstruction_01" parent="floor/large_objects" instance=ExtResource("21_l1nnv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -41.0991)
+ObjId = 113
+
+[node name="RefineryBridge_01" parent="floor/large_objects" instance=ExtResource("22_hvbho")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.53508, 0, -110.256)
+ObjId = 114
+
+[node name="RefineryBridge_02" parent="floor/large_objects" instance=ExtResource("23_hsqkc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.93695, 0, -99.1852)
+ObjId = 115
+
+[node name="FXSiloMedium_01" parent="floor/large_objects" instance=ExtResource("24_5g2mk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.9367, 0, -108.922)
+ObjId = 116
+
+[node name="FXSiloOilHuge_02" parent="floor/large_objects" instance=ExtResource("25_17e2g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.9502, 0, -77.8452)
+ObjId = 117
+
+[node name="SiloMedium_01" parent="floor/large_objects" instance=ExtResource("26_2iwb7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.6998, 0, -103.835)
+ObjId = 118
+
+[node name="SiloOilHuge_01" parent="floor/large_objects" instance=ExtResource("27_iehax")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.4827, 0, -43.2765)
+ObjId = 119
+
+[node name="SiloOilHuge_02" parent="floor/large_objects" instance=ExtResource("28_hi535")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.8932, 0, 0)
+ObjId = 120
+
+[node name="OilChimneyPlatform_02" parent="floor/large_objects" instance=ExtResource("29_hsqkc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.2315, 0, 32.1794)
+ObjId = 121
+
+[node name="RefineryTowerPlatform_01_A" parent="floor/large_objects" instance=ExtResource("30_5g2mk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.8374, 0, 50.8566)
+ObjId = 122
+
+[node name="RefineryTowerPlatform_01_B" parent="floor/large_objects" instance=ExtResource("31_17e2g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.676, 0, 68.6143)
+ObjId = 123
+
+[node name="RefineryTowerPlatform_01_Beams" parent="floor/large_objects" instance=ExtResource("32_2iwb7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.7773, 0, 83.4565)
+ObjId = 124
+
+[node name="Warehouse_01_A" parent="floor/large_objects" instance=ExtResource("33_iehax")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.0777, 0, -127.177)
+ObjId = 125
+
+[node name="Warehouse_01_B" parent="floor/large_objects" instance=ExtResource("34_hi535")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.94455, 0, -167.526)
+ObjId = 126
+
+[node name="Warehouse_01_C" parent="floor/large_objects" instance=ExtResource("35_fqn47")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.0733, 0, -215.921)
+ObjId = 127
+
+[node name="Warehouse_01_D" parent="floor/large_objects" instance=ExtResource("36_f3emh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.557755, 0, -212.158)
+ObjId = 128
+
+[node name="ConstructionSite_02_B" parent="floor/large_objects" instance=ExtResource("8_j5axt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 59.0144)
+ObjId = 129
+
+[node name="StorageShed_01" parent="floor/large_objects" instance=ExtResource("37_5g2mk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.8663, 0, 134.476)
+ObjId = 130
+
+[node name="SiloOilHugeRoof_02" parent="floor/large_objects" instance=ExtResource("38_iehax")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.7092, 0, 39.2788)
+ObjId = 131
+
+[node name="Maze_02" parent="floor/large_objects" instance=ExtResource("39_hi535")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.2598, 0, 189.354)
+ObjId = 132
+
+[node name="Maze_03" parent="floor/large_objects" instance=ExtResource("40_fqn47")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.05, 0, 193.712)
+ObjId = 133

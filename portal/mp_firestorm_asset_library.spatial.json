@@ -1,0 +1,1170 @@
+{
+    "Portal_Dynamic": [
+        {
+            "name": "WorldIcon",
+            "ObjId": 10,
+            "iconTextVisible": true,
+            "iconImagePicker": "SquadPing",
+            "iconImageVisible": true,
+            "type": "WorldIcon",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 13.8811,
+                "z": 0
+            },
+            "id": "WorldIcon"
+        },
+        {
+            "name": "FiringRange_Floor_01",
+            "type": "FiringRange_Floor_01",
+            "right": {
+                "x": 30,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 30,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 30
+            },
+            "position": {
+                "x": -300,
+                "y": 250,
+                "z": -300
+            },
+            "id": "floor/floor center/FiringRange_Floor_01"
+        },
+        {
+            "name": "FiringRange_Floor_01",
+            "type": "FiringRange_Floor_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -10,
+                "y": 304.738,
+                "z": -10
+            },
+            "id": "floor/spawn/FiringRange_Floor_01"
+        },
+        {
+            "name": "TEAM_2_HQ",
+            "Team": "Team2",
+            "AltTeam": "TeamNeutral",
+            "ObjId": 2,
+            "InfantrySpawns": [
+                "floor/spawn/TEAM_2_HQ/SpawnPoint_2_1"
+            ],
+            "HQArea": "floor/spawn/TEAM_2_HQ/HQ_Team2",
+            "type": "HQ_PlayerSpawner",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 304.8050166,
+                "z": -4.58968
+            },
+            "id": "floor/spawn/TEAM_2_HQ",
+            "linked": [
+                "HQArea",
+                "InfantrySpawns"
+            ]
+        },
+        {
+            "name": "HQ_Team2",
+            "type": "PolygonVolume",
+            "id": "floor/spawn/TEAM_2_HQ/HQ_Team2",
+            "height": 0,
+            "points": [
+                {
+                    "x": 5,
+                    "y": 307.3050166,
+                    "z": 0.41032
+                },
+                {
+                    "x": 5,
+                    "y": 307.3050166,
+                    "z": -9.58968
+                },
+                {
+                    "x": -5,
+                    "y": 307.3050166,
+                    "z": -9.58968
+                },
+                {
+                    "x": -5,
+                    "y": 307.3050166,
+                    "z": 0.41032
+                }
+            ]
+        },
+        {
+            "name": "SpawnPoint_2_1",
+            "type": "SpawnPoint",
+            "right": {
+                "x": 0.87795,
+                "y": 0,
+                "z": 0.478754
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.478754,
+                "y": 0,
+                "z": 0.87795
+            },
+            "position": {
+                "x": 0,
+                "y": 304.8050166,
+                "z": -4.748417
+            },
+            "id": "floor/spawn/TEAM_2_HQ/SpawnPoint_2_1"
+        },
+        {
+            "name": "TEAM_1_HQ",
+            "AltTeam": "TeamNeutral",
+            "ObjId": 1,
+            "InfantrySpawns": [
+                "floor/spawn/TEAM_1_HQ/SpawnPoint_1_1"
+            ],
+            "HQArea": "floor/spawn/TEAM_1_HQ/HQ_Team1",
+            "type": "HQ_PlayerSpawner",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 304.8206111,
+                "z": 5.90933
+            },
+            "id": "floor/spawn/TEAM_1_HQ",
+            "linked": [
+                "HQArea",
+                "InfantrySpawns"
+            ]
+        },
+        {
+            "name": "HQ_Team1",
+            "type": "PolygonVolume",
+            "id": "floor/spawn/TEAM_1_HQ/HQ_Team1",
+            "height": 0,
+            "points": [
+                {
+                    "x": 5,
+                    "y": 307.3206111,
+                    "z": 10.90933
+                },
+                {
+                    "x": 5,
+                    "y": 307.3206111,
+                    "z": 0.90933
+                },
+                {
+                    "x": -5,
+                    "y": 307.3206111,
+                    "z": 0.90933
+                },
+                {
+                    "x": -5,
+                    "y": 307.3206111,
+                    "z": 10.90933
+                }
+            ]
+        },
+        {
+            "name": "SpawnPoint_1_1",
+            "type": "SpawnPoint",
+            "right": {
+                "x": 0.999884,
+                "y": 0,
+                "z": 0.0152535
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.0152535,
+                "y": 0,
+                "z": 0.999884
+            },
+            "position": {
+                "x": 0,
+                "y": 304.8206111,
+                "z": 5.8520542
+            },
+            "id": "floor/spawn/TEAM_1_HQ/SpawnPoint_1_1"
+        },
+        {
+            "name": "GasTank_01",
+            "ObjId": 101,
+            "type": "GasTank_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 216.926,
+                "y": 250,
+                "z": -8.7587
+            },
+            "id": "floor/large_objects/GasTank_01"
+        },
+        {
+            "name": "PressureTank_02",
+            "ObjId": 102,
+            "type": "PressureTank_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 216.926,
+                "y": 250,
+                "z": 0
+            },
+            "id": "floor/large_objects/PressureTank_02"
+        },
+        {
+            "name": "CliffLarge_03",
+            "ObjId": 103,
+            "type": "CliffLarge_03",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 216.926,
+                "y": 250,
+                "z": 10.9006
+            },
+            "id": "floor/large_objects/CliffLarge_03"
+        },
+        {
+            "name": "CliffLarge_04",
+            "ObjId": 104,
+            "type": "CliffLarge_04",
+            "right": {
+                "x": -0.98558,
+                "y": 0,
+                "z": 0.169212
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.169212,
+                "y": 0,
+                "z": -0.98558
+            },
+            "position": {
+                "x": 216.926,
+                "y": 250,
+                "z": 30.4182
+            },
+            "id": "floor/large_objects/CliffLarge_04"
+        },
+        {
+            "name": "CliffHuge_08B",
+            "ObjId": 105,
+            "type": "CliffHuge_08B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 246.8546,
+                "y": 250,
+                "z": 0
+            },
+            "id": "floor/large_objects/CliffHuge_08B"
+        },
+        {
+            "name": "CliffHuge_08B_B",
+            "ObjId": 106,
+            "type": "CliffHuge_08B_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 249.5618,
+                "y": 250,
+                "z": 49.1845
+            },
+            "id": "floor/large_objects/CliffHuge_08B_B"
+        },
+        {
+            "name": "CliffHuge_10_C90",
+            "ObjId": 107,
+            "type": "CliffHuge_10_C90",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 357.655,
+                "y": 250,
+                "z": 42.055
+            },
+            "id": "floor/large_objects/CliffHuge_10_C90"
+        },
+        {
+            "name": "ConstructionSite_03_C",
+            "ObjId": 108,
+            "type": "ConstructionSite_03_C",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 216.926,
+                "y": 250,
+                "z": 77.7004
+            },
+            "id": "floor/large_objects/ConstructionSite_03_C"
+        },
+        {
+            "name": "ConstructionSite_04_B",
+            "ObjId": 109,
+            "type": "ConstructionSite_04_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 216.926,
+                "y": 250,
+                "z": 97.0579
+            },
+            "id": "floor/large_objects/ConstructionSite_04_B"
+        },
+        {
+            "name": "ConstructionSite_04_PropsA",
+            "ObjId": 110,
+            "type": "ConstructionSite_04_PropsA",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 216.926,
+                "y": 250,
+                "z": 117.417
+            },
+            "id": "floor/large_objects/ConstructionSite_04_PropsA"
+        },
+        {
+            "name": "ConstructionSite_04_PropsB",
+            "ObjId": 111,
+            "type": "ConstructionSite_04_PropsB",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 216.926,
+                "y": 250,
+                "z": 137.731
+            },
+            "id": "floor/large_objects/ConstructionSite_04_PropsB"
+        },
+        {
+            "name": "ConstructionSite_04_PropsC",
+            "ObjId": 112,
+            "type": "ConstructionSite_04_PropsC",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 216.926,
+                "y": 250,
+                "z": 157.031
+            },
+            "id": "floor/large_objects/ConstructionSite_04_PropsC"
+        },
+        {
+            "name": "RefineryConstruction_01",
+            "ObjId": 113,
+            "type": "RefineryConstruction_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 216.926,
+                "y": 250,
+                "z": -41.0991
+            },
+            "id": "floor/large_objects/RefineryConstruction_01"
+        },
+        {
+            "name": "RefineryBridge_01",
+            "ObjId": 114,
+            "type": "RefineryBridge_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 224.46108,
+                "y": 250,
+                "z": -110.256
+            },
+            "id": "floor/large_objects/RefineryBridge_01"
+        },
+        {
+            "name": "RefineryBridge_02",
+            "ObjId": 115,
+            "type": "RefineryBridge_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 209.98905,
+                "y": 250,
+                "z": -99.1852
+            },
+            "id": "floor/large_objects/RefineryBridge_02"
+        },
+        {
+            "name": "FXSiloMedium_01",
+            "ObjId": 116,
+            "type": "FXSiloMedium_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 174.9893,
+                "y": 250,
+                "z": -108.922
+            },
+            "id": "floor/large_objects/FXSiloMedium_01"
+        },
+        {
+            "name": "FXSiloOilHuge_02",
+            "ObjId": 117,
+            "type": "FXSiloOilHuge_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 175.9758,
+                "y": 250,
+                "z": -77.8452
+            },
+            "id": "floor/large_objects/FXSiloOilHuge_02"
+        },
+        {
+            "name": "SiloMedium_01",
+            "ObjId": 118,
+            "type": "SiloMedium_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 190.2262,
+                "y": 250,
+                "z": -103.835
+            },
+            "id": "floor/large_objects/SiloMedium_01"
+        },
+        {
+            "name": "SiloOilHuge_01",
+            "ObjId": 119,
+            "type": "SiloOilHuge_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 177.4433,
+                "y": 250,
+                "z": -43.2765
+            },
+            "id": "floor/large_objects/SiloOilHuge_01"
+        },
+        {
+            "name": "SiloOilHuge_02",
+            "ObjId": 120,
+            "type": "SiloOilHuge_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 176.0328,
+                "y": 250,
+                "z": 0
+            },
+            "id": "floor/large_objects/SiloOilHuge_02"
+        },
+        {
+            "name": "OilChimneyPlatform_02",
+            "ObjId": 121,
+            "type": "OilChimneyPlatform_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 184.6945,
+                "y": 250,
+                "z": 32.1794
+            },
+            "id": "floor/large_objects/OilChimneyPlatform_02"
+        },
+        {
+            "name": "RefineryTowerPlatform_01_A",
+            "ObjId": 122,
+            "type": "RefineryTowerPlatform_01_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 180.0886,
+                "y": 250,
+                "z": 50.8566
+            },
+            "id": "floor/large_objects/RefineryTowerPlatform_01_A"
+        },
+        {
+            "name": "RefineryTowerPlatform_01_B",
+            "ObjId": 123,
+            "type": "RefineryTowerPlatform_01_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 180.25,
+                "y": 250,
+                "z": 68.6143
+            },
+            "id": "floor/large_objects/RefineryTowerPlatform_01_B"
+        },
+        {
+            "name": "RefineryTowerPlatform_01_Beams",
+            "ObjId": 124,
+            "type": "RefineryTowerPlatform_01_Beams",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 182.1487,
+                "y": 250,
+                "z": 83.4565
+            },
+            "id": "floor/large_objects/RefineryTowerPlatform_01_Beams"
+        },
+        {
+            "name": "Warehouse_01_A",
+            "ObjId": 125,
+            "type": "Warehouse_01_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 164.8483,
+                "y": 250,
+                "z": -127.177
+            },
+            "id": "floor/large_objects/Warehouse_01_A"
+        },
+        {
+            "name": "Warehouse_01_B",
+            "ObjId": 126,
+            "type": "Warehouse_01_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 210.98145,
+                "y": 250,
+                "z": -167.526
+            },
+            "id": "floor/large_objects/Warehouse_01_B"
+        },
+        {
+            "name": "Warehouse_01_C",
+            "ObjId": 127,
+            "type": "Warehouse_01_C",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 156.8527,
+                "y": 250,
+                "z": -215.921
+            },
+            "id": "floor/large_objects/Warehouse_01_C"
+        },
+        {
+            "name": "Warehouse_01_D",
+            "ObjId": 128,
+            "type": "Warehouse_01_D",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 216.368245,
+                "y": 250,
+                "z": -212.158
+            },
+            "id": "floor/large_objects/Warehouse_01_D"
+        },
+        {
+            "name": "ConstructionSite_02_B",
+            "ObjId": 129,
+            "type": "ConstructionSite_02_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 216.926,
+                "y": 250,
+                "z": 59.0144
+            },
+            "id": "floor/large_objects/ConstructionSite_02_B"
+        },
+        {
+            "name": "StorageShed_01",
+            "ObjId": 130,
+            "type": "StorageShed_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 200.0597,
+                "y": 250,
+                "z": 134.476
+            },
+            "id": "floor/large_objects/StorageShed_01"
+        },
+        {
+            "name": "SiloOilHugeRoof_02",
+            "ObjId": 131,
+            "type": "SiloOilHugeRoof_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 161.2168,
+                "y": 250,
+                "z": 39.2788
+            },
+            "id": "floor/large_objects/SiloOilHugeRoof_02"
+        },
+        {
+            "name": "Maze_02",
+            "ObjId": 132,
+            "type": "Maze_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 148.6662,
+                "y": 250,
+                "z": 189.354
+            },
+            "id": "floor/large_objects/Maze_02"
+        },
+        {
+            "name": "Maze_03",
+            "ObjId": 133,
+            "type": "Maze_03",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 191.876,
+                "y": 250,
+                "z": 193.712
+            },
+            "id": "floor/large_objects/Maze_03"
+        }
+    ],
+    "Static": [
+        {
+            "name": "MP_FireStorm_Terrain",
+            "type": "MP_FireStorm_Terrain",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "id": "Static/MP_FireStorm_Terrain"
+        },
+        {
+            "name": "MP_FireStorm_Assets",
+            "type": "MP_FireStorm_Assets",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "id": "Static/MP_FireStorm_Assets"
+        }
+    ]
+}
