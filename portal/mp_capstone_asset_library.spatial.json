@@ -1,0 +1,1685 @@
+{
+    "Portal_Dynamic": [
+        {
+            "name": "FiringRange_Floor_01",
+            "type": "FiringRange_Floor_01",
+            "right": {
+                "x": 30,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 30,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 30
+            },
+            "position": {
+                "x": -300,
+                "y": 250,
+                "z": -300
+            },
+            "id": "Node3D/FloorCenter/FiringRange_Floor_01"
+        },
+        {
+            "name": "FiringRange_Floor_01",
+            "type": "FiringRange_Floor_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -10,
+                "y": 322.4082,
+                "z": -10
+            },
+            "id": "Node3D/spawns/FiringRange_Floor_01"
+        },
+        {
+            "name": "TEAM_2_HQ",
+            "Team": "Team2",
+            "AltTeam": "TeamNeutral",
+            "InfantrySpawns": [
+                "Node3D/spawns/TEAM_2_HQ/SpawnPoint_2_1"
+            ],
+            "HQArea": "Node3D/spawns/TEAM_2_HQ/HQ_Team2",
+            "type": "HQ_PlayerSpawner",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 322.4082,
+                "z": 5.50866
+            },
+            "id": "Node3D/spawns/TEAM_2_HQ",
+            "linked": [
+                "HQArea",
+                "InfantrySpawns"
+            ]
+        },
+        {
+            "name": "HQ_Team2",
+            "type": "PolygonVolume",
+            "id": "Node3D/spawns/TEAM_2_HQ/HQ_Team2",
+            "height": 0,
+            "points": [
+                {
+                    "x": 5,
+                    "y": 327.4082,
+                    "z": 10.50866
+                },
+                {
+                    "x": 5,
+                    "y": 327.4082,
+                    "z": 0.50866
+                },
+                {
+                    "x": -5,
+                    "y": 327.4082,
+                    "z": 0.50866
+                },
+                {
+                    "x": -5,
+                    "y": 327.4082,
+                    "z": 10.50866
+                }
+            ]
+        },
+        {
+            "name": "SpawnPoint_2_1",
+            "type": "SpawnPoint",
+            "right": {
+                "x": 0.87795,
+                "y": 0,
+                "z": 0.478754
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.478754,
+                "y": 0,
+                "z": 0.87795
+            },
+            "position": {
+                "x": 0,
+                "y": 322.4082,
+                "z": 5.5525946
+            },
+            "id": "Node3D/spawns/TEAM_2_HQ/SpawnPoint_2_1"
+        },
+        {
+            "name": "TEAM_1_HQ",
+            "AltTeam": "TeamNeutral",
+            "InfantrySpawns": [
+                "Node3D/spawns/TEAM_1_HQ/SpawnPoint_1_1"
+            ],
+            "HQArea": "Node3D/spawns/TEAM_1_HQ/HQ_Team1",
+            "type": "HQ_PlayerSpawner",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 322.4082,
+                "z": -4.80026
+            },
+            "id": "Node3D/spawns/TEAM_1_HQ",
+            "linked": [
+                "HQArea",
+                "InfantrySpawns"
+            ]
+        },
+        {
+            "name": "HQ_Team1",
+            "type": "PolygonVolume",
+            "id": "Node3D/spawns/TEAM_1_HQ/HQ_Team1",
+            "height": 0,
+            "points": [
+                {
+                    "x": 5,
+                    "y": 327.4082,
+                    "z": 0.19974
+                },
+                {
+                    "x": 5,
+                    "y": 327.4082,
+                    "z": -9.80026
+                },
+                {
+                    "x": -5,
+                    "y": 327.4082,
+                    "z": -9.80026
+                },
+                {
+                    "x": -5,
+                    "y": 327.4082,
+                    "z": 0.19974
+                }
+            ]
+        },
+        {
+            "name": "SpawnPoint_1_1",
+            "type": "SpawnPoint",
+            "right": {
+                "x": 0.999884,
+                "y": 0,
+                "z": 0.0152535
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.0152535,
+                "y": 0,
+                "z": 0.999884
+            },
+            "position": {
+                "x": 0,
+                "y": 322.4082,
+                "z": -4.600525
+            },
+            "id": "Node3D/spawns/TEAM_1_HQ/SpawnPoint_1_1"
+        },
+        {
+            "name": "WorldIcon",
+            "ObjId": 10,
+            "type": "WorldIcon",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 255.88834,
+                "z": 0
+            },
+            "id": "Node3D/WorldIcon"
+        },
+        {
+            "name": "CliffHuge_02",
+            "ObjId": 101,
+            "type": "CliffHuge_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 265.476,
+                "y": 250,
+                "z": -277.873
+            },
+            "id": "Node3D/LargeObjects/CliffsHuge/CliffHuge_02"
+        },
+        {
+            "name": "CliffHuge_08A",
+            "ObjId": 102,
+            "type": "CliffHuge_08A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 265.476,
+                "y": 250,
+                "z": -118.123
+            },
+            "id": "Node3D/LargeObjects/CliffsHuge/CliffHuge_08A"
+        },
+        {
+            "name": "CliffHuge_08B_B",
+            "ObjId": 103,
+            "type": "CliffHuge_08B_B",
+            "right": {
+                "x": 0.801755,
+                "y": 0,
+                "z": 0.597653
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.597653,
+                "y": 0,
+                "z": 0.801755
+            },
+            "position": {
+                "x": 230.3511,
+                "y": 250,
+                "z": 19.0268
+            },
+            "id": "Node3D/LargeObjects/CliffsHuge/CliffHuge_08B_B"
+        },
+        {
+            "name": "CliffHuge_10",
+            "ObjId": 104,
+            "type": "CliffHuge_10",
+            "right": {
+                "x": 0.60854,
+                "y": 0,
+                "z": -0.793523
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0.793523,
+                "y": 0,
+                "z": 0.60854
+            },
+            "position": {
+                "x": 306.0522,
+                "y": 249.9999847412,
+                "z": -4.10406
+            },
+            "id": "Node3D/LargeObjects/CliffsHuge/CliffHuge_10"
+        },
+        {
+            "name": "CliffHuge_10_C90",
+            "ObjId": 105,
+            "type": "CliffHuge_10_C90",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 182.2215,
+                "y": 250,
+                "z": 298.434
+            },
+            "id": "Node3D/LargeObjects/CliffsHuge/CliffHuge_10_C90"
+        },
+        {
+            "name": "CliffHuge_20",
+            "ObjId": 106,
+            "type": "CliffHuge_20",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 274.48256,
+                "y": 250,
+                "z": -66.6762
+            },
+            "id": "Node3D/LargeObjects/CliffsHuge/CliffHuge_20"
+        },
+        {
+            "name": "CliffHuge_20_C45",
+            "ObjId": 107,
+            "type": "CliffHuge_20_C45",
+            "right": {
+                "x": 0.314009,
+                "y": 0,
+                "z": 0.94942
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.94942,
+                "y": 0,
+                "z": 0.314009
+            },
+            "position": {
+                "x": 296.1519,
+                "y": 256.81854,
+                "z": 162.688
+            },
+            "id": "Node3D/LargeObjects/CliffsHuge/CliffHuge_20_C45"
+        },
+        {
+            "name": "CliffHuge_20_C90",
+            "ObjId": 108,
+            "type": "CliffHuge_20_C90",
+            "right": {
+                "x": -0.00204198,
+                "y": 0,
+                "z": 0.999998
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.999998,
+                "y": 0,
+                "z": -0.00204198
+            },
+            "position": {
+                "x": 268.13866,
+                "y": 249.9999847412,
+                "z": 271.163
+            },
+            "id": "Node3D/LargeObjects/CliffsHuge/CliffHuge_20_C90"
+        },
+        {
+            "name": "CliffHuge_20_CliffPoint_A",
+            "ObjId": 109,
+            "type": "CliffHuge_20_CliffPoint_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 221.7754,
+                "y": 250.0000152588,
+                "z": 142.34
+            },
+            "id": "Node3D/LargeObjects/CliffsHuge/CliffHuge_20_CliffPoint_A"
+        },
+        {
+            "name": "CliffHuge_20_CliffPoint_B",
+            "ObjId": 110,
+            "type": "CliffHuge_20_CliffPoint_B",
+            "right": {
+                "x": -0.986737,
+                "y": 0,
+                "z": 0.162327
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.162327,
+                "y": 0,
+                "z": -0.986737
+            },
+            "position": {
+                "x": 225.0597,
+                "y": 250,
+                "z": 203.287
+            },
+            "id": "Node3D/LargeObjects/CliffsHuge/CliffHuge_20_CliffPoint_B"
+        },
+        {
+            "name": "CliffLarge_03",
+            "ObjId": 111,
+            "type": "CliffLarge_03",
+            "right": {
+                "x": -0.193601,
+                "y": 0,
+                "z": 0.98108
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.98108,
+                "y": 0,
+                "z": -0.193601
+            },
+            "position": {
+                "x": 210.3273,
+                "y": 250,
+                "z": 72.9137
+            },
+            "id": "Node3D/LargeObjects/CliffsHuge/CliffLarge_03"
+        },
+        {
+            "name": "CliffLarge_04",
+            "ObjId": 112,
+            "type": "CliffLarge_04",
+            "right": {
+                "x": -0.997811,
+                "y": 0,
+                "z": 0.0661347
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.0661347,
+                "y": 0,
+                "z": -0.997811
+            },
+            "position": {
+                "x": 206.7172,
+                "y": 250,
+                "z": 99.0281
+            },
+            "id": "Node3D/LargeObjects/CliffsHuge/CliffLarge_04"
+        },
+        {
+            "name": "Pylon_01_A",
+            "ObjId": 113,
+            "type": "Pylon_01_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 250,
+                "z": 189.93
+            },
+            "id": "Node3D/LargeObjects/Pylon/Pylon_01_A"
+        },
+        {
+            "name": "Pylon_01_B",
+            "ObjId": 114,
+            "type": "Pylon_01_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 40.3282,
+                "y": 250,
+                "z": 189.93
+            },
+            "id": "Node3D/LargeObjects/Pylon/Pylon_01_B"
+        },
+        {
+            "name": "RockLarge_06_A",
+            "ObjId": 118,
+            "type": "RockLarge_06_A",
+            "right": {
+                "x": 0.0848082,
+                "y": 0,
+                "z": -0.996397
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0.996397,
+                "y": 0,
+                "z": 0.0848082
+            },
+            "position": {
+                "x": -46.0166,
+                "y": 250,
+                "z": 189.93
+            },
+            "id": "Node3D/LargeObjects/Pylon/RockLarge_06_A"
+        },
+        {
+            "name": "RockLarge_06_B",
+            "ObjId": 119,
+            "type": "RockLarge_06_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -28.8721,
+                "y": 250,
+                "z": 189.93
+            },
+            "id": "Node3D/LargeObjects/Pylon/RockLarge_06_B"
+        },
+        {
+            "name": "HouseRuralLarge_01_Mirror_PropsA",
+            "ObjId": 120,
+            "type": "HouseRuralLarge_01_Mirror_PropsA",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -200.198,
+                "y": 250,
+                "z": 176.996
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralLarge_01_Mirror_PropsA"
+        },
+        {
+            "name": "HouseRuralLarge_01_Mirror_PropsB",
+            "ObjId": 121,
+            "type": "HouseRuralLarge_01_Mirror_PropsB",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -200.198,
+                "y": 250,
+                "z": 152.341
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralLarge_01_Mirror_PropsB"
+        },
+        {
+            "name": "HouseRuralLarge_01_Mirrored",
+            "ObjId": 122,
+            "type": "HouseRuralLarge_01_Mirrored",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -200.198,
+                "y": 250,
+                "z": 129.937
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralLarge_01_Mirrored"
+        },
+        {
+            "name": "HouseRuralO02",
+            "ObjId": 123,
+            "type": "HouseRuralO02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -200.198,
+                "y": 250,
+                "z": 102.639
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralO02"
+        },
+        {
+            "name": "HouseRuralO02_PropsB",
+            "ObjId": 124,
+            "type": "HouseRuralO02_PropsB",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -200.198,
+                "y": 250,
+                "z": 89.9016
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralO02_PropsB"
+        },
+        {
+            "name": "HouseRuralO02_PropsC",
+            "ObjId": 125,
+            "type": "HouseRuralO02_PropsC",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -200.198,
+                "y": 250,
+                "z": 78.04
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralO02_PropsC"
+        },
+        {
+            "name": "HouseRuralSmall_01_A",
+            "ObjId": 126,
+            "type": "HouseRuralSmall_01_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -200.198,
+                "y": 250,
+                "z": 54.3429
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_A"
+        },
+        {
+            "name": "HouseRuralSmall_01_A_Mirror_PropsA",
+            "ObjId": 127,
+            "type": "HouseRuralSmall_01_A_Mirror_PropsA",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -200.198,
+                "y": 250,
+                "z": 38.3092
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_A_Mirror_PropsA"
+        },
+        {
+            "name": "HouseRuralSmall_01_A_PropsA",
+            "ObjId": 128,
+            "type": "HouseRuralSmall_01_A_PropsA",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -200.198,
+                "y": 250,
+                "z": 22.8183
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_A_PropsA"
+        },
+        {
+            "name": "HouseRuralSmall_01_A_PropsC",
+            "ObjId": 129,
+            "type": "HouseRuralSmall_01_A_PropsC",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -200.198,
+                "y": 250,
+                "z": 8.44393
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_A_PropsC"
+        },
+        {
+            "name": "HouseRuralSmall_01_A_PropsD",
+            "ObjId": 130,
+            "type": "HouseRuralSmall_01_A_PropsD",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -200.198,
+                "y": 250,
+                "z": -4.43163
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_A_PropsD"
+        },
+        {
+            "name": "HouseRuralSmall_01_B",
+            "ObjId": 131,
+            "type": "HouseRuralSmall_01_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -226.2673,
+                "y": 250,
+                "z": 150.707
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_B"
+        },
+        {
+            "name": "HouseRuralSmall_01_B_Mirror_PropsA",
+            "ObjId": 132,
+            "type": "HouseRuralSmall_01_B_Mirror_PropsA",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -226.2673,
+                "y": 250,
+                "z": 136.663
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_B_Mirror_PropsA"
+        },
+        {
+            "name": "HouseRuralSmall_01_B_Mirror_PropsB",
+            "ObjId": 133,
+            "type": "HouseRuralSmall_01_B_Mirror_PropsB",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -226.3746,
+                "y": 250,
+                "z": 122.952
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_B_Mirror_PropsB"
+        },
+        {
+            "name": "HouseRuralSmall_01_B_PropsA",
+            "ObjId": 134,
+            "type": "HouseRuralSmall_01_B_PropsA",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -226.6619,
+                "y": 250,
+                "z": 90.9244
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_B_PropsA"
+        },
+        {
+            "name": "HouseRuralSmall_01_B_PropsB",
+            "ObjId": 135,
+            "type": "HouseRuralSmall_01_B_PropsB",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -226.6619,
+                "y": 250,
+                "z": 77.1129
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_B_PropsB"
+        },
+        {
+            "name": "HouseRuralSmall_01_B_PropsD",
+            "ObjId": 136,
+            "type": "HouseRuralSmall_01_B_PropsD",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -226.6619,
+                "y": 250,
+                "z": 64.6616
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_B_PropsD"
+        },
+        {
+            "name": "HouseRuralSmall_01_B_PropsE",
+            "ObjId": 137,
+            "type": "HouseRuralSmall_01_B_PropsE",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -226.6619,
+                "y": 250,
+                "z": 51.8733
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_B_PropsE"
+        },
+        {
+            "name": "HouseRuralSmall_01_Mirrored_B",
+            "ObjId": 138,
+            "type": "HouseRuralSmall_01_Mirrored_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -226.9382,
+                "y": 250,
+                "z": 109.348
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_01_Mirrored_B"
+        },
+        {
+            "name": "HouseRural_01_A",
+            "ObjId": 139,
+            "type": "HouseRural_01_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -239.4803,
+                "y": 250,
+                "z": 14.1357
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRural_01_A"
+        },
+        {
+            "name": "HouseRural_01_B",
+            "ObjId": 140,
+            "type": "HouseRural_01_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -239.4803,
+                "y": 250,
+                "z": -7.08679
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRural_01_B"
+        },
+        {
+            "name": "HouseRural_01_C",
+            "ObjId": 141,
+            "type": "HouseRural_01_C",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -239.4803,
+                "y": 250,
+                "z": -25.1841
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRural_01_C"
+        },
+        {
+            "name": "HouseRural_01_D",
+            "ObjId": 142,
+            "type": "HouseRural_01_D",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -239.4803,
+                "y": 250,
+                "z": -41.4583
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRural_01_D"
+        },
+        {
+            "name": "HouseRural_01_E",
+            "ObjId": 143,
+            "type": "HouseRural_01_E",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -239.4803,
+                "y": 250,
+                "z": -56.8129
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRural_01_E"
+        },
+        {
+            "name": "HouseRural_01_F",
+            "ObjId": 144,
+            "type": "HouseRural_01_F",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -239.4803,
+                "y": 250,
+                "z": -74.1847
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRural_01_F"
+        },
+        {
+            "name": "HouseRural_01_G",
+            "ObjId": 145,
+            "type": "HouseRural_01_G",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -239.4803,
+                "y": 250,
+                "z": -92.8943
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRural_01_G"
+        },
+        {
+            "name": "HouseRural_01_H",
+            "ObjId": 146,
+            "type": "HouseRural_01_H",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -239.4803,
+                "y": 250,
+                "z": -118.342
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRural_01_H"
+        },
+        {
+            "name": "HouseRural_01_I",
+            "ObjId": 147,
+            "type": "HouseRural_01_I",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -221.9471,
+                "y": 250,
+                "z": -50.8595
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRural_01_I"
+        },
+        {
+            "name": "HouseRural_01_J",
+            "ObjId": 148,
+            "type": "HouseRural_01_J",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -217.3481,
+                "y": 250,
+                "z": -36.8231
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRural_01_J"
+        },
+        {
+            "name": "HouseRuralSmall_02",
+            "ObjId": 149,
+            "type": "HouseRuralSmall_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -192.58032,
+                "y": 250,
+                "z": -26.3058
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_02"
+        },
+        {
+            "name": "HouseRuralSmall_02_A_PropsA",
+            "ObjId": 150,
+            "type": "HouseRuralSmall_02_A_PropsA",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -192.58032,
+                "y": 250,
+                "z": -38.1997
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_02_A_PropsA"
+        },
+        {
+            "name": "HouseRuralSmall_02_A_PropsB",
+            "ObjId": 151,
+            "type": "HouseRuralSmall_02_A_PropsB",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -192.58032,
+                "y": 250,
+                "z": -50.4039
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_02_A_PropsB"
+        },
+        {
+            "name": "HescoTower_01",
+            "ObjId": 152,
+            "type": "HescoTower_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -192.58032,
+                "y": 250,
+                "z": -70.0785
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_02_A_PropsB/HescoTower_01"
+        },
+        {
+            "name": "HescoTower_01_Beige",
+            "ObjId": 153,
+            "type": "HescoTower_01_Beige",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -192.58032,
+                "y": 250,
+                "z": -84.7878
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_02_A_PropsB/HescoTower_01_Beige"
+        },
+        {
+            "name": "Hescoline_01",
+            "ObjId": 154,
+            "type": "Hescoline_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -195.49362,
+                "y": 250,
+                "z": -102.6816
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_02_A_PropsB/HescoTower_01_Beige/Hescoline_01"
+        },
+        {
+            "name": "Hescoline_02",
+            "ObjId": 155,
+            "type": "Hescoline_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -183.26668,
+                "y": 250,
+                "z": -106.3221
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_02_A_PropsB/HescoTower_01_Beige/Hescoline_02"
+        },
+        {
+            "name": "Guard_Tower",
+            "ObjId": 156,
+            "type": "Guard_Tower",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -192.58032,
+                "y": 250,
+                "z": -137.0352
+            },
+            "id": "Node3D/LargeObjects/Houses/HouseRuralSmall_02_A_PropsB/Guard_Tower"
+        }
+    ],
+    "Static": [
+        {
+            "name": "MP_Capstone_Terrain",
+            "type": "MP_Capstone_Terrain",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "id": "Static/MP_Capstone_Terrain"
+        },
+        {
+            "name": "MP_Capstone_Assets",
+            "type": "MP_Capstone_Assets",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "id": "Static/MP_Capstone_Assets"
+        }
+    ]
+}

@@ -1,0 +1,338 @@
+[gd_scene load_steps=61 format=3 uid="uid://qhdnjxevfhs1"]
+
+[ext_resource type="PackedScene" path="res://objects/Gameplay/Common/HQ_PlayerSpawner.tscn" id="1_ijp3d"]
+[ext_resource type="PackedScene" uid="uid://jv31so3xcr7p" path="res://addons/bf_portal/portal_tools/types/PolygonVolume/PolygonVolume.tscn" id="2_617t5"]
+[ext_resource type="PackedScene" path="res://objects/Global/Architecture/FiringRange_Floor_01.tscn" id="3_617t5"]
+[ext_resource type="PackedScene" path="res://objects/entities/SpawnPoint.tscn" id="3_xw3y3"]
+[ext_resource type="PackedScene" path="res://static/MP_Capstone_Terrain.tscn" id="5_xpw1y"]
+[ext_resource type="PackedScene" path="res://static/MP_Capstone_Assets.tscn" id="6_0oe06"]
+[ext_resource type="PackedScene" path="res://objects/Gameplay/Common/WorldIcon.tscn" id="7_xw3y3"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Nature/CliffHuge_02.tscn" id="8_urnwc"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Nature/CliffHuge_08A.tscn" id="9_uxpch"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/CliffHuge_08B_B.tscn" id="10_afcpr"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Nature/CliffHuge_10.tscn" id="11_dfn0b"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/CliffHuge_10_C90.tscn" id="12_tm04h"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Nature/CliffHuge_20.tscn" id="13_v56mm"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Nature/CliffHuge_20_C45.tscn" id="14_fx1ag"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Nature/CliffHuge_20_C90.tscn" id="15_m62ur"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Nature/CliffHuge_20_CliffPoint_A.tscn" id="16_iw5p1"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Nature/CliffHuge_20_CliffPoint_B.tscn" id="17_25h6k"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/CliffLarge_03.tscn" id="18_kmsbk"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/CliffLarge_04.tscn" id="19_nynkn"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Generic/Industrial/Backdrop/Pylon_01_A.tscn" id="20_1fe50"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Generic/Industrial/Architecture/Pylon_01_B.tscn" id="21_lkorr"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralLarge_01_Mirror_PropsA.tscn" id="22_i113f"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralLarge_01_Mirror_PropsB.tscn" id="23_ynuvd"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Architecture/HouseRuralLarge_01_Mirrored.tscn" id="24_uxnf0"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/RockLarge_06_A.tscn" id="25_q0eqe"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Nature/RockLarge_06_B.tscn" id="26_tw0jv"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Architecture/HouseRuralO02.tscn" id="27_uxnf0"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Uncategorized/HouseRuralO02_PropsB.tscn" id="28_q0eqe"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralO02_PropsC.tscn" id="29_tw0jv"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Architecture/HouseRuralSmall_01_A.tscn" id="30_07ekx"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralSmall_01_A_Mirror_PropsA.tscn" id="31_vlrji"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralSmall_01_A_PropsA.tscn" id="32_s1x1w"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralSmall_01_A_PropsC.tscn" id="33_lppog"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralSmall_01_A_PropsD.tscn" id="34_s1q50"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Architecture/HouseRuralSmall_01_B.tscn" id="35_nbbhk"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralSmall_01_B_Mirror_PropsA.tscn" id="36_bus43"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralSmall_01_B_Mirror_PropsB.tscn" id="37_0k75t"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralSmall_01_B_PropsA.tscn" id="38_tw1j5"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralSmall_01_B_PropsB.tscn" id="39_3ktsk"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralSmall_01_B_PropsD.tscn" id="40_2bi4i"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralSmall_01_B_PropsE.tscn" id="41_b57xs"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Architecture/HouseRuralSmall_01_Mirrored_B.tscn" id="42_pqrlj"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Backdrop/HouseRural_01_A.tscn" id="43_0k75t"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Backdrop/HouseRural_01_B.tscn" id="44_tw1j5"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Backdrop/HouseRural_01_C.tscn" id="45_3ktsk"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Backdrop/HouseRural_01_D.tscn" id="46_2bi4i"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Backdrop/HouseRural_01_E.tscn" id="47_b57xs"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Backdrop/HouseRural_01_F.tscn" id="48_pqrlj"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Backdrop/HouseRural_01_G.tscn" id="49_rbvma"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Backdrop/HouseRural_01_H.tscn" id="50_kxba0"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Backdrop/HouseRural_01_I.tscn" id="51_0jym3"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Backdrop/HouseRural_01_J.tscn" id="52_8xoac"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/Shared/Architecture/HouseRuralSmall_02.tscn" id="53_0jym3"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralSmall_02_A_PropsA.tscn" id="54_8xoac"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HouseRuralSmall_02_A_PropsB.tscn" id="55_e0ufo"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HescoTower_01.tscn" id="56_3qadf"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/HescoTower_01_Beige.tscn" id="57_kl14f"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/Hescoline_01.tscn" id="58_4impn"]
+[ext_resource type="PackedScene" path="res://objects/Tajikistan/MP_Capstone/Uncategorized/Hescoline_02.tscn" id="59_hljh4"]
+[ext_resource type="PackedScene" path="res://objects/Shared/Uncategorized/Guard_Tower.tscn" id="60_cldkn"]
+
+[node name="MP_Capstone" type="Node3D"]
+
+[node name="Static" type="Node3D" parent="."]
+
+[node name="MP_Capstone_Terrain" parent="Static" instance=ExtResource("5_xpw1y")]
+
+[node name="MP_Capstone_Assets" parent="Static" instance=ExtResource("6_0oe06")]
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 250, 0)
+
+[node name="FloorCenter" type="Node3D" parent="Node3D"]
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 0, 0, 0)
+
+[node name="FiringRange_Floor_01" parent="Node3D/FloorCenter" instance=ExtResource("3_617t5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10)
+
+[node name="spawns" type="Node3D" parent="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 72.4082, 0)
+
+[node name="FiringRange_Floor_01" parent="Node3D/spawns" instance=ExtResource("3_617t5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10)
+
+[node name="TEAM_2_HQ" parent="Node3D/spawns" node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("1_ijp3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.50866)
+Team = 2
+AltTeam = 0
+HQArea = NodePath("HQ_Team2")
+InfantrySpawns = [NodePath("SpawnPoint_2_1"), NodePath(""), NodePath(""), NodePath("")]
+
+[node name="HQ_Team2" parent="Node3D/spawns/TEAM_2_HQ" instance=ExtResource("2_617t5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+points = PackedVector2Array(5, 5, 5, -5, -5, -5, -5, 5)
+
+[node name="SpawnPoint_2_1" parent="Node3D/spawns/TEAM_2_HQ" instance=ExtResource("3_xw3y3")]
+transform = Transform3D(0.87795, 0, -0.478754, 0, 1, 0, 0.478754, 0, 0.87795, 0, 0, 0.0439346)
+
+[node name="TEAM_1_HQ" parent="Node3D/spawns" node_paths=PackedStringArray("HQArea", "InfantrySpawns") instance=ExtResource("1_ijp3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.80026)
+AltTeam = 0
+HQArea = NodePath("HQ_Team1")
+InfantrySpawns = [NodePath("SpawnPoint_1_1"), NodePath(""), NodePath(""), NodePath("")]
+
+[node name="HQ_Team1" parent="Node3D/spawns/TEAM_1_HQ" instance=ExtResource("2_617t5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+points = PackedVector2Array(5, 5, 5, -5, -5, -5, -5, 5)
+
+[node name="SpawnPoint_1_1" parent="Node3D/spawns/TEAM_1_HQ" instance=ExtResource("3_xw3y3")]
+transform = Transform3D(0.999884, 0, -0.0152535, 0, 1, 0, 0.0152535, 0, 0.999884, 0, 0, 0.199735)
+
+[node name="WorldIcon" parent="Node3D" instance=ExtResource("7_xw3y3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.88834, 0)
+ObjId = 10
+
+[node name="LargeObjects" type="Node3D" parent="Node3D"]
+
+[node name="CliffsHuge" type="Node3D" parent="Node3D/LargeObjects"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 265.476, 0, 0)
+
+[node name="CliffHuge_02" parent="Node3D/LargeObjects/CliffsHuge" instance=ExtResource("8_urnwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -277.873)
+ObjId = 101
+
+[node name="CliffHuge_08A" parent="Node3D/LargeObjects/CliffsHuge" instance=ExtResource("9_uxpch")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -118.123)
+ObjId = 102
+
+[node name="CliffHuge_08B_B" parent="Node3D/LargeObjects/CliffsHuge" instance=ExtResource("10_afcpr")]
+transform = Transform3D(0.801755, 0, -0.597653, 0, 1, 0, 0.597653, 0, 0.801755, -35.1249, 0, 19.0268)
+ObjId = 103
+
+[node name="CliffHuge_10" parent="Node3D/LargeObjects/CliffsHuge" instance=ExtResource("11_dfn0b")]
+transform = Transform3D(0.60854, 0, 0.793523, 0, 1, 0, -0.793523, 0, 0.60854, 40.5762, -1.52588e-05, -4.10406)
+ObjId = 104
+
+[node name="CliffHuge_10_C90" parent="Node3D/LargeObjects/CliffsHuge" instance=ExtResource("12_tm04h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -83.2545, 0, 298.434)
+ObjId = 105
+
+[node name="CliffHuge_20" parent="Node3D/LargeObjects/CliffsHuge" instance=ExtResource("13_v56mm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.00656, 0, -66.6762)
+ObjId = 106
+
+[node name="CliffHuge_20_C45" parent="Node3D/LargeObjects/CliffsHuge" instance=ExtResource("14_fx1ag")]
+transform = Transform3D(0.314009, 0, -0.94942, 0, 1, 0, 0.94942, 0, 0.314009, 30.6759, 6.81854, 162.688)
+ObjId = 107
+
+[node name="CliffHuge_20_C90" parent="Node3D/LargeObjects/CliffsHuge" instance=ExtResource("15_m62ur")]
+transform = Transform3D(-0.00204198, 0, -0.999998, 0, 1, 0, 0.999998, 0, -0.00204198, 2.66266, -1.52588e-05, 271.163)
+ObjId = 108
+
+[node name="CliffHuge_20_CliffPoint_A" parent="Node3D/LargeObjects/CliffsHuge" instance=ExtResource("16_iw5p1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.7006, 1.52588e-05, 142.34)
+ObjId = 109
+
+[node name="CliffHuge_20_CliffPoint_B" parent="Node3D/LargeObjects/CliffsHuge" instance=ExtResource("17_25h6k")]
+transform = Transform3D(-0.986737, 0, -0.162327, 0, 1, 0, 0.162327, 0, -0.986737, -40.4163, 0, 203.287)
+ObjId = 110
+
+[node name="CliffLarge_03" parent="Node3D/LargeObjects/CliffsHuge" instance=ExtResource("18_kmsbk")]
+transform = Transform3D(-0.193601, 0, -0.98108, 0, 1, 0, 0.98108, 0, -0.193601, -55.1487, 0, 72.9137)
+ObjId = 111
+
+[node name="CliffLarge_04" parent="Node3D/LargeObjects/CliffsHuge" instance=ExtResource("19_nynkn")]
+transform = Transform3D(-0.997811, 0, -0.0661347, 0, 1, 0, 0.0661347, 0, -0.997811, -58.7588, 0, 99.0281)
+ObjId = 112
+
+[node name="Pylon" type="Node3D" parent="Node3D/LargeObjects"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 189.93)
+
+[node name="Pylon_01_A" parent="Node3D/LargeObjects/Pylon" instance=ExtResource("20_1fe50")]
+ObjId = 113
+
+[node name="Pylon_01_B" parent="Node3D/LargeObjects/Pylon" instance=ExtResource("21_lkorr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.3282, 0, 0)
+ObjId = 114
+
+[node name="RockLarge_06_A" parent="Node3D/LargeObjects/Pylon" instance=ExtResource("25_q0eqe")]
+transform = Transform3D(0.0848082, 0, 0.996397, 0, 1, 0, -0.996397, 0, 0.0848082, -46.0166, 0, 0)
+ObjId = 118
+
+[node name="RockLarge_06_B" parent="Node3D/LargeObjects/Pylon" instance=ExtResource("26_tw0jv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.8721, 0, 0)
+ObjId = 119
+
+[node name="Houses" type="Node3D" parent="Node3D/LargeObjects"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -200.198, 0, 0)
+
+[node name="HouseRuralLarge_01_Mirror_PropsA" parent="Node3D/LargeObjects/Houses" instance=ExtResource("22_i113f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 176.996)
+ObjId = 120
+
+[node name="HouseRuralLarge_01_Mirror_PropsB" parent="Node3D/LargeObjects/Houses" instance=ExtResource("23_ynuvd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 152.341)
+ObjId = 121
+
+[node name="HouseRuralLarge_01_Mirrored" parent="Node3D/LargeObjects/Houses" instance=ExtResource("24_uxnf0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 129.937)
+ObjId = 122
+
+[node name="HouseRuralO02" parent="Node3D/LargeObjects/Houses" instance=ExtResource("27_uxnf0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 102.639)
+ObjId = 123
+
+[node name="HouseRuralO02_PropsB" parent="Node3D/LargeObjects/Houses" instance=ExtResource("28_q0eqe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 89.9016)
+ObjId = 124
+
+[node name="HouseRuralO02_PropsC" parent="Node3D/LargeObjects/Houses" instance=ExtResource("29_tw0jv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 78.04)
+ObjId = 125
+
+[node name="HouseRuralSmall_01_A" parent="Node3D/LargeObjects/Houses" instance=ExtResource("30_07ekx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 54.3429)
+ObjId = 126
+
+[node name="HouseRuralSmall_01_A_Mirror_PropsA" parent="Node3D/LargeObjects/Houses" instance=ExtResource("31_vlrji")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 38.3092)
+ObjId = 127
+
+[node name="HouseRuralSmall_01_A_PropsA" parent="Node3D/LargeObjects/Houses" instance=ExtResource("32_s1x1w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 22.8183)
+ObjId = 128
+
+[node name="HouseRuralSmall_01_A_PropsC" parent="Node3D/LargeObjects/Houses" instance=ExtResource("33_lppog")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.44393)
+ObjId = 129
+
+[node name="HouseRuralSmall_01_A_PropsD" parent="Node3D/LargeObjects/Houses" instance=ExtResource("34_s1q50")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.43163)
+ObjId = 130
+
+[node name="HouseRuralSmall_01_B" parent="Node3D/LargeObjects/Houses" instance=ExtResource("35_nbbhk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.0693, 0, 150.707)
+ObjId = 131
+
+[node name="HouseRuralSmall_01_B_Mirror_PropsA" parent="Node3D/LargeObjects/Houses" instance=ExtResource("36_bus43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.0693, 0, 136.663)
+ObjId = 132
+
+[node name="HouseRuralSmall_01_B_Mirror_PropsB" parent="Node3D/LargeObjects/Houses" instance=ExtResource("37_0k75t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.1766, 0, 122.952)
+ObjId = 133
+
+[node name="HouseRuralSmall_01_B_PropsA" parent="Node3D/LargeObjects/Houses" instance=ExtResource("38_tw1j5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.4639, 0, 90.9244)
+ObjId = 134
+
+[node name="HouseRuralSmall_01_B_PropsB" parent="Node3D/LargeObjects/Houses" instance=ExtResource("39_3ktsk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.4639, 0, 77.1129)
+ObjId = 135
+
+[node name="HouseRuralSmall_01_B_PropsD" parent="Node3D/LargeObjects/Houses" instance=ExtResource("40_2bi4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.4639, 0, 64.6616)
+ObjId = 136
+
+[node name="HouseRuralSmall_01_B_PropsE" parent="Node3D/LargeObjects/Houses" instance=ExtResource("41_b57xs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.4639, 0, 51.8733)
+ObjId = 137
+
+[node name="HouseRuralSmall_01_Mirrored_B" parent="Node3D/LargeObjects/Houses" instance=ExtResource("42_pqrlj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.7402, 0, 109.348)
+ObjId = 138
+
+[node name="HouseRural_01_A" parent="Node3D/LargeObjects/Houses" instance=ExtResource("43_0k75t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2823, 0, 14.1357)
+ObjId = 139
+
+[node name="HouseRural_01_B" parent="Node3D/LargeObjects/Houses" instance=ExtResource("44_tw1j5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2823, 0, -7.08679)
+ObjId = 140
+
+[node name="HouseRural_01_C" parent="Node3D/LargeObjects/Houses" instance=ExtResource("45_3ktsk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2823, 0, -25.1841)
+ObjId = 141
+
+[node name="HouseRural_01_D" parent="Node3D/LargeObjects/Houses" instance=ExtResource("46_2bi4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2823, 0, -41.4583)
+ObjId = 142
+
+[node name="HouseRural_01_E" parent="Node3D/LargeObjects/Houses" instance=ExtResource("47_b57xs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2823, 0, -56.8129)
+ObjId = 143
+
+[node name="HouseRural_01_F" parent="Node3D/LargeObjects/Houses" instance=ExtResource("48_pqrlj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2823, 0, -74.1847)
+ObjId = 144
+
+[node name="HouseRural_01_G" parent="Node3D/LargeObjects/Houses" instance=ExtResource("49_rbvma")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2823, 0, -92.8943)
+ObjId = 145
+
+[node name="HouseRural_01_H" parent="Node3D/LargeObjects/Houses" instance=ExtResource("50_kxba0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2823, 0, -118.342)
+ObjId = 146
+
+[node name="HouseRural_01_I" parent="Node3D/LargeObjects/Houses" instance=ExtResource("51_0jym3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.7491, 0, -50.8595)
+ObjId = 147
+
+[node name="HouseRural_01_J" parent="Node3D/LargeObjects/Houses" instance=ExtResource("52_8xoac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.1501, 0, -36.8231)
+ObjId = 148
+
+[node name="HouseRuralSmall_02" parent="Node3D/LargeObjects/Houses" instance=ExtResource("53_0jym3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.61768, 0, -26.3058)
+ObjId = 149
+
+[node name="HouseRuralSmall_02_A_PropsA" parent="Node3D/LargeObjects/Houses" instance=ExtResource("54_8xoac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.61768, 0, -38.1997)
+ObjId = 150
+
+[node name="HouseRuralSmall_02_A_PropsB" parent="Node3D/LargeObjects/Houses" instance=ExtResource("55_e0ufo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.61768, 0, -50.4039)
+ObjId = 151
+
+[node name="HescoTower_01" parent="Node3D/LargeObjects/Houses/HouseRuralSmall_02_A_PropsB" instance=ExtResource("56_3qadf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -19.6746)
+ObjId = 152
+
+[node name="HescoTower_01_Beige" parent="Node3D/LargeObjects/Houses/HouseRuralSmall_02_A_PropsB" instance=ExtResource("57_kl14f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -34.3839)
+ObjId = 153
+
+[node name="Hescoline_01" parent="Node3D/LargeObjects/Houses/HouseRuralSmall_02_A_PropsB/HescoTower_01_Beige" instance=ExtResource("58_4impn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9133, 0, -17.8938)
+ObjId = 154
+
+[node name="Hescoline_02" parent="Node3D/LargeObjects/Houses/HouseRuralSmall_02_A_PropsB/HescoTower_01_Beige" instance=ExtResource("59_hljh4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.31364, 0, -21.5343)
+ObjId = 155
+
+[node name="Guard_Tower" parent="Node3D/LargeObjects/Houses/HouseRuralSmall_02_A_PropsB" instance=ExtResource("60_cldkn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -86.6313)
+ObjId = 156
