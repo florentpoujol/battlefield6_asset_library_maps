@@ -1,0 +1,3016 @@
+{
+    "Portal_Dynamic": [
+        {
+            "name": "DeployCam",
+            "type": "DeployCam",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 0.101056,
+                "z": -0.994881
+            },
+            "front": {
+                "x": 0,
+                "y": 0.994881,
+                "z": 0.101056
+            },
+            "position": {
+                "x": -600.903,
+                "y": 264.669,
+                "z": 16.8177
+            },
+            "id": "Camera3D/DeployCam"
+        },
+        {
+            "name": "FiringRange_Floor_01",
+            "ObjId": 186,
+            "type": "FiringRange_Floor_01",
+            "right": {
+                "x": 50,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 50,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 50
+            },
+            "position": {
+                "x": -500,
+                "y": 190,
+                "z": -500
+            },
+            "id": "Node3D/floor/FiringRange_Floor_01"
+        },
+        {
+            "name": "FiringRange_Floor_01",
+            "ObjId": 187,
+            "type": "FiringRange_Floor_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -10,
+                "y": 235.3451,
+                "z": -10
+            },
+            "id": "Node3D/spawn/FiringRange_Floor_01"
+        },
+        {
+            "name": "TEAM_2_HQ",
+            "Team": "Team2",
+            "AltTeam": "TeamNeutral",
+            "InfantrySpawns": [
+                "Node3D/spawn/TEAM_2_HQ/SpawnPoint_2_1"
+            ],
+            "HQArea": "Node3D/spawn/TEAM_2_HQ/HQ_Team2",
+            "type": "HQ_PlayerSpawner",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 235.3451,
+                "z": 5.37625
+            },
+            "id": "Node3D/spawn/TEAM_2_HQ",
+            "linked": [
+                "HQArea",
+                "InfantrySpawns"
+            ]
+        },
+        {
+            "name": "HQ_Team2",
+            "type": "PolygonVolume",
+            "id": "Node3D/spawn/TEAM_2_HQ/HQ_Team2",
+            "height": 0,
+            "points": [
+                {
+                    "x": 5,
+                    "y": 240.3451,
+                    "z": 10.37625
+                },
+                {
+                    "x": 5,
+                    "y": 240.3451,
+                    "z": 0.37625
+                },
+                {
+                    "x": -5,
+                    "y": 240.3451,
+                    "z": 0.37625
+                },
+                {
+                    "x": -5,
+                    "y": 240.3451,
+                    "z": 10.37625
+                }
+            ]
+        },
+        {
+            "name": "SpawnPoint_2_1",
+            "ObjId": 188,
+            "type": "SpawnPoint",
+            "right": {
+                "x": 0.87795,
+                "y": 0,
+                "z": 0.478754
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.478754,
+                "y": 0,
+                "z": 0.87795
+            },
+            "position": {
+                "x": 0,
+                "y": 235.3451,
+                "z": 5.431751
+            },
+            "id": "Node3D/spawn/TEAM_2_HQ/SpawnPoint_2_1"
+        },
+        {
+            "name": "TEAM_1_HQ",
+            "AltTeam": "TeamNeutral",
+            "InfantrySpawns": [
+                "Node3D/spawn/TEAM_1_HQ/SpawnPoint_1_1"
+            ],
+            "HQArea": "Node3D/spawn/TEAM_1_HQ/HQ_Team1",
+            "type": "HQ_PlayerSpawner",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 235.3451,
+                "z": -5.2893
+            },
+            "id": "Node3D/spawn/TEAM_1_HQ",
+            "linked": [
+                "HQArea",
+                "InfantrySpawns"
+            ]
+        },
+        {
+            "name": "HQ_Team1",
+            "type": "PolygonVolume",
+            "id": "Node3D/spawn/TEAM_1_HQ/HQ_Team1",
+            "height": 0,
+            "points": [
+                {
+                    "x": 5,
+                    "y": 240.3451,
+                    "z": -0.2893
+                },
+                {
+                    "x": 5,
+                    "y": 240.3451,
+                    "z": -10.2893
+                },
+                {
+                    "x": -5,
+                    "y": 240.3451,
+                    "z": -10.2893
+                },
+                {
+                    "x": -5,
+                    "y": 240.3451,
+                    "z": -0.2893
+                }
+            ]
+        },
+        {
+            "name": "SpawnPoint_1_1",
+            "ObjId": 189,
+            "type": "SpawnPoint",
+            "right": {
+                "x": 0.999884,
+                "y": 0,
+                "z": 0.0152535
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.0152535,
+                "y": 0,
+                "z": 0.999884
+            },
+            "position": {
+                "x": 0,
+                "y": 235.3451,
+                "z": -5.2710281
+            },
+            "id": "Node3D/spawn/TEAM_1_HQ/SpawnPoint_1_1"
+        },
+        {
+            "name": "MudRidgeHuge_Straight_01",
+            "ObjId": 101,
+            "type": "MudRidgeHuge_Straight_01",
+            "right": {
+                "x": -0.996704,
+                "y": 0,
+                "z": -0.081121
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0.081121,
+                "y": 0,
+                "z": -0.996704
+            },
+            "position": {
+                "x": -61.1881,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/MudRidgeHuge_Straight_01"
+        },
+        {
+            "name": "BrickPileLarge_01",
+            "ObjId": 102,
+            "type": "BrickPileLarge_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -44.9897,
+                "y": 190,
+                "z": -222.281499
+            },
+            "id": "Node3D/large_object/BrickPileLarge_01"
+        },
+        {
+            "name": "BuildingVentLarge_01_A",
+            "ObjId": 103,
+            "type": "BuildingVentLarge_01_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -38.9466,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/BuildingVentLarge_01_A"
+        },
+        {
+            "name": "BuildingVentLarge_01_B",
+            "ObjId": 104,
+            "type": "BuildingVentLarge_01_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -36.674,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/BuildingVentLarge_01_B"
+        },
+        {
+            "name": "BuildingVentLarge_01_C",
+            "ObjId": 104,
+            "type": "BuildingVentLarge_01_C",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -34.762,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/BuildingVentLarge_01_C"
+        },
+        {
+            "name": "BuildingVentLarge_01_D",
+            "ObjId": 106,
+            "type": "BuildingVentLarge_01_D",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -32.0402,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/BuildingVentLarge_01_D"
+        },
+        {
+            "name": "BuildingVentLarge_01_D_Pale",
+            "ObjId": 107,
+            "type": "BuildingVentLarge_01_D_Pale",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -28.558,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/BuildingVentLarge_01_D_Pale"
+        },
+        {
+            "name": "CliffDarkLarge_02A",
+            "ObjId": 108,
+            "type": "CliffDarkLarge_02A",
+            "right": {
+                "x": 0.0496866,
+                "y": 0,
+                "z": -0.998765
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0.998765,
+                "y": 0,
+                "z": 0.0496866
+            },
+            "position": {
+                "x": -21.0436,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/CliffDarkLarge_02A"
+        },
+        {
+            "name": "DirtPileLarge_02",
+            "ObjId": 109,
+            "type": "DirtPileLarge_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -7.48021,
+                "y": 190,
+                "z": -222.80085
+            },
+            "id": "Node3D/large_object/DirtPileLarge_02"
+        },
+        {
+            "name": "IvyJapaneseHydrangeaLargeWall_01",
+            "ObjId": 110,
+            "type": "IvyJapaneseHydrangeaLargeWall_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 9.66077,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/IvyJapaneseHydrangeaLargeWall_01"
+        },
+        {
+            "name": "IvyJapaneseHydrangeaLargeWall_02",
+            "ObjId": 110,
+            "type": "IvyJapaneseHydrangeaLargeWall_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 16.4059,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/IvyJapaneseHydrangeaLargeWall_02"
+        },
+        {
+            "name": "IvyJapaneseHydrangeaLargeWall_03",
+            "ObjId": 112,
+            "type": "IvyJapaneseHydrangeaLargeWall_03",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 21.1904,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/IvyJapaneseHydrangeaLargeWall_03"
+        },
+        {
+            "name": "Panorama_01_LargeScaffolding",
+            "ObjId": 113,
+            "type": "Panorama_01_LargeScaffolding",
+            "right": {
+                "x": -0.000890136,
+                "y": 0,
+                "z": 1
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -1,
+                "y": 0,
+                "z": -0.000890136
+            },
+            "position": {
+                "x": 26.1041,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/Panorama_01_LargeScaffolding"
+        },
+        {
+            "name": "RockLarge_06_A",
+            "ObjId": 114,
+            "type": "RockLarge_06_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 33.725,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/RockLarge_06_A"
+        },
+        {
+            "name": "RockLarge_06_B",
+            "ObjId": 115,
+            "type": "RockLarge_06_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 44.6125,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/RockLarge_06_B"
+        },
+        {
+            "name": "RockpileLarge_01_A",
+            "ObjId": 116,
+            "type": "RockpileLarge_01_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 55.3309,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/RockpileLarge_01_A"
+        },
+        {
+            "name": "RockpileLarge_02",
+            "ObjId": 117,
+            "type": "RockpileLarge_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 62.1133,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/RockpileLarge_02"
+        },
+        {
+            "name": "RockpileLarge_03",
+            "ObjId": 118,
+            "type": "RockpileLarge_03",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 69.114,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/RockpileLarge_03"
+        },
+        {
+            "name": "RuinHouseCorner_LargeDebris_01",
+            "ObjId": 119,
+            "type": "RuinHouseCorner_LargeDebris_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 78.388,
+                "y": 190,
+                "z": -221.676
+            },
+            "id": "Node3D/large_object/RuinHouseCorner_LargeDebris_01"
+        },
+        {
+            "name": "ServerRackLarge_01",
+            "ObjId": 120,
+            "type": "ServerRackLarge_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -42.8054,
+                "y": 190,
+                "z": -235.8783
+            },
+            "id": "Node3D/large_object/ServerRackLarge_01"
+        },
+        {
+            "name": "TentLarge_01_FullOpen",
+            "ObjId": 121,
+            "type": "TentLarge_01_FullOpen",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -24.0598,
+                "y": 190,
+                "z": -236.034
+            },
+            "id": "Node3D/large_object/TentLarge_01_FullOpen"
+        },
+        {
+            "name": "TrashPileLarge_01",
+            "ObjId": 122,
+            "type": "TrashPileLarge_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -10.0753,
+                "y": 190,
+                "z": -233.5853
+            },
+            "id": "Node3D/large_object/TrashPileLarge_01"
+        },
+        {
+            "name": "StatueOfLiberty_01",
+            "ObjId": 123,
+            "type": "StatueOfLiberty_01",
+            "right": {
+                "x": 0.999976,
+                "y": 0,
+                "z": 0.00694635
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.00694635,
+                "y": 0,
+                "z": 0.999976
+            },
+            "position": {
+                "x": 327.0286,
+                "y": 190,
+                "z": -104.105
+            },
+            "id": "Node3D/buildings/StatueOfLiberty_01"
+        },
+        {
+            "name": "Area06_Building_01_A",
+            "ObjId": 124,
+            "type": "Area06_Building_01_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 350.875,
+                "y": 190,
+                "z": 23.4255
+            },
+            "id": "Node3D/buildings/Area06_Building_01_A"
+        },
+        {
+            "name": "Area06_Building_02_A",
+            "ObjId": 125,
+            "type": "Area06_Building_02_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 363.529,
+                "y": 190,
+                "z": 69.3814
+            },
+            "id": "Node3D/buildings/Area06_Building_02_A"
+        },
+        {
+            "name": "Area06_Building_03_A",
+            "ObjId": 126,
+            "type": "Area06_Building_03_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 359.964,
+                "y": 190,
+                "z": 95.0539
+            },
+            "id": "Node3D/buildings/Area06_Building_03_A"
+        },
+        {
+            "name": "Area06_Building_05_A",
+            "ObjId": 127,
+            "type": "Area06_Building_05_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 359.483,
+                "y": 190,
+                "z": 125.503
+            },
+            "id": "Node3D/buildings/Area06_Building_05_A"
+        },
+        {
+            "name": "Area07_Building_01",
+            "ObjId": 128,
+            "type": "Area07_Building_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 358.384,
+                "y": 190,
+                "z": 149.4
+            },
+            "id": "Node3D/buildings/Area07_Building_01"
+        },
+        {
+            "name": "Area07_Building_03_A",
+            "ObjId": 129,
+            "type": "Area07_Building_03_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 361.929,
+                "y": 190,
+                "z": 174.754
+            },
+            "id": "Node3D/buildings/Area07_Building_03_A"
+        },
+        {
+            "name": "Area07_Building_04",
+            "ObjId": 130,
+            "type": "Area07_Building_04",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 316.9056,
+                "y": 190,
+                "z": 3.68606
+            },
+            "id": "Node3D/buildings/Area07_Building_04"
+        },
+        {
+            "name": "Area08_Building_01_A",
+            "ObjId": 131,
+            "type": "Area08_Building_01_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 311.4903,
+                "y": 190,
+                "z": 36.3819
+            },
+            "id": "Node3D/buildings/Area08_Building_01_A"
+        },
+        {
+            "name": "Area08_Building_02",
+            "ObjId": 132,
+            "type": "Area08_Building_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 302.7693,
+                "y": 190,
+                "z": 93.924
+            },
+            "id": "Node3D/buildings/Area08_Building_02"
+        },
+        {
+            "name": "Area08_Building_05",
+            "ObjId": 133,
+            "type": "Area08_Building_05",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 308.3369,
+                "y": 190,
+                "z": 124.01
+            },
+            "id": "Node3D/buildings/Area08_Building_05"
+        },
+        {
+            "name": "Area08_Building_06",
+            "ObjId": 134,
+            "type": "Area08_Building_06",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 308.2148,
+                "y": 190,
+                "z": 152.289
+            },
+            "id": "Node3D/buildings/Area08_Building_06"
+        },
+        {
+            "name": "Area08_Building_07",
+            "ObjId": 135,
+            "type": "Area08_Building_07",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 312.0783,
+                "y": 190,
+                "z": 184.636
+            },
+            "id": "Node3D/buildings/Area08_Building_07"
+        },
+        {
+            "name": "Area08_Building_07_PropsA",
+            "ObjId": 136,
+            "type": "Area08_Building_07_PropsA",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 309.0189,
+                "y": 190,
+                "z": 215.238
+            },
+            "id": "Node3D/buildings/Area08_Building_07_PropsA"
+        },
+        {
+            "name": "Area08_Building_08",
+            "ObjId": 137,
+            "type": "Area08_Building_08",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 317.3403,
+                "y": 190,
+                "z": 241.347
+            },
+            "id": "Node3D/buildings/Area08_Building_08"
+        },
+        {
+            "name": "Area08_Building_08_PropsA",
+            "ObjId": 139,
+            "type": "Area08_Building_08_PropsA",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 319.8024,
+                "y": 190,
+                "z": 266.839
+            },
+            "id": "Node3D/buildings/Area08_Building_08_PropsA"
+        },
+        {
+            "name": "Area08_Building_09_PropsDressingA",
+            "ObjId": 140,
+            "type": "Area08_Building_09_PropsDressingA",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 319.4103,
+                "y": 190,
+                "z": 297.941
+            },
+            "id": "Node3D/buildings/Area08_Building_09_PropsDressingA"
+        },
+        {
+            "name": "Area08_Building_10_Destroyed",
+            "ObjId": 141,
+            "type": "Area08_Building_10_Destroyed",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 317.0794,
+                "y": 190,
+                "z": 323.228
+            },
+            "id": "Node3D/buildings/Area08_Building_10_Destroyed"
+        },
+        {
+            "name": "Area08_Building_11",
+            "ObjId": 142,
+            "type": "Area08_Building_11",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 318.1194,
+                "y": 190,
+                "z": 353.059
+            },
+            "id": "Node3D/buildings/Area08_Building_11"
+        },
+        {
+            "name": "Area10_Building_01_OOB",
+            "ObjId": 143,
+            "type": "Area10_Building_01_OOB",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 345.869,
+                "y": 190,
+                "z": -212.669
+            },
+            "id": "Node3D/buildings/Area10_Building_01_OOB"
+        },
+        {
+            "name": "Area10_Building_02_OoB",
+            "ObjId": 144,
+            "type": "Area10_Building_02_OoB",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 263.3568,
+                "y": 190,
+                "z": -214.314
+            },
+            "id": "Node3D/buildings/Area10_Building_02_OoB"
+        },
+        {
+            "name": "Commercial_Modern_Building_03_B",
+            "ObjId": 145,
+            "type": "Commercial_Modern_Building_03_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 361.835,
+                "y": 190,
+                "z": 226.036
+            },
+            "id": "Node3D/buildings/Commercial_Modern_Building_03_B"
+        },
+        {
+            "name": "Commercial_Modern_Building_04_B",
+            "ObjId": 146,
+            "type": "Commercial_Modern_Building_04_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 360.508,
+                "y": 190,
+                "z": 277.602
+            },
+            "id": "Node3D/buildings/Commercial_Modern_Building_04_B"
+        },
+        {
+            "name": "FireStation_Building_01",
+            "ObjId": 147,
+            "type": "FireStation_Building_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 273.0687,
+                "y": 190,
+                "z": 111.485
+            },
+            "id": "Node3D/buildings/FireStation_Building_01"
+        },
+        {
+            "name": "PanoramaBuilding_01",
+            "ObjId": 148,
+            "type": "PanoramaBuilding_01",
+            "right": {
+                "x": -0.0316899,
+                "y": 0,
+                "z": 0.999498
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.999498,
+                "y": 0,
+                "z": -0.0316899
+            },
+            "position": {
+                "x": 356.683,
+                "y": 190,
+                "z": 368.047
+            },
+            "id": "Node3D/buildings/PanoramaBuilding_01"
+        },
+        {
+            "name": "PanoramaBuilding_02",
+            "ObjId": 149,
+            "type": "PanoramaBuilding_02",
+            "right": {
+                "x": 0.319737,
+                "y": 0,
+                "z": 0.947506
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.947506,
+                "y": 0,
+                "z": 0.319737
+            },
+            "position": {
+                "x": 284.0221,
+                "y": 190,
+                "z": 427.27
+            },
+            "id": "Node3D/buildings/PanoramaBuilding_02"
+        },
+        {
+            "name": "Residential_BuildingModular_BG_01",
+            "ObjId": 150,
+            "type": "Residential_BuildingModular_BG_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 263.8737,
+                "y": 190,
+                "z": 146.1
+            },
+            "id": "Node3D/buildings/Residential_BuildingModular_BG_01"
+        },
+        {
+            "name": "Residential_BuildingModular_BackDrop_01",
+            "ObjId": 151,
+            "type": "Residential_BuildingModular_BackDrop_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 264.8757,
+                "y": 190,
+                "z": 186.44
+            },
+            "id": "Node3D/buildings/Residential_BuildingModular_BackDrop_01"
+        },
+        {
+            "name": "RooftopBuilding_02",
+            "ObjId": 152,
+            "type": "RooftopBuilding_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 278.6518,
+                "y": 190,
+                "z": 221.315
+            },
+            "id": "Node3D/buildings/RooftopBuilding_02"
+        },
+        {
+            "name": "BrooklynBridge_01_Under_Brigde",
+            "ObjId": 153,
+            "type": "BrooklynBridge_01_Under_Brigde",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 117.359,
+                "y": 190,
+                "z": 360.3067
+            },
+            "id": "Node3D/bridge/BrooklynBridge_01_Under_Brigde"
+        },
+        {
+            "name": "BrooklynBridge_01_Under_Pedestrian",
+            "ObjId": 154,
+            "type": "BrooklynBridge_01_Under_Pedestrian",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 74.6858,
+                "y": 190,
+                "z": 357.1199
+            },
+            "id": "Node3D/bridge/BrooklynBridge_01_Under_Pedestrian"
+        },
+        {
+            "name": "BrooklynBridge_Base_B_Dmg_01",
+            "ObjId": 155,
+            "type": "BrooklynBridge_Base_B_Dmg_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 128.213,
+                "y": 190,
+                "z": 371.2929
+            },
+            "id": "Node3D/bridge/BrooklynBridge_Base_B_Dmg_01"
+        },
+        {
+            "name": "BrooklynBridge_Base_B_Dmg_02",
+            "ObjId": 156,
+            "type": "BrooklynBridge_Base_B_Dmg_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 104.888,
+                "y": 190,
+                "z": 372.1679
+            },
+            "id": "Node3D/bridge/BrooklynBridge_Base_B_Dmg_02"
+        },
+        {
+            "name": "BrooklynBridge_Base_B_Dmg_03",
+            "ObjId": 157,
+            "type": "BrooklynBridge_Base_B_Dmg_03",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 80.0887,
+                "y": 190,
+                "z": 371.2754
+            },
+            "id": "Node3D/bridge/BrooklynBridge_Base_B_Dmg_03"
+        },
+        {
+            "name": "BrooklynBridge_LightsOff_01",
+            "ObjId": 158,
+            "type": "BrooklynBridge_LightsOff_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -74.5994,
+                "y": 190,
+                "z": 511.51
+            },
+            "id": "Node3D/bridge/BrooklynBridge_LightsOff_01"
+        },
+        {
+            "name": "HighwayOverpass_Bridge_01",
+            "ObjId": 159,
+            "type": "HighwayOverpass_Bridge_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 60.8195,
+                "y": 190,
+                "z": 385.9548
+            },
+            "id": "Node3D/bridge/HighwayOverpass_Bridge_01"
+        },
+        {
+            "name": "HighwayOverpass_Bridge_02",
+            "ObjId": 160,
+            "type": "HighwayOverpass_Bridge_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 4.00033,
+                "y": 190,
+                "z": 387.3742
+            },
+            "id": "Node3D/bridge/HighwayOverpass_Bridge_02"
+        },
+        {
+            "name": "HighwayOverpass_Bridge_04",
+            "ObjId": 161,
+            "type": "HighwayOverpass_Bridge_04",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -51.7208,
+                "y": 190,
+                "z": 387.4013
+            },
+            "id": "Node3D/bridge/HighwayOverpass_Bridge_04"
+        },
+        {
+            "name": "HighwayOverpass_Bridge_BrokenBlockout_2",
+            "ObjId": 162,
+            "type": "HighwayOverpass_Bridge_BrokenBlockout_2",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -107.182,
+                "y": 190,
+                "z": 385.6404
+            },
+            "id": "Node3D/bridge/HighwayOverpass_Bridge_BrokenBlockout_2"
+        },
+        {
+            "name": "ManhattanBridge_01_Anchorage_01",
+            "ObjId": 163,
+            "type": "ManhattanBridge_01_Anchorage_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 122.755,
+                "y": 190.0000152588,
+                "z": 435.104
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Anchorage_01"
+        },
+        {
+            "name": "ManhattanBridge_01_Cable_01",
+            "ObjId": 164,
+            "type": "ManhattanBridge_01_Cable_01",
+            "right": {
+                "x": -0.0518827,
+                "y": 0,
+                "z": 0.998653
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.998653,
+                "y": 0,
+                "z": -0.0518827
+            },
+            "position": {
+                "x": 0,
+                "y": 190,
+                "z": 418.1567
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Cable_01"
+        },
+        {
+            "name": "ManhattanBridge_01_Cable_02",
+            "ObjId": 165,
+            "type": "ManhattanBridge_01_Cable_02",
+            "right": {
+                "x": -0.0518827,
+                "y": 0,
+                "z": 0.998653
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.998653,
+                "y": 0,
+                "z": -0.0518827
+            },
+            "position": {
+                "x": 0,
+                "y": 190,
+                "z": 427.9537
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Cable_02"
+        },
+        {
+            "name": "ManhattanBridge_01_Cable_03",
+            "ObjId": 166,
+            "type": "ManhattanBridge_01_Cable_03",
+            "right": {
+                "x": -0.0518827,
+                "y": 0,
+                "z": 0.998653
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.998653,
+                "y": 0,
+                "z": -0.0518827
+            },
+            "position": {
+                "x": 0,
+                "y": 190,
+                "z": 435.505
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Cable_03"
+        },
+        {
+            "name": "ManhattanBridge_01_Cable_04",
+            "ObjId": 167,
+            "type": "ManhattanBridge_01_Cable_04",
+            "right": {
+                "x": -0.0518827,
+                "y": 0,
+                "z": 0.998653
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.998653,
+                "y": 0,
+                "z": -0.0518827
+            },
+            "position": {
+                "x": 0,
+                "y": 190,
+                "z": 446.102
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Cable_04"
+        },
+        {
+            "name": "ManhattanBridge_01_Cable_05",
+            "ObjId": 168,
+            "type": "ManhattanBridge_01_Cable_05",
+            "right": {
+                "x": 0.0262293,
+                "y": 0,
+                "z": 0.999656
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.999656,
+                "y": 0,
+                "z": 0.0262293
+            },
+            "position": {
+                "x": 0,
+                "y": 190,
+                "z": 453.994
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Cable_05"
+        },
+        {
+            "name": "ManhattanBridge_01_Cable_06",
+            "ObjId": 169,
+            "type": "ManhattanBridge_01_Cable_06",
+            "right": {
+                "x": 0.0262293,
+                "y": 0,
+                "z": 0.999656
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.999656,
+                "y": 0,
+                "z": 0.0262293
+            },
+            "position": {
+                "x": 0,
+                "y": 190,
+                "z": 462.625
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Cable_06"
+        },
+        {
+            "name": "ManhattanBridge_01_Cable_07",
+            "ObjId": 170,
+            "type": "ManhattanBridge_01_Cable_07",
+            "right": {
+                "x": 0.0262293,
+                "y": 0,
+                "z": 0.999656
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.999656,
+                "y": 0,
+                "z": 0.0262293
+            },
+            "position": {
+                "x": 0,
+                "y": 190,
+                "z": 473.626
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Cable_07"
+        },
+        {
+            "name": "ManhattanBridge_01_Cable_08",
+            "ObjId": 171,
+            "type": "ManhattanBridge_01_Cable_08",
+            "right": {
+                "x": 0.0262293,
+                "y": 0,
+                "z": 0.999656
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.999656,
+                "y": 0,
+                "z": 0.0262293
+            },
+            "position": {
+                "x": 0,
+                "y": 190,
+                "z": 484.363
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Cable_08"
+        },
+        {
+            "name": "ManhattanBridge_01_Concrete",
+            "ObjId": 172,
+            "type": "ManhattanBridge_01_Concrete",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 5.96124,
+                "y": 190,
+                "z": 354.6426
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Concrete"
+        },
+        {
+            "name": "ManhattanBridge_01_MetalBase_01",
+            "ObjId": 173,
+            "type": "ManhattanBridge_01_MetalBase_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -41.8513,
+                "y": 190,
+                "z": 353.5379
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_MetalBase_01"
+        },
+        {
+            "name": "ManhattanBridge_01_MetalConnect_01",
+            "ObjId": 174,
+            "type": "ManhattanBridge_01_MetalConnect_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 0.748,
+                "z": 481.409
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_MetalConnect_01"
+        },
+        {
+            "name": "ManhattanBridge_01_MetalConnect_02",
+            "ObjId": 175,
+            "type": "ManhattanBridge_01_MetalConnect_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -116.071,
+                "y": 190,
+                "z": 353.7729
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_MetalConnect_02"
+        },
+        {
+            "name": "ManhattanBridge_01_MetalConnect_03",
+            "ObjId": 176,
+            "type": "ManhattanBridge_01_MetalConnect_03",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -160.168,
+                "y": 190,
+                "z": 354.412
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_MetalConnect_03"
+        },
+        {
+            "name": "ManhattanBridge_01_Metal_01",
+            "ObjId": 177,
+            "type": "ManhattanBridge_01_Metal_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -201.067,
+                "y": 190,
+                "z": 359.5913
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Metal_01"
+        },
+        {
+            "name": "ManhattanBridge_01_Rope",
+            "ObjId": 178,
+            "type": "ManhattanBridge_01_Rope",
+            "right": {
+                "x": 0.0302769,
+                "y": 0,
+                "z": 0.999542
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": -0.999542,
+                "y": 0,
+                "z": 0.0302769
+            },
+            "position": {
+                "x": 40.8678,
+                "y": 190,
+                "z": 337.0881
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Rope"
+        },
+        {
+            "name": "ManhattanBridge_01_Rope_01",
+            "ObjId": 179,
+            "type": "ManhattanBridge_01_Rope_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 47.5202,
+                "y": 190,
+                "z": 338.543
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Rope_01"
+        },
+        {
+            "name": "ManhattanBridge_01_Rope_02",
+            "ObjId": 180,
+            "type": "ManhattanBridge_01_Rope_02",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 51.1179,
+                "y": 190,
+                "z": 338.2346
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Rope_02"
+        },
+        {
+            "name": "ManhattanBridge_01_Rope_03",
+            "ObjId": 181,
+            "type": "ManhattanBridge_01_Rope_03",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 54.41,
+                "y": 190,
+                "z": 337.53253
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Rope_03"
+        },
+        {
+            "name": "ManhattanBridge_01_Rope_04",
+            "ObjId": 182,
+            "type": "ManhattanBridge_01_Rope_04",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 58.1695,
+                "y": 190,
+                "z": 338.1944
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Rope_04"
+        },
+        {
+            "name": "ManhattanBridge_01_Rope_05",
+            "ObjId": 183,
+            "type": "ManhattanBridge_01_Rope_05",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 60.4754,
+                "y": 190,
+                "z": 336.71136
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Rope_05"
+        },
+        {
+            "name": "ManhattanBridge_01_Rope_06",
+            "ObjId": 184,
+            "type": "ManhattanBridge_01_Rope_06",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 64.6299,
+                "y": 190,
+                "z": 336.91809
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Rope_06"
+        },
+        {
+            "name": "ManhattanBridge_01_Stone",
+            "ObjId": 185,
+            "type": "ManhattanBridge_01_Stone",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -135.211,
+                "y": 190,
+                "z": 414.4691
+            },
+            "id": "Node3D/bridge/ManhattanBridge_01_Stone"
+        },
+        {
+            "name": "HighwayBrooklyn_01_B",
+            "ObjId": 186,
+            "type": "HighwayBrooklyn_01_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -345.8232,
+                "y": 198.69305,
+                "z": 60.6262
+            },
+            "id": "Node3D/more_large_objects/HighwayBrooklyn_01_B"
+        },
+        {
+            "name": "ManhattanBridge_01_Streaming",
+            "ObjId": 187,
+            "type": "ManhattanBridge_01_Streaming",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -455.7264,
+                "y": 192.25084,
+                "z": 306.605
+            },
+            "id": "Node3D/more_large_objects/ManhattanBridge_01_Streaming"
+        },
+        {
+            "name": "FoundationConstruction_01_1024x256",
+            "ObjId": 188,
+            "type": "FoundationConstruction_01_1024x256",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -381.694,
+                "y": 190,
+                "z": 84.409
+            },
+            "id": "Node3D/more_large_objects/FoundationConstruction_01_1024x256"
+        },
+        {
+            "name": "FoundationConstruction_01_256x256",
+            "ObjId": 189,
+            "type": "FoundationConstruction_01_256x256",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -381.694,
+                "y": 190,
+                "z": 75.8435
+            },
+            "id": "Node3D/more_large_objects/FoundationConstruction_01_256x256"
+        },
+        {
+            "name": "FoundationConstruction_01_512x256",
+            "ObjId": 190,
+            "type": "FoundationConstruction_01_512x256",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -381.694,
+                "y": 190,
+                "z": 66.0585
+            },
+            "id": "Node3D/more_large_objects/FoundationConstruction_01_512x256"
+        },
+        {
+            "name": "FoundationConstruction_01_C90",
+            "ObjId": 191,
+            "type": "FoundationConstruction_01_C90",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -381.694,
+                "y": 190,
+                "z": 58.829
+            },
+            "id": "Node3D/more_large_objects/FoundationConstruction_01_C90"
+        },
+        {
+            "name": "FoundationPlanter_01_A",
+            "ObjId": 192,
+            "type": "FoundationPlanter_01_A",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -395.4066,
+                "y": 190,
+                "z": 90.2715
+            },
+            "id": "Node3D/more_large_objects/FoundationPlanter_01_A"
+        },
+        {
+            "name": "FoundationPlanter_01_B",
+            "ObjId": 193,
+            "type": "FoundationPlanter_01_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -395.4066,
+                "y": 190,
+                "z": 83.4254
+            },
+            "id": "Node3D/more_large_objects/FoundationPlanter_01_B"
+        },
+        {
+            "name": "FoundationPlanter_01_C",
+            "ObjId": 194,
+            "type": "FoundationPlanter_01_C",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -395.4066,
+                "y": 190,
+                "z": 77.6239
+            },
+            "id": "Node3D/more_large_objects/FoundationPlanter_01_C"
+        },
+        {
+            "name": "FoundationPlanter_02_B",
+            "ObjId": 195,
+            "type": "FoundationPlanter_02_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -395.4066,
+                "y": 190,
+                "z": 72.9819
+            },
+            "id": "Node3D/more_large_objects/FoundationPlanter_02_B"
+        },
+        {
+            "name": "FoundationPlanter_02_C",
+            "ObjId": 196,
+            "type": "FoundationPlanter_02_C",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -395.4066,
+                "y": 190,
+                "z": 68.2166
+            },
+            "id": "Node3D/more_large_objects/FoundationPlanter_02_C"
+        },
+        {
+            "name": "FoundationPlanter_Long_01",
+            "ObjId": 197,
+            "type": "FoundationPlanter_Long_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -395.4066,
+                "y": 190,
+                "z": 63.8693
+            },
+            "id": "Node3D/more_large_objects/FoundationPlanter_Long_01"
+        },
+        {
+            "name": "FoundationStairs_01_256x256_B",
+            "ObjId": 198,
+            "type": "FoundationStairs_01_256x256_B",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -406.7983,
+                "y": 190,
+                "z": 23.7514
+            },
+            "id": "Node3D/more_large_objects/FoundationStairs_01_256x256_B"
+        },
+        {
+            "name": "FoundationWallTunnel_1024x768_01",
+            "ObjId": 199,
+            "type": "FoundationWallTunnel_1024x768_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -412.6696,
+                "y": 190,
+                "z": -4.09497
+            },
+            "id": "Node3D/more_large_objects/FoundationWallTunnel_1024x768_01"
+        },
+        {
+            "name": "FoundationWallTunnel_512x512_01",
+            "ObjId": 200,
+            "type": "FoundationWallTunnel_512x512_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -413.0074,
+                "y": 190,
+                "z": -14.3504
+            },
+            "id": "Node3D/more_large_objects/FoundationWallTunnel_512x512_01"
+        },
+        {
+            "name": "FoundationWall_1024x256_01",
+            "ObjId": 201,
+            "type": "FoundationWall_1024x256_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -397.4917,
+                "y": 190,
+                "z": -28.34
+            },
+            "id": "Node3D/more_large_objects/FoundationWall_1024x256_01"
+        },
+        {
+            "name": "FoundationWall_1024x512_01",
+            "ObjId": 202,
+            "type": "FoundationWall_1024x512_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -398.2326,
+                "y": 190,
+                "z": -37.1415
+            },
+            "id": "Node3D/more_large_objects/FoundationWall_1024x512_01"
+        },
+        {
+            "name": "FoundationWall_512x512_C90_01",
+            "ObjId": 203,
+            "type": "FoundationWall_512x512_C90_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -397.4012,
+                "y": 190,
+                "z": -46.8062
+            },
+            "id": "Node3D/more_large_objects/FoundationWall_512x512_C90_01"
+        },
+        {
+            "name": "HighwayOverpass_Foundation_01",
+            "ObjId": 204,
+            "type": "HighwayOverpass_Foundation_01",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": -392.8214,
+                "y": 190,
+                "z": -66.3178
+            },
+            "id": "Node3D/more_large_objects/HighwayOverpass_Foundation_01"
+        },
+        {
+            "name": "WorldIcon",
+            "ObjId": 1,
+            "type": "WorldIcon",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "id": "WorldIcon"
+        }
+    ],
+    "Static": [
+        {
+            "name": "MP_Aftermath_Terrain",
+            "metadata/_edit_lock_": true,
+            "type": "MP_Aftermath_Terrain",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "id": "Static/MP_Aftermath_Terrain"
+        },
+        {
+            "name": "MP_Aftermath_Assets",
+            "metadata/_edit_lock_": true,
+            "type": "MP_Aftermath_Assets",
+            "right": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "up": {
+                "x": 0,
+                "y": 1,
+                "z": 0
+            },
+            "front": {
+                "x": 0,
+                "y": 0,
+                "z": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "id": "Static/MP_Aftermath_Assets"
+        }
+    ]
+}

@@ -9,7 +9,7 @@ All objects should float a little above the ground. Those who don't thus have ph
 
 An icon in the 3D world as well a UI element in the bottom center show you the name of the closest asset.
 
-Some may be published, look for "assets library" in the in-game Portal server browser.    
+Some may be published, look for `"asset library"` in the in-game Portal server browser.    
 The experiences are only meant to be hosted locally and with a single player.
 
 ![abbasid assets](imgs/abbasid.jpg)
@@ -24,7 +24,7 @@ The `src` folder contains the source of the scripts, that are concatenated with 
 ### Build the .strings.json file
 
 Copy from the `index.d.ts` file the list of cases from one of the `RuntimeSpawn_*` enum.  
-Then do a search/replace with regex: search for `\w+(.+),`, and replace by `  "$1": "$1",` (works in Webstorm at least).
+Then do a search/replace with regex: search for `\s*(\w+),`, and replace by `  "$1": "$1",` (works in Webstorm at least).
 
 ## Create an experience for yourself
 
